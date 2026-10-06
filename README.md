@@ -1,5 +1,7 @@
 # FlashKDA Prefix Scan Experiments
 
+See [Nsight Compute profiling](PROFILING.md) for measured bottlenecks, spill-traffic controls, and the confirmed 1.96x full-forward result at 32K/12 heads.
+
 An experimental study of parallelizing the inter-chunk state recurrence in [FlashKDA](https://github.com/MoonshotAI/FlashKDA) with associative affine scans.
 
 On a single NVIDIA B200, an eight-segment tree prototype achieves **1.64x at 8K tokens** and **1.82x at 32K tokens** with 12 heads. The results include preprocessing and state replay. The same approach does **not** improve the tested 96-head cases, and a dense tree with one leaf per chunk is slower than the original kernel.

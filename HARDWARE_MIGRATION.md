@@ -1,5 +1,7 @@
 # Hardware Migration: Ampere, Hopper, and Blackwell
 
+See [Nsight Compute profiling](PROFILING.md) for measured bottlenecks, spill-traffic controls, and the confirmed 1.96x full-forward result at 32K/12 heads.
+
 This follow-up separates algorithmic parallelism from GPU backend selection. It also implements an explicit Blackwell affine-composition kernel using Gluon, shared memory, TMEM, and `tcgen05_mma`.
 
 The original B200 prototype was already using compiler-generated tcgen05 instructions. The earlier study had inspected the upstream FlashKDA binary, but had not inspected the newly generated Triton kernels. The instruction evidence here closes that gap; it does not claim that tcgen05 first appeared only after this follow-up.

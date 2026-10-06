@@ -1,0 +1,1867 @@
+{
+  "runs": [
+    {
+      "metadata": {
+        "gpu": "NVIDIA B200",
+        "capability": [
+          10,
+          0
+        ],
+        "sm_count": 148,
+        "memory_GiB": 178.3511962890625,
+        "torch": "2.8.0+cu129",
+        "triton": "3.4.0",
+        "cuda": "12.9",
+        "disable_mma_v5": "0",
+        "disable_mma_v3": "0"
+      },
+      "mode": "auto",
+      "rows": [
+        {
+          "scope": "summary_control",
+          "T": 8192,
+          "H": 12,
+          "P": 8,
+          "BV": 32,
+          "warps": 4,
+          "timing": {
+            "median_ms": 0.47310266435516546,
+            "samples_ms": [
+              0.4731184112359278,
+              0.47310266435516546,
+              0.47272588125667214
+            ]
+          },
+          "summary": {
+            "median_ms": 0.2502983670881494,
+            "samples_ms": [
+              0.2502467830597408,
+              0.2502983670881494,
+              0.25030769252177304
+            ]
+          },
+          "original": {
+            "median_ms": 0.7725913029091032,
+            "samples_ms": [
+              0.7725822149538526,
+              0.7725913029091032,
+              0.7726036744959214
+            ]
+          },
+          "speedup_vs_original": 1.6330309700583443,
+          "registers": 144,
+          "spills": 0,
+          "shared_bytes": 18432
+        },
+        {
+          "scope": "summary_control",
+          "T": 8192,
+          "H": 12,
+          "P": 8,
+          "BV": 64,
+          "warps": 4,
+          "timing": {
+            "median_ms": 0.49557789393833707,
+            "samples_ms": [
+              0.4956675710241779,
+              0.4954421049629162,
+              0.49557789393833707
+            ]
+          },
+          "summary": {
+            "median_ms": 0.2689757188700013,
+            "samples_ms": [
+              0.26887410134585643,
+              0.26906794004472856,
+              0.2689757188700013
+            ]
+          },
+          "original": {
+            "median_ms": 0.7725913029091032,
+            "samples_ms": [
+              0.7725822149538526,
+              0.7725913029091032,
+              0.7726036744959214
+            ]
+          },
+          "speedup_vs_original": 1.5589704713609236,
+          "registers": 203,
+          "spills": 0,
+          "shared_bytes": 34816
+        },
+        {
+          "scope": "summary_control",
+          "T": 8192,
+          "H": 12,
+          "P": 8,
+          "BV": 64,
+          "warps": 8,
+          "timing": {
+            "median_ms": 0.5239654175222737,
+            "samples_ms": [
+              0.5239937142150043,
+              0.5239654175222737,
+              0.5238890347415454
+            ]
+          },
+          "summary": {
+            "median_ms": 0.30103700006869355,
+            "samples_ms": [
+              0.3011033438911003,
+              0.30103700006869355,
+              0.30096009693218273
+            ]
+          },
+          "original": {
+            "median_ms": 0.7725913029091032,
+            "samples_ms": [
+              0.7725822149538526,
+              0.7725913029091032,
+              0.7726036744959214
+            ]
+          },
+          "speedup_vs_original": 1.474508196671702,
+          "registers": 128,
+          "spills": 0,
+          "shared_bytes": 34816
+        },
+        {
+          "scope": "summary_control",
+          "T": 8192,
+          "H": 12,
+          "P": 8,
+          "BV": 128,
+          "warps": 8,
+          "timing": {
+            "median_ms": 0.5198724877344418,
+            "samples_ms": [
+              0.519838133312407,
+              0.5198724877344418,
+              0.5198836449863148
+            ]
+          },
+          "summary": {
+            "median_ms": 0.29312480220088255,
+            "samples_ms": [
+              0.293101631447121,
+              0.2931555769178602,
+              0.29312480220088255
+            ]
+          },
+          "original": {
+            "median_ms": 0.7725913029091032,
+            "samples_ms": [
+              0.7725822149538526,
+              0.7725913029091032,
+              0.7726036744959214
+            ]
+          },
+          "speedup_vs_original": 1.486116925086741,
+          "registers": 209,
+          "spills": 0,
+          "shared_bytes": 67584
+        },
+        {
+          "scope": "summary_control",
+          "T": 8192,
+          "H": 12,
+          "P": 16,
+          "BV": 32,
+          "warps": 4,
+          "timing": {
+            "median_ms": 0.49770541442068,
+            "samples_ms": [
+              0.4977514066194233,
+              0.49761909183702974,
+              0.49770541442068
+            ]
+          },
+          "summary": {
+            "median_ms": 0.2634403279622396,
+            "samples_ms": [
+              0.263409428914388,
+              0.2634839121500651,
+              0.2634403279622396
+            ]
+          },
+          "original": {
+            "median_ms": 0.7725913029091032,
+            "samples_ms": [
+              0.7725822149538526,
+              0.7725913029091032,
+              0.7726036744959214
+            ]
+          },
+          "speedup_vs_original": 1.552306405604177,
+          "registers": 144,
+          "spills": 0,
+          "shared_bytes": 18432
+        },
+        {
+          "scope": "summary_control",
+          "T": 8192,
+          "H": 12,
+          "P": 16,
+          "BV": 64,
+          "warps": 8,
+          "timing": {
+            "median_ms": 0.46756126451196134,
+            "samples_ms": [
+              0.4676567456737068,
+              0.46756126451196134,
+              0.46754723306028
+            ]
+          },
+          "summary": {
+            "median_ms": 0.23208573193144588,
+            "samples_ms": [
+              0.23204275692210477,
+              0.23208573193144588,
+              0.23210472711020552
+            ]
+          },
+          "original": {
+            "median_ms": 0.7725913029091032,
+            "samples_ms": [
+              0.7725822149538526,
+              0.7725913029091032,
+              0.7726036744959214
+            ]
+          },
+          "speedup_vs_original": 1.6523851771928348,
+          "registers": 128,
+          "spills": 0,
+          "shared_bytes": 34816
+        },
+        {
+          "scope": "summary_control",
+          "T": 8192,
+          "H": 12,
+          "P": 16,
+          "BV": 128,
+          "warps": 8,
+          "timing": {
+            "median_ms": 0.4673899917128664,
+            "samples_ms": [
+              0.46721412281931185,
+              0.4673899917128664,
+              0.46755591027530624
+            ]
+          },
+          "summary": {
+            "median_ms": 0.23073714406866777,
+            "samples_ms": [
+              0.23073714406866777,
+              0.23076081080743444,
+              0.23071486845044448
+            ]
+          },
+          "original": {
+            "median_ms": 0.7725913029091032,
+            "samples_ms": [
+              0.7725822149538526,
+              0.7725913029091032,
+              0.7726036744959214
+            ]
+          },
+          "speedup_vs_original": 1.6529906857392282,
+          "registers": 209,
+          "spills": 0,
+          "shared_bytes": 67584
+        },
+        {
+          "scope": "summary_control",
+          "T": 32768,
+          "H": 12,
+          "P": 8,
+          "BV": 32,
+          "warps": 4,
+          "timing": {
+            "median_ms": 1.6747236698231798,
+            "samples_ms": [
+              1.6745467814993351,
+              1.6747236698231798,
+              1.67487086843937
+            ]
+          },
+          "summary": {
+            "median_ms": 0.9831300240975839,
+            "samples_ms": [
+              0.9827667518898293,
+              0.9833055190098139,
+              0.9831300240975839
+            ]
+          },
+          "original": {
+            "median_ms": 3.0291924403263972,
+            "samples_ms": [
+              3.0293295640211837,
+              3.029108458298903,
+              3.0291924403263972
+            ]
+          },
+          "speedup_vs_original": 1.8087714975965108,
+          "registers": 144,
+          "spills": 0,
+          "shared_bytes": 18432
+        },
+        {
+          "scope": "summary_control",
+          "T": 32768,
+          "H": 12,
+          "P": 8,
+          "BV": 64,
+          "warps": 4,
+          "timing": {
+            "median_ms": 1.7614117188887162,
+            "samples_ms": [
+              1.7616938157515092,
+              1.7614117188887162,
+              1.7609402916648171
+            ]
+          },
+          "summary": {
+            "median_ms": 1.0593779602050781,
+            "samples_ms": [
+              1.0592430826822916,
+              1.0599857381184896,
+              1.0593779602050781
+            ]
+          },
+          "original": {
+            "median_ms": 3.0291924403263972,
+            "samples_ms": [
+              3.0293295640211837,
+              3.029108458298903,
+              3.0291924403263972
+            ]
+          },
+          "speedup_vs_original": 1.7197526324155097,
+          "registers": 203,
+          "spills": 0,
+          "shared_bytes": 34816
+        },
+        {
+          "scope": "summary_control",
+          "T": 32768,
+          "H": 12,
+          "P": 8,
+          "BV": 64,
+          "warps": 8,
+          "timing": {
+            "median_ms": 1.888185212670303,
+            "samples_ms": [
+              1.888185212670303,
+              1.8887887349942836,
+              1.8877868280178163
+            ]
+          },
+          "summary": {
+            "median_ms": 1.1905045238893424,
+            "samples_ms": [
+              1.1903230240095908,
+              1.1905668230199102,
+              1.1905045238893424
+            ]
+          },
+          "original": {
+            "median_ms": 3.0291924403263972,
+            "samples_ms": [
+              3.0293295640211837,
+              3.029108458298903,
+              3.0291924403263972
+            ]
+          },
+          "speedup_vs_original": 1.6042877679581353,
+          "registers": 128,
+          "spills": 0,
+          "shared_bytes": 34816
+        },
+        {
+          "scope": "summary_control",
+          "T": 32768,
+          "H": 12,
+          "P": 8,
+          "BV": 128,
+          "warps": 8,
+          "timing": {
+            "median_ms": 1.8879752554544589,
+            "samples_ms": [
+              1.887951604331412,
+              1.8881517922006001,
+              1.8879752554544589
+            ]
+          },
+          "summary": {
+            "median_ms": 1.1880627987989738,
+            "samples_ms": [
+              1.1879697657343167,
+              1.1880627987989738,
+              1.1881473370452424
+            ]
+          },
+          "original": {
+            "median_ms": 3.0291924403263972,
+            "samples_ms": [
+              3.0293295640211837,
+              3.029108458298903,
+              3.0291924403263972
+            ]
+          },
+          "speedup_vs_original": 1.604466176966516,
+          "registers": 209,
+          "spills": 0,
+          "shared_bytes": 67584
+        },
+        {
+          "scope": "summary_control",
+          "T": 32768,
+          "H": 12,
+          "P": 16,
+          "BV": 32,
+          "warps": 4,
+          "timing": {
+            "median_ms": 1.6696881720360288,
+            "samples_ms": [
+              1.6696510639596491,
+              1.6699000419454373,
+              1.6696881720360288
+            ]
+          },
+          "summary": {
+            "median_ms": 1.0403567966661955,
+            "samples_ms": [
+              1.0403567966661955,
+              1.040713209854929,
+              1.0403284173262746
+            ]
+          },
+          "original": {
+            "median_ms": 3.0291924403263972,
+            "samples_ms": [
+              3.0293295640211837,
+              3.029108458298903,
+              3.0291924403263972
+            ]
+          },
+          "speedup_vs_original": 1.814226447224921,
+          "registers": 144,
+          "spills": 0,
+          "shared_bytes": 18432
+        },
+        {
+          "scope": "summary_control",
+          "T": 32768,
+          "H": 12,
+          "P": 16,
+          "BV": 64,
+          "warps": 8,
+          "timing": {
+            "median_ms": 1.540444138470818,
+            "samples_ms": [
+              1.5402567395976945,
+              1.540444138470818,
+              1.5404972450405943
+            ]
+          },
+          "summary": {
+            "median_ms": 0.9120855046414781,
+            "samples_ms": [
+              0.9120855046414781,
+              0.9120330635158495,
+              0.9121653326626482
+            ]
+          },
+          "original": {
+            "median_ms": 3.0291924403263972,
+            "samples_ms": [
+              3.0293295640211837,
+              3.029108458298903,
+              3.0291924403263972
+            ]
+          },
+          "speedup_vs_original": 1.9664409534080498,
+          "registers": 128,
+          "spills": 0,
+          "shared_bytes": 34816
+        },
+        {
+          "scope": "summary_control",
+          "T": 32768,
+          "H": 12,
+          "P": 16,
+          "BV": 128,
+          "warps": 8,
+          "timing": {
+            "median_ms": 1.5681891326904296,
+            "samples_ms": [
+              1.5682881927490235,
+              1.5681891326904296,
+              1.5680803833007813
+            ]
+          },
+          "summary": {
+            "median_ms": 0.9367136607450598,
+            "samples_ms": [
+              0.9367443937413833,
+              0.936696247774012,
+              0.9367136607450598
+            ]
+          },
+          "original": {
+            "median_ms": 3.0291924403263972,
+            "samples_ms": [
+              3.0293295640211837,
+              3.029108458298903,
+              3.0291924403263972
+            ]
+          },
+          "speedup_vs_original": 1.9316499376127094,
+          "registers": 209,
+          "spills": 0,
+          "shared_bytes": 67584
+        },
+        {
+          "scope": "validation",
+          "gate": "normal",
+          "T": 8192,
+          "H": 12,
+          "P": 8,
+          "BV": 32,
+          "warps": 4,
+          "output_vs_fp64": {
+            "rel_rms": 0.005724685732275248,
+            "max_abs": 0.000639747828245163,
+            "finite": true
+          },
+          "state_vs_fp64": {
+            "rel_rms": 0.004932678770273924,
+            "max_abs": 0.004193395376205444,
+            "finite": true
+          }
+        },
+        {
+          "scope": "validation",
+          "gate": "normal",
+          "T": 8192,
+          "H": 12,
+          "P": 8,
+          "BV": 64,
+          "warps": 4,
+          "output_vs_fp64": {
+            "rel_rms": 0.005724685732275248,
+            "max_abs": 0.000639747828245163,
+            "finite": true
+          },
+          "state_vs_fp64": {
+            "rel_rms": 0.004932678770273924,
+            "max_abs": 0.004193395376205444,
+            "finite": true
+          }
+        },
+        {
+          "scope": "validation",
+          "gate": "normal",
+          "T": 8192,
+          "H": 12,
+          "P": 8,
+          "BV": 64,
+          "warps": 8,
+          "output_vs_fp64": {
+            "rel_rms": 0.005724685732275248,
+            "max_abs": 0.000639747828245163,
+            "finite": true
+          },
+          "state_vs_fp64": {
+            "rel_rms": 0.004932678770273924,
+            "max_abs": 0.004193395376205444,
+            "finite": true
+          }
+        },
+        {
+          "scope": "validation",
+          "gate": "normal",
+          "T": 8192,
+          "H": 12,
+          "P": 8,
+          "BV": 128,
+          "warps": 8,
+          "output_vs_fp64": {
+            "rel_rms": 0.005724685732275248,
+            "max_abs": 0.000639747828245163,
+            "finite": true
+          },
+          "state_vs_fp64": {
+            "rel_rms": 0.004932678770273924,
+            "max_abs": 0.004193395376205444,
+            "finite": true
+          }
+        },
+        {
+          "scope": "validation",
+          "gate": "normal",
+          "T": 8192,
+          "H": 12,
+          "P": 16,
+          "BV": 32,
+          "warps": 4,
+          "output_vs_fp64": {
+            "rel_rms": 0.005724678747355938,
+            "max_abs": 0.000639747828245163,
+            "finite": true
+          },
+          "state_vs_fp64": {
+            "rel_rms": 0.004932678770273924,
+            "max_abs": 0.004193395376205444,
+            "finite": true
+          }
+        },
+        {
+          "scope": "validation",
+          "gate": "normal",
+          "T": 8192,
+          "H": 12,
+          "P": 16,
+          "BV": 64,
+          "warps": 8,
+          "output_vs_fp64": {
+            "rel_rms": 0.005724678747355938,
+            "max_abs": 0.000639747828245163,
+            "finite": true
+          },
+          "state_vs_fp64": {
+            "rel_rms": 0.004932678770273924,
+            "max_abs": 0.004193395376205444,
+            "finite": true
+          }
+        },
+        {
+          "scope": "validation",
+          "gate": "normal",
+          "T": 8192,
+          "H": 12,
+          "P": 16,
+          "BV": 128,
+          "warps": 8,
+          "output_vs_fp64": {
+            "rel_rms": 0.005724678747355938,
+            "max_abs": 0.000639747828245163,
+            "finite": true
+          },
+          "state_vs_fp64": {
+            "rel_rms": 0.004932678770273924,
+            "max_abs": 0.004193395376205444,
+            "finite": true
+          }
+        },
+        {
+          "scope": "validation",
+          "gate": "weak",
+          "T": 8192,
+          "H": 12,
+          "P": 8,
+          "BV": 32,
+          "warps": 4,
+          "output_vs_fp64": {
+            "rel_rms": 0.0076074604876339436,
+            "max_abs": 0.0027354061603546143,
+            "finite": true
+          },
+          "state_vs_fp64": {
+            "rel_rms": 0.007381976582109928,
+            "max_abs": 0.03306984901428223,
+            "finite": true
+          }
+        },
+        {
+          "scope": "validation",
+          "gate": "weak",
+          "T": 8192,
+          "H": 12,
+          "P": 8,
+          "BV": 64,
+          "warps": 4,
+          "output_vs_fp64": {
+            "rel_rms": 0.0076074604876339436,
+            "max_abs": 0.0027354061603546143,
+            "finite": true
+          },
+          "state_vs_fp64": {
+            "rel_rms": 0.007381976582109928,
+            "max_abs": 0.03306984901428223,
+            "finite": true
+          }
+        },
+        {
+          "scope": "validation",
+          "gate": "weak",
+          "T": 8192,
+          "H": 12,
+          "P": 8,
+          "BV": 64,
+          "warps": 8,
+          "output_vs_fp64": {
+            "rel_rms": 0.0076074604876339436,
+            "max_abs": 0.0027354061603546143,
+            "finite": true
+          },
+          "state_vs_fp64": {
+            "rel_rms": 0.007381976582109928,
+            "max_abs": 0.03306984901428223,
+            "finite": true
+          }
+        },
+        {
+          "scope": "validation",
+          "gate": "weak",
+          "T": 8192,
+          "H": 12,
+          "P": 8,
+          "BV": 128,
+          "warps": 8,
+          "output_vs_fp64": {
+            "rel_rms": 0.0076074604876339436,
+            "max_abs": 0.0027354061603546143,
+            "finite": true
+          },
+          "state_vs_fp64": {
+            "rel_rms": 0.007381976582109928,
+            "max_abs": 0.03306984901428223,
+            "finite": true
+          }
+        },
+        {
+          "scope": "validation",
+          "gate": "weak",
+          "T": 8192,
+          "H": 12,
+          "P": 16,
+          "BV": 32,
+          "warps": 4,
+          "output_vs_fp64": {
+            "rel_rms": 0.007234048563987017,
+            "max_abs": 0.002584099769592285,
+            "finite": true
+          },
+          "state_vs_fp64": {
+            "rel_rms": 0.007213789504021406,
+            "max_abs": 0.030744552612304688,
+            "finite": true
+          }
+        },
+        {
+          "scope": "validation",
+          "gate": "weak",
+          "T": 8192,
+          "H": 12,
+          "P": 16,
+          "BV": 64,
+          "warps": 8,
+          "output_vs_fp64": {
+            "rel_rms": 0.007234048563987017,
+            "max_abs": 0.002584099769592285,
+            "finite": true
+          },
+          "state_vs_fp64": {
+            "rel_rms": 0.007213789504021406,
+            "max_abs": 0.030744552612304688,
+            "finite": true
+          }
+        },
+        {
+          "scope": "validation",
+          "gate": "weak",
+          "T": 8192,
+          "H": 12,
+          "P": 16,
+          "BV": 128,
+          "warps": 8,
+          "output_vs_fp64": {
+            "rel_rms": 0.007234048563987017,
+            "max_abs": 0.002584099769592285,
+            "finite": true
+          },
+          "state_vs_fp64": {
+            "rel_rms": 0.007213789504021406,
+            "max_abs": 0.030744552612304688,
+            "finite": true
+          }
+        },
+        {
+          "scope": "validation",
+          "gate": "strong",
+          "T": 8192,
+          "H": 12,
+          "P": 8,
+          "BV": 32,
+          "warps": 4,
+          "output_vs_fp64": {
+            "rel_rms": 0.0052610160782933235,
+            "max_abs": 0.0006321072578430176,
+            "finite": true
+          },
+          "state_vs_fp64": {
+            "rel_rms": 0.004558902699500322,
+            "max_abs": 0.0051094889640808105,
+            "finite": true
+          }
+        },
+        {
+          "scope": "validation",
+          "gate": "strong",
+          "T": 8192,
+          "H": 12,
+          "P": 8,
+          "BV": 64,
+          "warps": 4,
+          "output_vs_fp64": {
+            "rel_rms": 0.0052610160782933235,
+            "max_abs": 0.0006321072578430176,
+            "finite": true
+          },
+          "state_vs_fp64": {
+            "rel_rms": 0.004558902699500322,
+            "max_abs": 0.0051094889640808105,
+            "finite": true
+          }
+        },
+        {
+          "scope": "validation",
+          "gate": "strong",
+          "T": 8192,
+          "H": 12,
+          "P": 8,
+          "BV": 64,
+          "warps": 8,
+          "output_vs_fp64": {
+            "rel_rms": 0.0052610160782933235,
+            "max_abs": 0.0006321072578430176,
+            "finite": true
+          },
+          "state_vs_fp64": {
+            "rel_rms": 0.004558902699500322,
+            "max_abs": 0.0051094889640808105,
+            "finite": true
+          }
+        },
+        {
+          "scope": "validation",
+          "gate": "strong",
+          "T": 8192,
+          "H": 12,
+          "P": 8,
+          "BV": 128,
+          "warps": 8,
+          "output_vs_fp64": {
+            "rel_rms": 0.0052610160782933235,
+            "max_abs": 0.0006321072578430176,
+            "finite": true
+          },
+          "state_vs_fp64": {
+            "rel_rms": 0.004558902699500322,
+            "max_abs": 0.0051094889640808105,
+            "finite": true
+          }
+        },
+        {
+          "scope": "validation",
+          "gate": "strong",
+          "T": 8192,
+          "H": 12,
+          "P": 16,
+          "BV": 32,
+          "warps": 4,
+          "output_vs_fp64": {
+            "rel_rms": 0.005261016543954611,
+            "max_abs": 0.0006321072578430176,
+            "finite": true
+          },
+          "state_vs_fp64": {
+            "rel_rms": 0.004558902699500322,
+            "max_abs": 0.0051094889640808105,
+            "finite": true
+          }
+        },
+        {
+          "scope": "validation",
+          "gate": "strong",
+          "T": 8192,
+          "H": 12,
+          "P": 16,
+          "BV": 64,
+          "warps": 8,
+          "output_vs_fp64": {
+            "rel_rms": 0.005261016543954611,
+            "max_abs": 0.0006321072578430176,
+            "finite": true
+          },
+          "state_vs_fp64": {
+            "rel_rms": 0.004558902699500322,
+            "max_abs": 0.0051094889640808105,
+            "finite": true
+          }
+        },
+        {
+          "scope": "validation",
+          "gate": "strong",
+          "T": 8192,
+          "H": 12,
+          "P": 16,
+          "BV": 128,
+          "warps": 8,
+          "output_vs_fp64": {
+            "rel_rms": 0.005261016543954611,
+            "max_abs": 0.0006321072578430176,
+            "finite": true
+          },
+          "state_vs_fp64": {
+            "rel_rms": 0.004558902699500322,
+            "max_abs": 0.0051094889640808105,
+            "finite": true
+          }
+        }
+      ],
+      "evidence": {
+        "summary_p8_v32_w4": {
+          "ptx_static_counts": {
+            "mma_sync": 8,
+            "wgmma": 0,
+            "tcgen05_mma": 1,
+            "tmem_alloc": 1,
+            "tmem_load": 1,
+            "tmem_store": 0
+          },
+          "sass_matrix_instructions": [
+            "HMMA.16816.F32.BF16",
+            "LDTM.",
+            "UTCHMMA"
+          ],
+          "ptx_instruction_examples": [
+            "@%p1 tcgen05.alloc.cta_group::1.sync.aligned.shared::cta.b32 [%r188], 32;",
+            "@%p1 tcgen05.relinquish_alloc_permit.cta_group::1.sync.aligned;",
+            "tcgen05.ld.sync.aligned.32x32b.x32.b32 {%r725, %r726, %r727, %r728, %r729, %r730, %r731, %r732, %r733, %r734, %r735, %r736, %r737, %r738, %r739, %r740, %r741, %r742, %r743, %r744, %r745, %r746, %r747, %r748, %r749, %r750, %r751, %r752, %r753, %r754, %r755, %r756}, [%r757 + 0];",
+            "tcgen05.wait::ld.sync.aligned;",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r523, %r524, %r525, %r526 }, { %r517, %r518, %r519, %r520 }, { %r489, %r490 }, { %r523, %r524, %r525, %r526 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r523, %r524, %r525, %r526 }, { %r531, %r532, %r533, %r534 }, { %r491, %r492 }, { %r523, %r524, %r525, %r526 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r523, %r524, %r525, %r526 }, { %r545, %r546, %r547, %r548 }, { %r494, %r495 }, { %r523, %r524, %r525, %r526 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r523, %r524, %r525, %r526 }, { %r559, %r560, %r561, %r562 }, { %r496, %r497 }, { %r523, %r524, %r525, %r526 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r523, %r524, %r525, %r526 }, { %r573, %r574, %r575, %r576 }, { %r499, %r500 }, { %r523, %r524, %r525, %r526 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r523, %r524, %r525, %r526 }, { %r587, %r588, %r589, %r590 }, { %r501, %r502 }, { %r523, %r524, %r525, %r526 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r523, %r524, %r525, %r526 }, { %r601, %r602, %r603, %r604 }, { %r504, %r505 }, { %r523, %r524, %r525, %r526 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r523, %r524, %r525, %r526 }, { %r615, %r616, %r617, %r618 }, { %r506, %r507 }, { %r523, %r524, %r525, %r526 };",
+            "@%p43 tcgen05.mma.cta_group::1.kind::f16 [ %r801 + 0 ], %rd53, %rd54, %r714, %p42;",
+            "@%p43 tcgen05.commit.cta_group::1.mbarrier::arrive::one.b64 [%rd55];",
+            "@%p1 tcgen05.dealloc.cta_group::1.sync.aligned.b32 %r801, 32;"
+          ],
+          "ptx_sha256": "acc99544c668c7330c75b9a2cd34de462f4042279b2a697762a22a626cbb126a",
+          "cubin_sha256": "4b618ce1f7492cc601f475ef4567a4c3a3329af188fa70d3f8071e8bf59024ab",
+          "registers": 144,
+          "spills": 0,
+          "shared_bytes": 18432
+        },
+        "summary_p8_v64_w4": {
+          "ptx_static_counts": {
+            "mma_sync": 16,
+            "wgmma": 0,
+            "tcgen05_mma": 1,
+            "tmem_alloc": 1,
+            "tmem_load": 1,
+            "tmem_store": 0
+          },
+          "sass_matrix_instructions": [
+            "HMMA.16816.F32.BF16",
+            "LDTM.",
+            "UTCHMMA"
+          ],
+          "ptx_instruction_examples": [
+            "@%p1 tcgen05.alloc.cta_group::1.sync.aligned.shared::cta.b32 [%r315], 64;",
+            "@%p1 tcgen05.relinquish_alloc_permit.cta_group::1.sync.aligned;",
+            "tcgen05.ld.sync.aligned.32x32b.x64.b32 {%r1058, %r1059, %r1060, %r1061, %r1062, %r1063, %r1064, %r1065, %r1066, %r1067, %r1068, %r1069, %r1070, %r1071, %r1072, %r1073, %r1074, %r1075, %r1076, %r1077, %r1078, %r1079, %r1080, %r1081, %r1082, %r1083, %r1084, %r1085, %r1086, %r1087, %r1088, %r1089, %r1090, %r1091, %r1092, %r1093, %r1094, %r1095, %r1096, %r1097, %r1098, %r1099, %r1100, %r1101, %r1102, %r1103, %r1104, %r1105, %r1106, %r1107, %r1108, %r1109, %r1110, %r1111, %r1112, %r1113, %r1114, %r1115, %r1116, %r1117, %r1118, %r1119, %r1120, %r1121}, [%r1122 + 0];",
+            "tcgen05.wait::ld.sync.aligned;",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r739, %r740, %r741, %r742 }, { %r733, %r734, %r735, %r736 }, { %r671, %r672 }, { %r739, %r740, %r741, %r742 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r753, %r754, %r755, %r756 }, { %r733, %r734, %r735, %r736 }, { %r691, %r692 }, { %r753, %r754, %r755, %r756 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r739, %r740, %r741, %r742 }, { %r761, %r762, %r763, %r764 }, { %r673, %r674 }, { %r739, %r740, %r741, %r742 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r753, %r754, %r755, %r756 }, { %r761, %r762, %r763, %r764 }, { %r693, %r694 }, { %r753, %r754, %r755, %r756 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r739, %r740, %r741, %r742 }, { %r789, %r790, %r791, %r792 }, { %r676, %r677 }, { %r739, %r740, %r741, %r742 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r753, %r754, %r755, %r756 }, { %r789, %r790, %r791, %r792 }, { %r696, %r697 }, { %r753, %r754, %r755, %r756 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r739, %r740, %r741, %r742 }, { %r817, %r818, %r819, %r820 }, { %r678, %r679 }, { %r739, %r740, %r741, %r742 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r753, %r754, %r755, %r756 }, { %r817, %r818, %r819, %r820 }, { %r698, %r699 }, { %r753, %r754, %r755, %r756 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r739, %r740, %r741, %r742 }, { %r845, %r846, %r847, %r848 }, { %r681, %r682 }, { %r739, %r740, %r741, %r742 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r753, %r754, %r755, %r756 }, { %r845, %r846, %r847, %r848 }, { %r701, %r702 }, { %r753, %r754, %r755, %r756 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r739, %r740, %r741, %r742 }, { %r873, %r874, %r875, %r876 }, { %r683, %r684 }, { %r739, %r740, %r741, %r742 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r753, %r754, %r755, %r756 }, { %r873, %r874, %r875, %r876 }, { %r703, %r704 }, { %r753, %r754, %r755, %r756 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r739, %r740, %r741, %r742 }, { %r901, %r902, %r903, %r904 }, { %r686, %r687 }, { %r739, %r740, %r741, %r742 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r753, %r754, %r755, %r756 }, { %r901, %r902, %r903, %r904 }, { %r706, %r707 }, { %r753, %r754, %r755, %r756 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r739, %r740, %r741, %r742 }, { %r929, %r930, %r931, %r932 }, { %r688, %r689 }, { %r739, %r740, %r741, %r742 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r753, %r754, %r755, %r756 }, { %r929, %r930, %r931, %r932 }, { %r708, %r709 }, { %r753, %r754, %r755, %r756 };",
+            "@%p75 tcgen05.mma.cta_group::1.kind::f16 [ %r1199 + 0 ], %rd56, %rd57, %r1047, %p74;",
+            "@%p75 tcgen05.commit.cta_group::1.mbarrier::arrive::one.b64 [%rd58];",
+            "@%p1 tcgen05.dealloc.cta_group::1.sync.aligned.b32 %r1199, 64;"
+          ],
+          "ptx_sha256": "dd680996c1b8dfac9434354e3b827180162001c2494660e31b0bc617acd26c1f",
+          "cubin_sha256": "acf160812c298b6c1f05279961b59ef7d3289864edb434571e61ebc8b9c0cbef",
+          "registers": 203,
+          "spills": 0,
+          "shared_bytes": 34816
+        },
+        "summary_p8_v64_w8": {
+          "ptx_static_counts": {
+            "mma_sync": 8,
+            "wgmma": 0,
+            "tcgen05_mma": 1,
+            "tmem_alloc": 1,
+            "tmem_load": 1,
+            "tmem_store": 0
+          },
+          "sass_matrix_instructions": [
+            "HMMA.16816.F32.BF16",
+            "LDTM.",
+            "UTCHMMA"
+          ],
+          "ptx_instruction_examples": [
+            "@%p1 tcgen05.alloc.cta_group::1.sync.aligned.shared::cta.b32 [%r209], 64;",
+            "@%p1 tcgen05.relinquish_alloc_permit.cta_group::1.sync.aligned;",
+            "tcgen05.ld.sync.aligned.32x32b.x32.b32 {%r804, %r805, %r806, %r807, %r808, %r809, %r810, %r811, %r812, %r813, %r814, %r815, %r816, %r817, %r818, %r819, %r820, %r821, %r822, %r823, %r824, %r825, %r826, %r827, %r828, %r829, %r830, %r831, %r832, %r833, %r834, %r835}, [%r836 + 0];",
+            "tcgen05.wait::ld.sync.aligned;",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r603, %r604, %r605, %r606 }, { %r597, %r598, %r599, %r600 }, { %r569, %r570 }, { %r603, %r604, %r605, %r606 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r603, %r604, %r605, %r606 }, { %r611, %r612, %r613, %r614 }, { %r571, %r572 }, { %r603, %r604, %r605, %r606 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r603, %r604, %r605, %r606 }, { %r625, %r626, %r627, %r628 }, { %r574, %r575 }, { %r603, %r604, %r605, %r606 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r603, %r604, %r605, %r606 }, { %r639, %r640, %r641, %r642 }, { %r576, %r577 }, { %r603, %r604, %r605, %r606 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r603, %r604, %r605, %r606 }, { %r653, %r654, %r655, %r656 }, { %r579, %r580 }, { %r603, %r604, %r605, %r606 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r603, %r604, %r605, %r606 }, { %r667, %r668, %r669, %r670 }, { %r581, %r582 }, { %r603, %r604, %r605, %r606 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r603, %r604, %r605, %r606 }, { %r681, %r682, %r683, %r684 }, { %r584, %r585 }, { %r603, %r604, %r605, %r606 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r603, %r604, %r605, %r606 }, { %r695, %r696, %r697, %r698 }, { %r586, %r587 }, { %r603, %r604, %r605, %r606 };",
+            "@%p43 tcgen05.mma.cta_group::1.kind::f16 [ %r880 + 0 ], %rd47, %rd48, %r795, %p42;",
+            "@%p43 tcgen05.commit.cta_group::1.mbarrier::arrive::one.b64 [%rd49];",
+            "@%p1 tcgen05.dealloc.cta_group::1.sync.aligned.b32 %r880, 64;"
+          ],
+          "ptx_sha256": "39cad2ec6e3799631ab96267318a76219a6468826921861cdf6f4f78e5dc2743",
+          "cubin_sha256": "8352625fd8dccf18472808be985bab1a4c00716c334811fd34c4a49b0dddcdc6",
+          "registers": 128,
+          "spills": 0,
+          "shared_bytes": 34816
+        },
+        "summary_p8_v128_w8": {
+          "ptx_static_counts": {
+            "mma_sync": 16,
+            "wgmma": 0,
+            "tcgen05_mma": 1,
+            "tmem_alloc": 1,
+            "tmem_load": 1,
+            "tmem_store": 0
+          },
+          "sass_matrix_instructions": [
+            "HMMA.16816.F32.BF16",
+            "LDTM.",
+            "UTCHMMA"
+          ],
+          "ptx_instruction_examples": [
+            "@%p1 tcgen05.alloc.cta_group::1.sync.aligned.shared::cta.b32 [%r372], 128;",
+            "@%p1 tcgen05.relinquish_alloc_permit.cta_group::1.sync.aligned;",
+            "tcgen05.ld.sync.aligned.32x32b.x64.b32 {%r1175, %r1176, %r1177, %r1178, %r1179, %r1180, %r1181, %r1182, %r1183, %r1184, %r1185, %r1186, %r1187, %r1188, %r1189, %r1190, %r1191, %r1192, %r1193, %r1194, %r1195, %r1196, %r1197, %r1198, %r1199, %r1200, %r1201, %r1202, %r1203, %r1204, %r1205, %r1206, %r1207, %r1208, %r1209, %r1210, %r1211, %r1212, %r1213, %r1214, %r1215, %r1216, %r1217, %r1218, %r1219, %r1220, %r1221, %r1222, %r1223, %r1224, %r1225, %r1226, %r1227, %r1228, %r1229, %r1230, %r1231, %r1232, %r1233, %r1234, %r1235, %r1236, %r1237, %r1238}, [%r1239 + 0];",
+            "tcgen05.wait::ld.sync.aligned;",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r858, %r859, %r860, %r861 }, { %r852, %r853, %r854, %r855 }, { %r790, %r791 }, { %r858, %r859, %r860, %r861 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r872, %r873, %r874, %r875 }, { %r852, %r853, %r854, %r855 }, { %r810, %r811 }, { %r872, %r873, %r874, %r875 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r858, %r859, %r860, %r861 }, { %r880, %r881, %r882, %r883 }, { %r792, %r793 }, { %r858, %r859, %r860, %r861 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r872, %r873, %r874, %r875 }, { %r880, %r881, %r882, %r883 }, { %r812, %r813 }, { %r872, %r873, %r874, %r875 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r858, %r859, %r860, %r861 }, { %r908, %r909, %r910, %r911 }, { %r795, %r796 }, { %r858, %r859, %r860, %r861 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r872, %r873, %r874, %r875 }, { %r908, %r909, %r910, %r911 }, { %r815, %r816 }, { %r872, %r873, %r874, %r875 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r858, %r859, %r860, %r861 }, { %r936, %r937, %r938, %r939 }, { %r797, %r798 }, { %r858, %r859, %r860, %r861 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r872, %r873, %r874, %r875 }, { %r936, %r937, %r938, %r939 }, { %r817, %r818 }, { %r872, %r873, %r874, %r875 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r858, %r859, %r860, %r861 }, { %r964, %r965, %r966, %r967 }, { %r800, %r801 }, { %r858, %r859, %r860, %r861 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r872, %r873, %r874, %r875 }, { %r964, %r965, %r966, %r967 }, { %r820, %r821 }, { %r872, %r873, %r874, %r875 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r858, %r859, %r860, %r861 }, { %r992, %r993, %r994, %r995 }, { %r802, %r803 }, { %r858, %r859, %r860, %r861 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r872, %r873, %r874, %r875 }, { %r992, %r993, %r994, %r995 }, { %r822, %r823 }, { %r872, %r873, %r874, %r875 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r858, %r859, %r860, %r861 }, { %r1020, %r1021, %r1022, %r1023 }, { %r805, %r806 }, { %r858, %r859, %r860, %r861 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r872, %r873, %r874, %r875 }, { %r1020, %r1021, %r1022, %r1023 }, { %r825, %r826 }, { %r872, %r873, %r874, %r875 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r858, %r859, %r860, %r861 }, { %r1048, %r1049, %r1050, %r1051 }, { %r807, %r808 }, { %r858, %r859, %r860, %r861 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r872, %r873, %r874, %r875 }, { %r1048, %r1049, %r1050, %r1051 }, { %r827, %r828 }, { %r872, %r873, %r874, %r875 };",
+            "@%p75 tcgen05.mma.cta_group::1.kind::f16 [ %r1315 + 0 ], %rd45, %rd46, %r1166, %p74;",
+            "@%p75 tcgen05.commit.cta_group::1.mbarrier::arrive::one.b64 [%rd47];",
+            "@%p1 tcgen05.dealloc.cta_group::1.sync.aligned.b32 %r1315, 128;"
+          ],
+          "ptx_sha256": "02128ac1d9e601fc162ba4e8114c52ae2664f100e1a31d0f0abaeb2a89c346ed",
+          "cubin_sha256": "e6b9aec975559633708c55fc1441dd97e283fa748aa64b4e44a2cd3c6c89abd2",
+          "registers": 209,
+          "spills": 0,
+          "shared_bytes": 67584
+        },
+        "summary_p16_v32_w4": {
+          "ptx_static_counts": {
+            "mma_sync": 8,
+            "wgmma": 0,
+            "tcgen05_mma": 1,
+            "tmem_alloc": 1,
+            "tmem_load": 1,
+            "tmem_store": 0
+          },
+          "sass_matrix_instructions": [
+            "HMMA.16816.F32.BF16",
+            "LDTM.",
+            "UTCHMMA"
+          ],
+          "ptx_instruction_examples": [
+            "@%p1 tcgen05.alloc.cta_group::1.sync.aligned.shared::cta.b32 [%r188], 32;",
+            "@%p1 tcgen05.relinquish_alloc_permit.cta_group::1.sync.aligned;",
+            "tcgen05.ld.sync.aligned.32x32b.x32.b32 {%r725, %r726, %r727, %r728, %r729, %r730, %r731, %r732, %r733, %r734, %r735, %r736, %r737, %r738, %r739, %r740, %r741, %r742, %r743, %r744, %r745, %r746, %r747, %r748, %r749, %r750, %r751, %r752, %r753, %r754, %r755, %r756}, [%r757 + 0];",
+            "tcgen05.wait::ld.sync.aligned;",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r523, %r524, %r525, %r526 }, { %r517, %r518, %r519, %r520 }, { %r489, %r490 }, { %r523, %r524, %r525, %r526 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r523, %r524, %r525, %r526 }, { %r531, %r532, %r533, %r534 }, { %r491, %r492 }, { %r523, %r524, %r525, %r526 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r523, %r524, %r525, %r526 }, { %r545, %r546, %r547, %r548 }, { %r494, %r495 }, { %r523, %r524, %r525, %r526 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r523, %r524, %r525, %r526 }, { %r559, %r560, %r561, %r562 }, { %r496, %r497 }, { %r523, %r524, %r525, %r526 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r523, %r524, %r525, %r526 }, { %r573, %r574, %r575, %r576 }, { %r499, %r500 }, { %r523, %r524, %r525, %r526 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r523, %r524, %r525, %r526 }, { %r587, %r588, %r589, %r590 }, { %r501, %r502 }, { %r523, %r524, %r525, %r526 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r523, %r524, %r525, %r526 }, { %r601, %r602, %r603, %r604 }, { %r504, %r505 }, { %r523, %r524, %r525, %r526 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r523, %r524, %r525, %r526 }, { %r615, %r616, %r617, %r618 }, { %r506, %r507 }, { %r523, %r524, %r525, %r526 };",
+            "@%p43 tcgen05.mma.cta_group::1.kind::f16 [ %r801 + 0 ], %rd53, %rd54, %r714, %p42;",
+            "@%p43 tcgen05.commit.cta_group::1.mbarrier::arrive::one.b64 [%rd55];",
+            "@%p1 tcgen05.dealloc.cta_group::1.sync.aligned.b32 %r801, 32;"
+          ],
+          "ptx_sha256": "23f0ce22c1ad69d9d7d00dbefacf970489cc60f84089a737e30055c7cd00fe61",
+          "cubin_sha256": "6e78e1c63bdeb1538b8c85295d510ab7d46b6530f61588568d6b900c8085db39",
+          "registers": 144,
+          "spills": 0,
+          "shared_bytes": 18432
+        },
+        "summary_p16_v64_w8": {
+          "ptx_static_counts": {
+            "mma_sync": 8,
+            "wgmma": 0,
+            "tcgen05_mma": 1,
+            "tmem_alloc": 1,
+            "tmem_load": 1,
+            "tmem_store": 0
+          },
+          "sass_matrix_instructions": [
+            "HMMA.16816.F32.BF16",
+            "LDTM.",
+            "UTCHMMA"
+          ],
+          "ptx_instruction_examples": [
+            "@%p1 tcgen05.alloc.cta_group::1.sync.aligned.shared::cta.b32 [%r209], 64;",
+            "@%p1 tcgen05.relinquish_alloc_permit.cta_group::1.sync.aligned;",
+            "tcgen05.ld.sync.aligned.32x32b.x32.b32 {%r804, %r805, %r806, %r807, %r808, %r809, %r810, %r811, %r812, %r813, %r814, %r815, %r816, %r817, %r818, %r819, %r820, %r821, %r822, %r823, %r824, %r825, %r826, %r827, %r828, %r829, %r830, %r831, %r832, %r833, %r834, %r835}, [%r836 + 0];",
+            "tcgen05.wait::ld.sync.aligned;",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r603, %r604, %r605, %r606 }, { %r597, %r598, %r599, %r600 }, { %r569, %r570 }, { %r603, %r604, %r605, %r606 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r603, %r604, %r605, %r606 }, { %r611, %r612, %r613, %r614 }, { %r571, %r572 }, { %r603, %r604, %r605, %r606 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r603, %r604, %r605, %r606 }, { %r625, %r626, %r627, %r628 }, { %r574, %r575 }, { %r603, %r604, %r605, %r606 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r603, %r604, %r605, %r606 }, { %r639, %r640, %r641, %r642 }, { %r576, %r577 }, { %r603, %r604, %r605, %r606 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r603, %r604, %r605, %r606 }, { %r653, %r654, %r655, %r656 }, { %r579, %r580 }, { %r603, %r604, %r605, %r606 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r603, %r604, %r605, %r606 }, { %r667, %r668, %r669, %r670 }, { %r581, %r582 }, { %r603, %r604, %r605, %r606 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r603, %r604, %r605, %r606 }, { %r681, %r682, %r683, %r684 }, { %r584, %r585 }, { %r603, %r604, %r605, %r606 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r603, %r604, %r605, %r606 }, { %r695, %r696, %r697, %r698 }, { %r586, %r587 }, { %r603, %r604, %r605, %r606 };",
+            "@%p43 tcgen05.mma.cta_group::1.kind::f16 [ %r880 + 0 ], %rd47, %rd48, %r795, %p42;",
+            "@%p43 tcgen05.commit.cta_group::1.mbarrier::arrive::one.b64 [%rd49];",
+            "@%p1 tcgen05.dealloc.cta_group::1.sync.aligned.b32 %r880, 64;"
+          ],
+          "ptx_sha256": "ce8c41248020c9a21cb32c6933a5f88cbb07d127c5da8c0753cdeb4d7adcaf91",
+          "cubin_sha256": "85209eee95f4cf69afe9caa9f29e0c20f7849b909b47f783b44506d36dcd5cc8",
+          "registers": 128,
+          "spills": 0,
+          "shared_bytes": 34816
+        },
+        "summary_p16_v128_w8": {
+          "ptx_static_counts": {
+            "mma_sync": 16,
+            "wgmma": 0,
+            "tcgen05_mma": 1,
+            "tmem_alloc": 1,
+            "tmem_load": 1,
+            "tmem_store": 0
+          },
+          "sass_matrix_instructions": [
+            "HMMA.16816.F32.BF16",
+            "LDTM.",
+            "UTCHMMA"
+          ],
+          "ptx_instruction_examples": [
+            "@%p1 tcgen05.alloc.cta_group::1.sync.aligned.shared::cta.b32 [%r372], 128;",
+            "@%p1 tcgen05.relinquish_alloc_permit.cta_group::1.sync.aligned;",
+            "tcgen05.ld.sync.aligned.32x32b.x64.b32 {%r1175, %r1176, %r1177, %r1178, %r1179, %r1180, %r1181, %r1182, %r1183, %r1184, %r1185, %r1186, %r1187, %r1188, %r1189, %r1190, %r1191, %r1192, %r1193, %r1194, %r1195, %r1196, %r1197, %r1198, %r1199, %r1200, %r1201, %r1202, %r1203, %r1204, %r1205, %r1206, %r1207, %r1208, %r1209, %r1210, %r1211, %r1212, %r1213, %r1214, %r1215, %r1216, %r1217, %r1218, %r1219, %r1220, %r1221, %r1222, %r1223, %r1224, %r1225, %r1226, %r1227, %r1228, %r1229, %r1230, %r1231, %r1232, %r1233, %r1234, %r1235, %r1236, %r1237, %r1238}, [%r1239 + 0];",
+            "tcgen05.wait::ld.sync.aligned;",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r858, %r859, %r860, %r861 }, { %r852, %r853, %r854, %r855 }, { %r790, %r791 }, { %r858, %r859, %r860, %r861 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r872, %r873, %r874, %r875 }, { %r852, %r853, %r854, %r855 }, { %r810, %r811 }, { %r872, %r873, %r874, %r875 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r858, %r859, %r860, %r861 }, { %r880, %r881, %r882, %r883 }, { %r792, %r793 }, { %r858, %r859, %r860, %r861 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r872, %r873, %r874, %r875 }, { %r880, %r881, %r882, %r883 }, { %r812, %r813 }, { %r872, %r873, %r874, %r875 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r858, %r859, %r860, %r861 }, { %r908, %r909, %r910, %r911 }, { %r795, %r796 }, { %r858, %r859, %r860, %r861 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r872, %r873, %r874, %r875 }, { %r908, %r909, %r910, %r911 }, { %r815, %r816 }, { %r872, %r873, %r874, %r875 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r858, %r859, %r860, %r861 }, { %r936, %r937, %r938, %r939 }, { %r797, %r798 }, { %r858, %r859, %r860, %r861 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r872, %r873, %r874, %r875 }, { %r936, %r937, %r938, %r939 }, { %r817, %r818 }, { %r872, %r873, %r874, %r875 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r858, %r859, %r860, %r861 }, { %r964, %r965, %r966, %r967 }, { %r800, %r801 }, { %r858, %r859, %r860, %r861 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r872, %r873, %r874, %r875 }, { %r964, %r965, %r966, %r967 }, { %r820, %r821 }, { %r872, %r873, %r874, %r875 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r858, %r859, %r860, %r861 }, { %r992, %r993, %r994, %r995 }, { %r802, %r803 }, { %r858, %r859, %r860, %r861 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r872, %r873, %r874, %r875 }, { %r992, %r993, %r994, %r995 }, { %r822, %r823 }, { %r872, %r873, %r874, %r875 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r858, %r859, %r860, %r861 }, { %r1020, %r1021, %r1022, %r1023 }, { %r805, %r806 }, { %r858, %r859, %r860, %r861 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r872, %r873, %r874, %r875 }, { %r1020, %r1021, %r1022, %r1023 }, { %r825, %r826 }, { %r872, %r873, %r874, %r875 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r858, %r859, %r860, %r861 }, { %r1048, %r1049, %r1050, %r1051 }, { %r807, %r808 }, { %r858, %r859, %r860, %r861 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r872, %r873, %r874, %r875 }, { %r1048, %r1049, %r1050, %r1051 }, { %r827, %r828 }, { %r872, %r873, %r874, %r875 };",
+            "@%p75 tcgen05.mma.cta_group::1.kind::f16 [ %r1315 + 0 ], %rd45, %rd46, %r1166, %p74;",
+            "@%p75 tcgen05.commit.cta_group::1.mbarrier::arrive::one.b64 [%rd47];",
+            "@%p1 tcgen05.dealloc.cta_group::1.sync.aligned.b32 %r1315, 128;"
+          ],
+          "ptx_sha256": "a50e171025762742f0a86490875ee2630711878bc80379acadb07cf69f275c43",
+          "cubin_sha256": "8865610fe354cb338f58d6aa4c57e42aebe944b5f8e7023e92846f55f2161928",
+          "registers": 209,
+          "spills": 0,
+          "shared_bytes": 67584
+        }
+      }
+    },
+    {
+      "metadata": {
+        "gpu": "NVIDIA B200",
+        "capability": [
+          10,
+          0
+        ],
+        "sm_count": 148,
+        "memory_GiB": 178.3511962890625,
+        "torch": "2.8.0+cu129",
+        "triton": "3.4.0",
+        "cuda": "12.9",
+        "disable_mma_v5": "1",
+        "disable_mma_v3": "1"
+      },
+      "mode": "legacy",
+      "rows": [
+        {
+          "scope": "merge_control",
+          "T": 8192,
+          "H": 12,
+          "tile": 32,
+          "warps": 4,
+          "timing": {
+            "median_ms": 0.5550328185592872,
+            "samples_ms": [
+              0.5550328185592872,
+              0.5549733535103176,
+              0.5554975537286289
+            ]
+          },
+          "merge": {
+            "median_ms": 0.13068573839723852,
+            "samples_ms": [
+              0.1308134192751165,
+              0.13067138458091615,
+              0.13068573839723852
+            ]
+          }
+        },
+        {
+          "scope": "merge_control",
+          "T": 8192,
+          "H": 12,
+          "tile": 32,
+          "warps": 8,
+          "timing": {
+            "median_ms": 0.5672102695041232,
+            "samples_ms": [
+              0.5677181667751736,
+              0.5672102695041232,
+              0.5671745469835069
+            ]
+          },
+          "merge": {
+            "median_ms": 0.13993869679962273,
+            "samples_ms": [
+              0.13989676851214786,
+              0.14001573772938078,
+              0.13993869679962273
+            ]
+          }
+        },
+        {
+          "scope": "merge_control",
+          "T": 8192,
+          "H": 12,
+          "tile": 64,
+          "warps": 8,
+          "timing": {
+            "median_ms": 0.6139028991699219,
+            "samples_ms": [
+              0.6141968872070313,
+              0.6139028991699219,
+              0.6138508544921875
+            ]
+          },
+          "merge": {
+            "median_ms": 0.19082608438616422,
+            "samples_ms": [
+              0.1908569852212318,
+              0.1907673169620073,
+              0.19082608438616422
+            ]
+          }
+        },
+        {
+          "scope": "merge_control",
+          "T": 8192,
+          "H": 12,
+          "tile": 64,
+          "warps": 16,
+          "timing": {
+            "median_ms": 1.3423846863863762,
+            "samples_ms": [
+              1.3423846863863762,
+              1.3427463136870286,
+              1.3414898839490168
+            ]
+          },
+          "merge": {
+            "median_ms": 0.9466852097284226,
+            "samples_ms": [
+              0.9470997086490494,
+              0.9466289382383047,
+              0.9466852097284226
+            ]
+          }
+        },
+        {
+          "scope": "merge_control",
+          "T": 8192,
+          "H": 12,
+          "tile": 16,
+          "warps": 4,
+          "timing": {
+            "median_ms": 0.5722608179078066,
+            "samples_ms": [
+              0.5722418372310809,
+              0.572359908254523,
+              0.5722608179078066
+            ]
+          },
+          "merge": {
+            "median_ms": 0.14623952352378264,
+            "samples_ms": [
+              0.14620911423958588,
+              0.14625281436448165,
+              0.14623952352378264
+            ]
+          }
+        },
+        {
+          "scope": "validation",
+          "gate": "weak",
+          "tile": 32,
+          "warps": 4,
+          "output_vs_fp64": {
+            "rel_rms": 0.007608824409544468,
+            "max_abs": 0.0026055723428726196,
+            "finite": true
+          },
+          "state_vs_fp64": {
+            "rel_rms": 0.007343471981585026,
+            "max_abs": 0.032025814056396484,
+            "finite": true
+          }
+        },
+        {
+          "scope": "validation",
+          "gate": "weak",
+          "tile": 32,
+          "warps": 8,
+          "output_vs_fp64": {
+            "rel_rms": 0.007608824409544468,
+            "max_abs": 0.0026055723428726196,
+            "finite": true
+          },
+          "state_vs_fp64": {
+            "rel_rms": 0.007343471981585026,
+            "max_abs": 0.032025814056396484,
+            "finite": true
+          }
+        },
+        {
+          "scope": "validation",
+          "gate": "weak",
+          "tile": 64,
+          "warps": 8,
+          "output_vs_fp64": {
+            "rel_rms": 0.007608824409544468,
+            "max_abs": 0.0026055723428726196,
+            "finite": true
+          },
+          "state_vs_fp64": {
+            "rel_rms": 0.007343471981585026,
+            "max_abs": 0.032025814056396484,
+            "finite": true
+          }
+        },
+        {
+          "scope": "validation",
+          "gate": "weak",
+          "tile": 64,
+          "warps": 16,
+          "output_vs_fp64": {
+            "rel_rms": 0.007608824409544468,
+            "max_abs": 0.0026055723428726196,
+            "finite": true
+          },
+          "state_vs_fp64": {
+            "rel_rms": 0.007343471981585026,
+            "max_abs": 0.032025814056396484,
+            "finite": true
+          }
+        },
+        {
+          "scope": "validation",
+          "gate": "weak",
+          "tile": 16,
+          "warps": 4,
+          "output_vs_fp64": {
+            "rel_rms": 0.007608824409544468,
+            "max_abs": 0.0026055723428726196,
+            "finite": true
+          },
+          "state_vs_fp64": {
+            "rel_rms": 0.007343471981585026,
+            "max_abs": 0.032025814056396484,
+            "finite": true
+          }
+        }
+      ],
+      "evidence": {
+        "compose_32_w4": {
+          "ptx_static_counts": {
+            "mma_sync": 192,
+            "wgmma": 0,
+            "tcgen05_mma": 0,
+            "tmem_alloc": 0,
+            "tmem_load": 0,
+            "tmem_store": 0
+          },
+          "sass_matrix_instructions": [
+            "HMMA.1688.F32.TF32"
+          ],
+          "ptx_instruction_examples": [
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r685, %r686, %r687, %r688 }, { %r651, %r652, %r653, %r654 }, { %r641, %r642 }, { %r685, %r686, %r687, %r688 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r699, %r700, %r701, %r702 }, { %r651, %r652, %r653, %r654 }, { %r655, %r656 }, { %r699, %r700, %r701, %r702 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r713, %r714, %r715, %r716 }, { %r651, %r652, %r653, %r654 }, { %r669, %r670 }, { %r713, %r714, %r715, %r716 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r727, %r728, %r729, %r730 }, { %r651, %r652, %r653, %r654 }, { %r683, %r684 }, { %r727, %r728, %r729, %r730 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r685, %r686, %r687, %r688 }, { %r707, %r708, %r709, %r710 }, { %r697, %r698 }, { %r685, %r686, %r687, %r688 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r699, %r700, %r701, %r702 }, { %r707, %r708, %r709, %r710 }, { %r711, %r712 }, { %r699, %r700, %r701, %r702 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r713, %r714, %r715, %r716 }, { %r707, %r708, %r709, %r710 }, { %r725, %r726 }, { %r713, %r714, %r715, %r716 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r727, %r728, %r729, %r730 }, { %r707, %r708, %r709, %r710 }, { %r739, %r740 }, { %r727, %r728, %r729, %r730 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r685, %r686, %r687, %r688 }, { %r763, %r764, %r765, %r766 }, { %r753, %r754 }, { %r685, %r686, %r687, %r688 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r699, %r700, %r701, %r702 }, { %r763, %r764, %r765, %r766 }, { %r767, %r768 }, { %r699, %r700, %r701, %r702 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r713, %r714, %r715, %r716 }, { %r763, %r764, %r765, %r766 }, { %r781, %r782 }, { %r713, %r714, %r715, %r716 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r727, %r728, %r729, %r730 }, { %r763, %r764, %r765, %r766 }, { %r795, %r796 }, { %r727, %r728, %r729, %r730 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r685, %r686, %r687, %r688 }, { %r819, %r820, %r821, %r822 }, { %r809, %r810 }, { %r685, %r686, %r687, %r688 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r699, %r700, %r701, %r702 }, { %r819, %r820, %r821, %r822 }, { %r823, %r824 }, { %r699, %r700, %r701, %r702 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r713, %r714, %r715, %r716 }, { %r819, %r820, %r821, %r822 }, { %r837, %r838 }, { %r713, %r714, %r715, %r716 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r727, %r728, %r729, %r730 }, { %r819, %r820, %r821, %r822 }, { %r851, %r852 }, { %r727, %r728, %r729, %r730 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r685, %r686, %r687, %r688 }, { %r875, %r876, %r877, %r878 }, { %r865, %r866 }, { %r685, %r686, %r687, %r688 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r699, %r700, %r701, %r702 }, { %r875, %r876, %r877, %r878 }, { %r879, %r880 }, { %r699, %r700, %r701, %r702 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r713, %r714, %r715, %r716 }, { %r875, %r876, %r877, %r878 }, { %r893, %r894 }, { %r713, %r714, %r715, %r716 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r727, %r728, %r729, %r730 }, { %r875, %r876, %r877, %r878 }, { %r907, %r908 }, { %r727, %r728, %r729, %r730 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r685, %r686, %r687, %r688 }, { %r931, %r932, %r933, %r934 }, { %r921, %r922 }, { %r685, %r686, %r687, %r688 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r699, %r700, %r701, %r702 }, { %r931, %r932, %r933, %r934 }, { %r935, %r936 }, { %r699, %r700, %r701, %r702 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r713, %r714, %r715, %r716 }, { %r931, %r932, %r933, %r934 }, { %r949, %r950 }, { %r713, %r714, %r715, %r716 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r727, %r728, %r729, %r730 }, { %r931, %r932, %r933, %r934 }, { %r963, %r964 }, { %r727, %r728, %r729, %r730 };"
+          ],
+          "ptx_sha256": "29154fc9bf334d0d7aec34f3e6e1aac3c5ae633d2d0a7e1757dbac65407454c2",
+          "cubin_sha256": "ecd84625c1b4a2b3dac99b69fa76d7dd07992aacdb499d4c48315f490bbd0c6a",
+          "registers": 255,
+          "spills": 46,
+          "shared_bytes": 16384
+        },
+        "descend_32_w4": {
+          "ptx_static_counts": {
+            "mma_sync": 192,
+            "wgmma": 0,
+            "tcgen05_mma": 0,
+            "tmem_alloc": 0,
+            "tmem_load": 0,
+            "tmem_store": 0
+          },
+          "sass_matrix_instructions": [
+            "HMMA.1688.F32.TF32"
+          ],
+          "ptx_instruction_examples": [
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r685, %r686, %r687, %r688 }, { %r651, %r652, %r653, %r654 }, { %r641, %r642 }, { %r685, %r686, %r687, %r688 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r699, %r700, %r701, %r702 }, { %r651, %r652, %r653, %r654 }, { %r655, %r656 }, { %r699, %r700, %r701, %r702 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r713, %r714, %r715, %r716 }, { %r651, %r652, %r653, %r654 }, { %r669, %r670 }, { %r713, %r714, %r715, %r716 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r727, %r728, %r729, %r730 }, { %r651, %r652, %r653, %r654 }, { %r683, %r684 }, { %r727, %r728, %r729, %r730 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r685, %r686, %r687, %r688 }, { %r707, %r708, %r709, %r710 }, { %r697, %r698 }, { %r685, %r686, %r687, %r688 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r699, %r700, %r701, %r702 }, { %r707, %r708, %r709, %r710 }, { %r711, %r712 }, { %r699, %r700, %r701, %r702 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r713, %r714, %r715, %r716 }, { %r707, %r708, %r709, %r710 }, { %r725, %r726 }, { %r713, %r714, %r715, %r716 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r727, %r728, %r729, %r730 }, { %r707, %r708, %r709, %r710 }, { %r739, %r740 }, { %r727, %r728, %r729, %r730 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r685, %r686, %r687, %r688 }, { %r763, %r764, %r765, %r766 }, { %r753, %r754 }, { %r685, %r686, %r687, %r688 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r699, %r700, %r701, %r702 }, { %r763, %r764, %r765, %r766 }, { %r767, %r768 }, { %r699, %r700, %r701, %r702 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r713, %r714, %r715, %r716 }, { %r763, %r764, %r765, %r766 }, { %r781, %r782 }, { %r713, %r714, %r715, %r716 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r727, %r728, %r729, %r730 }, { %r763, %r764, %r765, %r766 }, { %r795, %r796 }, { %r727, %r728, %r729, %r730 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r685, %r686, %r687, %r688 }, { %r819, %r820, %r821, %r822 }, { %r809, %r810 }, { %r685, %r686, %r687, %r688 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r699, %r700, %r701, %r702 }, { %r819, %r820, %r821, %r822 }, { %r823, %r824 }, { %r699, %r700, %r701, %r702 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r713, %r714, %r715, %r716 }, { %r819, %r820, %r821, %r822 }, { %r837, %r838 }, { %r713, %r714, %r715, %r716 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r727, %r728, %r729, %r730 }, { %r819, %r820, %r821, %r822 }, { %r851, %r852 }, { %r727, %r728, %r729, %r730 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r685, %r686, %r687, %r688 }, { %r875, %r876, %r877, %r878 }, { %r865, %r866 }, { %r685, %r686, %r687, %r688 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r699, %r700, %r701, %r702 }, { %r875, %r876, %r877, %r878 }, { %r879, %r880 }, { %r699, %r700, %r701, %r702 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r713, %r714, %r715, %r716 }, { %r875, %r876, %r877, %r878 }, { %r893, %r894 }, { %r713, %r714, %r715, %r716 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r727, %r728, %r729, %r730 }, { %r875, %r876, %r877, %r878 }, { %r907, %r908 }, { %r727, %r728, %r729, %r730 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r685, %r686, %r687, %r688 }, { %r931, %r932, %r933, %r934 }, { %r921, %r922 }, { %r685, %r686, %r687, %r688 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r699, %r700, %r701, %r702 }, { %r931, %r932, %r933, %r934 }, { %r935, %r936 }, { %r699, %r700, %r701, %r702 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r713, %r714, %r715, %r716 }, { %r931, %r932, %r933, %r934 }, { %r949, %r950 }, { %r713, %r714, %r715, %r716 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r727, %r728, %r729, %r730 }, { %r931, %r932, %r933, %r934 }, { %r963, %r964 }, { %r727, %r728, %r729, %r730 };"
+          ],
+          "ptx_sha256": "9b303f20e6efbbfb74446dffbb0db41a6f03bf2d2ae5b43677ced9058cf66d53",
+          "cubin_sha256": "064566d0ee69884739247ea19938a7076405b8640c31c36ed6872daf8fa079e3",
+          "registers": 255,
+          "spills": 60,
+          "shared_bytes": 16384
+        },
+        "compose_32_w8": {
+          "ptx_static_counts": {
+            "mma_sync": 192,
+            "wgmma": 0,
+            "tcgen05_mma": 0,
+            "tmem_alloc": 0,
+            "tmem_load": 0,
+            "tmem_store": 0
+          },
+          "sass_matrix_instructions": [
+            "HMMA.1688.F32.TF32"
+          ],
+          "ptx_instruction_examples": [
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r645, %r646, %r647, %r648 }, { %r611, %r612, %r613, %r614 }, { %r601, %r602 }, { %r645, %r646, %r647, %r648 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r659, %r660, %r661, %r662 }, { %r611, %r612, %r613, %r614 }, { %r615, %r616 }, { %r659, %r660, %r661, %r662 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r673, %r674, %r675, %r676 }, { %r611, %r612, %r613, %r614 }, { %r629, %r630 }, { %r673, %r674, %r675, %r676 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r687, %r688, %r689, %r690 }, { %r611, %r612, %r613, %r614 }, { %r643, %r644 }, { %r687, %r688, %r689, %r690 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r645, %r646, %r647, %r648 }, { %r667, %r668, %r669, %r670 }, { %r657, %r658 }, { %r645, %r646, %r647, %r648 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r659, %r660, %r661, %r662 }, { %r667, %r668, %r669, %r670 }, { %r671, %r672 }, { %r659, %r660, %r661, %r662 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r673, %r674, %r675, %r676 }, { %r667, %r668, %r669, %r670 }, { %r685, %r686 }, { %r673, %r674, %r675, %r676 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r687, %r688, %r689, %r690 }, { %r667, %r668, %r669, %r670 }, { %r699, %r700 }, { %r687, %r688, %r689, %r690 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r645, %r646, %r647, %r648 }, { %r723, %r724, %r725, %r726 }, { %r713, %r714 }, { %r645, %r646, %r647, %r648 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r659, %r660, %r661, %r662 }, { %r723, %r724, %r725, %r726 }, { %r727, %r728 }, { %r659, %r660, %r661, %r662 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r673, %r674, %r675, %r676 }, { %r723, %r724, %r725, %r726 }, { %r741, %r742 }, { %r673, %r674, %r675, %r676 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r687, %r688, %r689, %r690 }, { %r723, %r724, %r725, %r726 }, { %r755, %r756 }, { %r687, %r688, %r689, %r690 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r645, %r646, %r647, %r648 }, { %r779, %r780, %r781, %r782 }, { %r769, %r770 }, { %r645, %r646, %r647, %r648 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r659, %r660, %r661, %r662 }, { %r779, %r780, %r781, %r782 }, { %r783, %r784 }, { %r659, %r660, %r661, %r662 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r673, %r674, %r675, %r676 }, { %r779, %r780, %r781, %r782 }, { %r797, %r798 }, { %r673, %r674, %r675, %r676 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r687, %r688, %r689, %r690 }, { %r779, %r780, %r781, %r782 }, { %r811, %r812 }, { %r687, %r688, %r689, %r690 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r645, %r646, %r647, %r648 }, { %r835, %r836, %r837, %r838 }, { %r825, %r826 }, { %r645, %r646, %r647, %r648 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r659, %r660, %r661, %r662 }, { %r835, %r836, %r837, %r838 }, { %r839, %r840 }, { %r659, %r660, %r661, %r662 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r673, %r674, %r675, %r676 }, { %r835, %r836, %r837, %r838 }, { %r853, %r854 }, { %r673, %r674, %r675, %r676 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r687, %r688, %r689, %r690 }, { %r835, %r836, %r837, %r838 }, { %r867, %r868 }, { %r687, %r688, %r689, %r690 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r645, %r646, %r647, %r648 }, { %r891, %r892, %r893, %r894 }, { %r881, %r882 }, { %r645, %r646, %r647, %r648 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r659, %r660, %r661, %r662 }, { %r891, %r892, %r893, %r894 }, { %r895, %r896 }, { %r659, %r660, %r661, %r662 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r673, %r674, %r675, %r676 }, { %r891, %r892, %r893, %r894 }, { %r909, %r910 }, { %r673, %r674, %r675, %r676 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r687, %r688, %r689, %r690 }, { %r891, %r892, %r893, %r894 }, { %r923, %r924 }, { %r687, %r688, %r689, %r690 };"
+          ],
+          "ptx_sha256": "d1b81643263864294bf0871f0a22c10bb5ed3a666055e519b76ec72e7d58fde4",
+          "cubin_sha256": "90967b8d90a4201d7a208cdc11ec8085b0567af15f87107a852321c457ee1540",
+          "registers": 255,
+          "spills": 48,
+          "shared_bytes": 16384
+        },
+        "descend_32_w8": {
+          "ptx_static_counts": {
+            "mma_sync": 192,
+            "wgmma": 0,
+            "tcgen05_mma": 0,
+            "tmem_alloc": 0,
+            "tmem_load": 0,
+            "tmem_store": 0
+          },
+          "sass_matrix_instructions": [
+            "HMMA.1688.F32.TF32"
+          ],
+          "ptx_instruction_examples": [
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r646, %r647, %r648, %r649 }, { %r612, %r613, %r614, %r615 }, { %r602, %r603 }, { %r646, %r647, %r648, %r649 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r660, %r661, %r662, %r663 }, { %r612, %r613, %r614, %r615 }, { %r616, %r617 }, { %r660, %r661, %r662, %r663 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r674, %r675, %r676, %r677 }, { %r612, %r613, %r614, %r615 }, { %r630, %r631 }, { %r674, %r675, %r676, %r677 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r688, %r689, %r690, %r691 }, { %r612, %r613, %r614, %r615 }, { %r644, %r645 }, { %r688, %r689, %r690, %r691 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r646, %r647, %r648, %r649 }, { %r668, %r669, %r670, %r671 }, { %r658, %r659 }, { %r646, %r647, %r648, %r649 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r660, %r661, %r662, %r663 }, { %r668, %r669, %r670, %r671 }, { %r672, %r673 }, { %r660, %r661, %r662, %r663 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r674, %r675, %r676, %r677 }, { %r668, %r669, %r670, %r671 }, { %r686, %r687 }, { %r674, %r675, %r676, %r677 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r688, %r689, %r690, %r691 }, { %r668, %r669, %r670, %r671 }, { %r700, %r701 }, { %r688, %r689, %r690, %r691 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r646, %r647, %r648, %r649 }, { %r724, %r725, %r726, %r727 }, { %r714, %r715 }, { %r646, %r647, %r648, %r649 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r660, %r661, %r662, %r663 }, { %r724, %r725, %r726, %r727 }, { %r728, %r729 }, { %r660, %r661, %r662, %r663 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r674, %r675, %r676, %r677 }, { %r724, %r725, %r726, %r727 }, { %r742, %r743 }, { %r674, %r675, %r676, %r677 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r688, %r689, %r690, %r691 }, { %r724, %r725, %r726, %r727 }, { %r756, %r757 }, { %r688, %r689, %r690, %r691 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r646, %r647, %r648, %r649 }, { %r780, %r781, %r782, %r783 }, { %r770, %r771 }, { %r646, %r647, %r648, %r649 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r660, %r661, %r662, %r663 }, { %r780, %r781, %r782, %r783 }, { %r784, %r785 }, { %r660, %r661, %r662, %r663 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r674, %r675, %r676, %r677 }, { %r780, %r781, %r782, %r783 }, { %r798, %r799 }, { %r674, %r675, %r676, %r677 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r688, %r689, %r690, %r691 }, { %r780, %r781, %r782, %r783 }, { %r812, %r813 }, { %r688, %r689, %r690, %r691 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r646, %r647, %r648, %r649 }, { %r836, %r837, %r838, %r839 }, { %r826, %r827 }, { %r646, %r647, %r648, %r649 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r660, %r661, %r662, %r663 }, { %r836, %r837, %r838, %r839 }, { %r840, %r841 }, { %r660, %r661, %r662, %r663 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r674, %r675, %r676, %r677 }, { %r836, %r837, %r838, %r839 }, { %r854, %r855 }, { %r674, %r675, %r676, %r677 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r688, %r689, %r690, %r691 }, { %r836, %r837, %r838, %r839 }, { %r868, %r869 }, { %r688, %r689, %r690, %r691 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r646, %r647, %r648, %r649 }, { %r892, %r893, %r894, %r895 }, { %r882, %r883 }, { %r646, %r647, %r648, %r649 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r660, %r661, %r662, %r663 }, { %r892, %r893, %r894, %r895 }, { %r896, %r897 }, { %r660, %r661, %r662, %r663 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r674, %r675, %r676, %r677 }, { %r892, %r893, %r894, %r895 }, { %r910, %r911 }, { %r674, %r675, %r676, %r677 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r688, %r689, %r690, %r691 }, { %r892, %r893, %r894, %r895 }, { %r924, %r925 }, { %r688, %r689, %r690, %r691 };"
+          ],
+          "ptx_sha256": "3f2f8f643d11ad6eb895a9e25fa94f4508aeefe397a905e40aa872a8996c1b33",
+          "cubin_sha256": "a61da3dcc358f52e13f50ffb4e0d478d57649a3274f691309138201bbeae8521",
+          "registers": 255,
+          "spills": 54,
+          "shared_bytes": 16384
+        },
+        "compose_64_w8": {
+          "ptx_static_counts": {
+            "mma_sync": 384,
+            "wgmma": 0,
+            "tcgen05_mma": 0,
+            "tmem_alloc": 0,
+            "tmem_load": 0,
+            "tmem_store": 0
+          },
+          "sass_matrix_instructions": [
+            "HMMA.1688.F32.TF32"
+          ],
+          "ptx_instruction_examples": [
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1081, %r1082, %r1083, %r1084 }, { %r991, %r992, %r993, %r994 }, { %r981, %r982 }, { %r1081, %r1082, %r1083, %r1084 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1095, %r1096, %r1097, %r1098 }, { %r991, %r992, %r993, %r994 }, { %r995, %r996 }, { %r1095, %r1096, %r1097, %r1098 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1109, %r1110, %r1111, %r1112 }, { %r991, %r992, %r993, %r994 }, { %r1009, %r1010 }, { %r1109, %r1110, %r1111, %r1112 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1123, %r1124, %r1125, %r1126 }, { %r991, %r992, %r993, %r994 }, { %r1023, %r1024 }, { %r1123, %r1124, %r1125, %r1126 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1137, %r1138, %r1139, %r1140 }, { %r991, %r992, %r993, %r994 }, { %r1037, %r1038 }, { %r1137, %r1138, %r1139, %r1140 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1151, %r1152, %r1153, %r1154 }, { %r991, %r992, %r993, %r994 }, { %r1051, %r1052 }, { %r1151, %r1152, %r1153, %r1154 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1165, %r1166, %r1167, %r1168 }, { %r991, %r992, %r993, %r994 }, { %r1065, %r1066 }, { %r1165, %r1166, %r1167, %r1168 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1179, %r1180, %r1181, %r1182 }, { %r991, %r992, %r993, %r994 }, { %r1079, %r1080 }, { %r1179, %r1180, %r1181, %r1182 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1081, %r1082, %r1083, %r1084 }, { %r1103, %r1104, %r1105, %r1106 }, { %r1093, %r1094 }, { %r1081, %r1082, %r1083, %r1084 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1095, %r1096, %r1097, %r1098 }, { %r1103, %r1104, %r1105, %r1106 }, { %r1107, %r1108 }, { %r1095, %r1096, %r1097, %r1098 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1109, %r1110, %r1111, %r1112 }, { %r1103, %r1104, %r1105, %r1106 }, { %r1121, %r1122 }, { %r1109, %r1110, %r1111, %r1112 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1123, %r1124, %r1125, %r1126 }, { %r1103, %r1104, %r1105, %r1106 }, { %r1135, %r1136 }, { %r1123, %r1124, %r1125, %r1126 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1137, %r1138, %r1139, %r1140 }, { %r1103, %r1104, %r1105, %r1106 }, { %r1149, %r1150 }, { %r1137, %r1138, %r1139, %r1140 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1151, %r1152, %r1153, %r1154 }, { %r1103, %r1104, %r1105, %r1106 }, { %r1163, %r1164 }, { %r1151, %r1152, %r1153, %r1154 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1165, %r1166, %r1167, %r1168 }, { %r1103, %r1104, %r1105, %r1106 }, { %r1177, %r1178 }, { %r1165, %r1166, %r1167, %r1168 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1179, %r1180, %r1181, %r1182 }, { %r1103, %r1104, %r1105, %r1106 }, { %r1191, %r1192 }, { %r1179, %r1180, %r1181, %r1182 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1081, %r1082, %r1083, %r1084 }, { %r1215, %r1216, %r1217, %r1218 }, { %r1205, %r1206 }, { %r1081, %r1082, %r1083, %r1084 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1095, %r1096, %r1097, %r1098 }, { %r1215, %r1216, %r1217, %r1218 }, { %r1219, %r1220 }, { %r1095, %r1096, %r1097, %r1098 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1109, %r1110, %r1111, %r1112 }, { %r1215, %r1216, %r1217, %r1218 }, { %r1233, %r1234 }, { %r1109, %r1110, %r1111, %r1112 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1123, %r1124, %r1125, %r1126 }, { %r1215, %r1216, %r1217, %r1218 }, { %r1247, %r1248 }, { %r1123, %r1124, %r1125, %r1126 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1137, %r1138, %r1139, %r1140 }, { %r1215, %r1216, %r1217, %r1218 }, { %r1261, %r1262 }, { %r1137, %r1138, %r1139, %r1140 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1151, %r1152, %r1153, %r1154 }, { %r1215, %r1216, %r1217, %r1218 }, { %r1275, %r1276 }, { %r1151, %r1152, %r1153, %r1154 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1165, %r1166, %r1167, %r1168 }, { %r1215, %r1216, %r1217, %r1218 }, { %r1289, %r1290 }, { %r1165, %r1166, %r1167, %r1168 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1179, %r1180, %r1181, %r1182 }, { %r1215, %r1216, %r1217, %r1218 }, { %r1303, %r1304 }, { %r1179, %r1180, %r1181, %r1182 };"
+          ],
+          "ptx_sha256": "570a410e9b0b14ffec4a89d7fd09538875757dfe8869c27a8a24ca1e20b9d379",
+          "cubin_sha256": "5950e4d75aedca34e34104ea6010fae85c2bb2e96cd1aa275148d1e104646b46",
+          "registers": 255,
+          "spills": 144,
+          "shared_bytes": 32768
+        },
+        "descend_64_w8": {
+          "ptx_static_counts": {
+            "mma_sync": 384,
+            "wgmma": 0,
+            "tcgen05_mma": 0,
+            "tmem_alloc": 0,
+            "tmem_load": 0,
+            "tmem_store": 0
+          },
+          "sass_matrix_instructions": [
+            "HMMA.1688.F32.TF32"
+          ],
+          "ptx_instruction_examples": [
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1052, %r1053, %r1054, %r1055 }, { %r962, %r963, %r964, %r965 }, { %r952, %r953 }, { %r1052, %r1053, %r1054, %r1055 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1066, %r1067, %r1068, %r1069 }, { %r962, %r963, %r964, %r965 }, { %r966, %r967 }, { %r1066, %r1067, %r1068, %r1069 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1080, %r1081, %r1082, %r1083 }, { %r962, %r963, %r964, %r965 }, { %r980, %r981 }, { %r1080, %r1081, %r1082, %r1083 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1094, %r1095, %r1096, %r1097 }, { %r962, %r963, %r964, %r965 }, { %r994, %r995 }, { %r1094, %r1095, %r1096, %r1097 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1108, %r1109, %r1110, %r1111 }, { %r962, %r963, %r964, %r965 }, { %r1008, %r1009 }, { %r1108, %r1109, %r1110, %r1111 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1122, %r1123, %r1124, %r1125 }, { %r962, %r963, %r964, %r965 }, { %r1022, %r1023 }, { %r1122, %r1123, %r1124, %r1125 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1136, %r1137, %r1138, %r1139 }, { %r962, %r963, %r964, %r965 }, { %r1036, %r1037 }, { %r1136, %r1137, %r1138, %r1139 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1150, %r1151, %r1152, %r1153 }, { %r962, %r963, %r964, %r965 }, { %r1050, %r1051 }, { %r1150, %r1151, %r1152, %r1153 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1052, %r1053, %r1054, %r1055 }, { %r1074, %r1075, %r1076, %r1077 }, { %r1064, %r1065 }, { %r1052, %r1053, %r1054, %r1055 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1066, %r1067, %r1068, %r1069 }, { %r1074, %r1075, %r1076, %r1077 }, { %r1078, %r1079 }, { %r1066, %r1067, %r1068, %r1069 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1080, %r1081, %r1082, %r1083 }, { %r1074, %r1075, %r1076, %r1077 }, { %r1092, %r1093 }, { %r1080, %r1081, %r1082, %r1083 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1094, %r1095, %r1096, %r1097 }, { %r1074, %r1075, %r1076, %r1077 }, { %r1106, %r1107 }, { %r1094, %r1095, %r1096, %r1097 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1108, %r1109, %r1110, %r1111 }, { %r1074, %r1075, %r1076, %r1077 }, { %r1120, %r1121 }, { %r1108, %r1109, %r1110, %r1111 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1122, %r1123, %r1124, %r1125 }, { %r1074, %r1075, %r1076, %r1077 }, { %r1134, %r1135 }, { %r1122, %r1123, %r1124, %r1125 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1136, %r1137, %r1138, %r1139 }, { %r1074, %r1075, %r1076, %r1077 }, { %r1148, %r1149 }, { %r1136, %r1137, %r1138, %r1139 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1150, %r1151, %r1152, %r1153 }, { %r1074, %r1075, %r1076, %r1077 }, { %r1162, %r1163 }, { %r1150, %r1151, %r1152, %r1153 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1052, %r1053, %r1054, %r1055 }, { %r1186, %r1187, %r1188, %r1189 }, { %r1176, %r1177 }, { %r1052, %r1053, %r1054, %r1055 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1066, %r1067, %r1068, %r1069 }, { %r1186, %r1187, %r1188, %r1189 }, { %r1190, %r1191 }, { %r1066, %r1067, %r1068, %r1069 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1080, %r1081, %r1082, %r1083 }, { %r1186, %r1187, %r1188, %r1189 }, { %r1204, %r1205 }, { %r1080, %r1081, %r1082, %r1083 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1094, %r1095, %r1096, %r1097 }, { %r1186, %r1187, %r1188, %r1189 }, { %r1218, %r1219 }, { %r1094, %r1095, %r1096, %r1097 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1108, %r1109, %r1110, %r1111 }, { %r1186, %r1187, %r1188, %r1189 }, { %r1232, %r1233 }, { %r1108, %r1109, %r1110, %r1111 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1122, %r1123, %r1124, %r1125 }, { %r1186, %r1187, %r1188, %r1189 }, { %r1246, %r1247 }, { %r1122, %r1123, %r1124, %r1125 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1136, %r1137, %r1138, %r1139 }, { %r1186, %r1187, %r1188, %r1189 }, { %r1260, %r1261 }, { %r1136, %r1137, %r1138, %r1139 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1150, %r1151, %r1152, %r1153 }, { %r1186, %r1187, %r1188, %r1189 }, { %r1274, %r1275 }, { %r1150, %r1151, %r1152, %r1153 };"
+          ],
+          "ptx_sha256": "a1fcb717ee6ea1ab2b7a087ec91a212c023fe9b8268230d4b4fc0d4a22148bf1",
+          "cubin_sha256": "90d882ca6813792effce3402c71de23cc6f845928811eb9e7f61fafe090b9418",
+          "registers": 255,
+          "spills": 194,
+          "shared_bytes": 32768
+        },
+        "compose_64_w16": {
+          "ptx_static_counts": {
+            "mma_sync": 384,
+            "wgmma": 0,
+            "tcgen05_mma": 0,
+            "tmem_alloc": 0,
+            "tmem_load": 0,
+            "tmem_store": 0
+          },
+          "sass_matrix_instructions": [
+            "HMMA.1688.F32.TF32"
+          ],
+          "ptx_instruction_examples": [
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1035, %r1036, %r1037, %r1038 }, { %r945, %r946, %r947, %r948 }, { %r935, %r936 }, { %r1035, %r1036, %r1037, %r1038 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1049, %r1050, %r1051, %r1052 }, { %r945, %r946, %r947, %r948 }, { %r949, %r950 }, { %r1049, %r1050, %r1051, %r1052 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1063, %r1064, %r1065, %r1066 }, { %r945, %r946, %r947, %r948 }, { %r963, %r964 }, { %r1063, %r1064, %r1065, %r1066 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1077, %r1078, %r1079, %r1080 }, { %r945, %r946, %r947, %r948 }, { %r977, %r978 }, { %r1077, %r1078, %r1079, %r1080 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1091, %r1092, %r1093, %r1094 }, { %r945, %r946, %r947, %r948 }, { %r991, %r992 }, { %r1091, %r1092, %r1093, %r1094 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1105, %r1106, %r1107, %r1108 }, { %r945, %r946, %r947, %r948 }, { %r1005, %r1006 }, { %r1105, %r1106, %r1107, %r1108 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1119, %r1120, %r1121, %r1122 }, { %r945, %r946, %r947, %r948 }, { %r1019, %r1020 }, { %r1119, %r1120, %r1121, %r1122 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1133, %r1134, %r1135, %r1136 }, { %r945, %r946, %r947, %r948 }, { %r1033, %r1034 }, { %r1133, %r1134, %r1135, %r1136 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1035, %r1036, %r1037, %r1038 }, { %r1057, %r1058, %r1059, %r1060 }, { %r1047, %r1048 }, { %r1035, %r1036, %r1037, %r1038 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1049, %r1050, %r1051, %r1052 }, { %r1057, %r1058, %r1059, %r1060 }, { %r1061, %r1062 }, { %r1049, %r1050, %r1051, %r1052 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1063, %r1064, %r1065, %r1066 }, { %r1057, %r1058, %r1059, %r1060 }, { %r1075, %r1076 }, { %r1063, %r1064, %r1065, %r1066 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1077, %r1078, %r1079, %r1080 }, { %r1057, %r1058, %r1059, %r1060 }, { %r1089, %r1090 }, { %r1077, %r1078, %r1079, %r1080 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1091, %r1092, %r1093, %r1094 }, { %r1057, %r1058, %r1059, %r1060 }, { %r1103, %r1104 }, { %r1091, %r1092, %r1093, %r1094 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1105, %r1106, %r1107, %r1108 }, { %r1057, %r1058, %r1059, %r1060 }, { %r1117, %r1118 }, { %r1105, %r1106, %r1107, %r1108 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1119, %r1120, %r1121, %r1122 }, { %r1057, %r1058, %r1059, %r1060 }, { %r1131, %r1132 }, { %r1119, %r1120, %r1121, %r1122 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1133, %r1134, %r1135, %r1136 }, { %r1057, %r1058, %r1059, %r1060 }, { %r1145, %r1146 }, { %r1133, %r1134, %r1135, %r1136 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1035, %r1036, %r1037, %r1038 }, { %r1169, %r1170, %r1171, %r1172 }, { %r1159, %r1160 }, { %r1035, %r1036, %r1037, %r1038 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1049, %r1050, %r1051, %r1052 }, { %r1169, %r1170, %r1171, %r1172 }, { %r1173, %r1174 }, { %r1049, %r1050, %r1051, %r1052 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1063, %r1064, %r1065, %r1066 }, { %r1169, %r1170, %r1171, %r1172 }, { %r1187, %r1188 }, { %r1063, %r1064, %r1065, %r1066 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1077, %r1078, %r1079, %r1080 }, { %r1169, %r1170, %r1171, %r1172 }, { %r1201, %r1202 }, { %r1077, %r1078, %r1079, %r1080 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1091, %r1092, %r1093, %r1094 }, { %r1169, %r1170, %r1171, %r1172 }, { %r1215, %r1216 }, { %r1091, %r1092, %r1093, %r1094 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1105, %r1106, %r1107, %r1108 }, { %r1169, %r1170, %r1171, %r1172 }, { %r1229, %r1230 }, { %r1105, %r1106, %r1107, %r1108 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1119, %r1120, %r1121, %r1122 }, { %r1169, %r1170, %r1171, %r1172 }, { %r1243, %r1244 }, { %r1119, %r1120, %r1121, %r1122 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1133, %r1134, %r1135, %r1136 }, { %r1169, %r1170, %r1171, %r1172 }, { %r1257, %r1258 }, { %r1133, %r1134, %r1135, %r1136 };"
+          ],
+          "ptx_sha256": "9d0b091ab2844f78eed0e7e777b7d30f520c53fdee41010b5563e286d2509d5f",
+          "cubin_sha256": "f63c50724cc42ce1a5343c9bd478d044e3a235ef0fff1aae45c1822abc91bb3b",
+          "registers": 64,
+          "spills": 760,
+          "shared_bytes": 32768
+        },
+        "descend_64_w16": {
+          "ptx_static_counts": {
+            "mma_sync": 384,
+            "wgmma": 0,
+            "tcgen05_mma": 0,
+            "tmem_alloc": 0,
+            "tmem_load": 0,
+            "tmem_store": 0
+          },
+          "sass_matrix_instructions": [
+            "HMMA.1688.F32.TF32"
+          ],
+          "ptx_instruction_examples": [
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1008, %r1009, %r1010, %r1011 }, { %r918, %r919, %r920, %r921 }, { %r908, %r909 }, { %r1008, %r1009, %r1010, %r1011 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1022, %r1023, %r1024, %r1025 }, { %r918, %r919, %r920, %r921 }, { %r922, %r923 }, { %r1022, %r1023, %r1024, %r1025 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1036, %r1037, %r1038, %r1039 }, { %r918, %r919, %r920, %r921 }, { %r936, %r937 }, { %r1036, %r1037, %r1038, %r1039 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1050, %r1051, %r1052, %r1053 }, { %r918, %r919, %r920, %r921 }, { %r950, %r951 }, { %r1050, %r1051, %r1052, %r1053 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1064, %r1065, %r1066, %r1067 }, { %r918, %r919, %r920, %r921 }, { %r964, %r965 }, { %r1064, %r1065, %r1066, %r1067 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1078, %r1079, %r1080, %r1081 }, { %r918, %r919, %r920, %r921 }, { %r978, %r979 }, { %r1078, %r1079, %r1080, %r1081 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1092, %r1093, %r1094, %r1095 }, { %r918, %r919, %r920, %r921 }, { %r992, %r993 }, { %r1092, %r1093, %r1094, %r1095 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1106, %r1107, %r1108, %r1109 }, { %r918, %r919, %r920, %r921 }, { %r1006, %r1007 }, { %r1106, %r1107, %r1108, %r1109 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1008, %r1009, %r1010, %r1011 }, { %r1030, %r1031, %r1032, %r1033 }, { %r1020, %r1021 }, { %r1008, %r1009, %r1010, %r1011 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1022, %r1023, %r1024, %r1025 }, { %r1030, %r1031, %r1032, %r1033 }, { %r1034, %r1035 }, { %r1022, %r1023, %r1024, %r1025 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1036, %r1037, %r1038, %r1039 }, { %r1030, %r1031, %r1032, %r1033 }, { %r1048, %r1049 }, { %r1036, %r1037, %r1038, %r1039 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1050, %r1051, %r1052, %r1053 }, { %r1030, %r1031, %r1032, %r1033 }, { %r1062, %r1063 }, { %r1050, %r1051, %r1052, %r1053 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1064, %r1065, %r1066, %r1067 }, { %r1030, %r1031, %r1032, %r1033 }, { %r1076, %r1077 }, { %r1064, %r1065, %r1066, %r1067 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1078, %r1079, %r1080, %r1081 }, { %r1030, %r1031, %r1032, %r1033 }, { %r1090, %r1091 }, { %r1078, %r1079, %r1080, %r1081 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1092, %r1093, %r1094, %r1095 }, { %r1030, %r1031, %r1032, %r1033 }, { %r1104, %r1105 }, { %r1092, %r1093, %r1094, %r1095 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1106, %r1107, %r1108, %r1109 }, { %r1030, %r1031, %r1032, %r1033 }, { %r1118, %r1119 }, { %r1106, %r1107, %r1108, %r1109 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1008, %r1009, %r1010, %r1011 }, { %r1142, %r1143, %r1144, %r1145 }, { %r1132, %r1133 }, { %r1008, %r1009, %r1010, %r1011 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1022, %r1023, %r1024, %r1025 }, { %r1142, %r1143, %r1144, %r1145 }, { %r1146, %r1147 }, { %r1022, %r1023, %r1024, %r1025 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1036, %r1037, %r1038, %r1039 }, { %r1142, %r1143, %r1144, %r1145 }, { %r1160, %r1161 }, { %r1036, %r1037, %r1038, %r1039 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1050, %r1051, %r1052, %r1053 }, { %r1142, %r1143, %r1144, %r1145 }, { %r1174, %r1175 }, { %r1050, %r1051, %r1052, %r1053 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1064, %r1065, %r1066, %r1067 }, { %r1142, %r1143, %r1144, %r1145 }, { %r1188, %r1189 }, { %r1064, %r1065, %r1066, %r1067 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1078, %r1079, %r1080, %r1081 }, { %r1142, %r1143, %r1144, %r1145 }, { %r1202, %r1203 }, { %r1078, %r1079, %r1080, %r1081 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1092, %r1093, %r1094, %r1095 }, { %r1142, %r1143, %r1144, %r1145 }, { %r1216, %r1217 }, { %r1092, %r1093, %r1094, %r1095 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1106, %r1107, %r1108, %r1109 }, { %r1142, %r1143, %r1144, %r1145 }, { %r1230, %r1231 }, { %r1106, %r1107, %r1108, %r1109 };"
+          ],
+          "ptx_sha256": "a5b02635a30f31d894e9dbf6add731d249dd56017e8e4e5375bb06da23f2f5fb",
+          "cubin_sha256": "23309d9e202d2c7cf74d9fa58b7c2c28f7876590c12aedfca7bc320c7b9f3575",
+          "registers": 64,
+          "spills": 906,
+          "shared_bytes": 32768
+        },
+        "compose_16_w4": {
+          "ptx_static_counts": {
+            "mma_sync": 96,
+            "wgmma": 0,
+            "tcgen05_mma": 0,
+            "tmem_alloc": 0,
+            "tmem_load": 0,
+            "tmem_store": 0
+          },
+          "sass_matrix_instructions": [
+            "HMMA.1688.F32.TF32"
+          ],
+          "ptx_instruction_examples": [
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r453, %r454, %r455, %r456 }, { %r447, %r448, %r449, %r450 }, { %r437, %r438 }, { %r453, %r454, %r455, %r456 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r467, %r468, %r469, %r470 }, { %r447, %r448, %r449, %r450 }, { %r451, %r452 }, { %r467, %r468, %r469, %r470 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r453, %r454, %r455, %r456 }, { %r475, %r476, %r477, %r478 }, { %r465, %r466 }, { %r453, %r454, %r455, %r456 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r467, %r468, %r469, %r470 }, { %r475, %r476, %r477, %r478 }, { %r479, %r480 }, { %r467, %r468, %r469, %r470 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r453, %r454, %r455, %r456 }, { %r503, %r504, %r505, %r506 }, { %r493, %r494 }, { %r453, %r454, %r455, %r456 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r467, %r468, %r469, %r470 }, { %r503, %r504, %r505, %r506 }, { %r507, %r508 }, { %r467, %r468, %r469, %r470 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r453, %r454, %r455, %r456 }, { %r531, %r532, %r533, %r534 }, { %r521, %r522 }, { %r453, %r454, %r455, %r456 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r467, %r468, %r469, %r470 }, { %r531, %r532, %r533, %r534 }, { %r535, %r536 }, { %r467, %r468, %r469, %r470 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r453, %r454, %r455, %r456 }, { %r559, %r560, %r561, %r562 }, { %r549, %r550 }, { %r453, %r454, %r455, %r456 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r467, %r468, %r469, %r470 }, { %r559, %r560, %r561, %r562 }, { %r563, %r564 }, { %r467, %r468, %r469, %r470 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r453, %r454, %r455, %r456 }, { %r587, %r588, %r589, %r590 }, { %r577, %r578 }, { %r453, %r454, %r455, %r456 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r467, %r468, %r469, %r470 }, { %r587, %r588, %r589, %r590 }, { %r591, %r592 }, { %r467, %r468, %r469, %r470 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r453, %r454, %r455, %r456 }, { %r615, %r616, %r617, %r618 }, { %r605, %r606 }, { %r453, %r454, %r455, %r456 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r467, %r468, %r469, %r470 }, { %r615, %r616, %r617, %r618 }, { %r619, %r620 }, { %r467, %r468, %r469, %r470 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r453, %r454, %r455, %r456 }, { %r643, %r644, %r645, %r646 }, { %r633, %r634 }, { %r453, %r454, %r455, %r456 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r467, %r468, %r469, %r470 }, { %r643, %r644, %r645, %r646 }, { %r647, %r648 }, { %r467, %r468, %r469, %r470 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r453, %r454, %r455, %r456 }, { %r671, %r672, %r673, %r674 }, { %r661, %r662 }, { %r453, %r454, %r455, %r456 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r467, %r468, %r469, %r470 }, { %r671, %r672, %r673, %r674 }, { %r675, %r676 }, { %r467, %r468, %r469, %r470 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r453, %r454, %r455, %r456 }, { %r699, %r700, %r701, %r702 }, { %r689, %r690 }, { %r453, %r454, %r455, %r456 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r467, %r468, %r469, %r470 }, { %r699, %r700, %r701, %r702 }, { %r703, %r704 }, { %r467, %r468, %r469, %r470 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r453, %r454, %r455, %r456 }, { %r727, %r728, %r729, %r730 }, { %r717, %r718 }, { %r453, %r454, %r455, %r456 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r467, %r468, %r469, %r470 }, { %r727, %r728, %r729, %r730 }, { %r731, %r732 }, { %r467, %r468, %r469, %r470 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r453, %r454, %r455, %r456 }, { %r755, %r756, %r757, %r758 }, { %r745, %r746 }, { %r453, %r454, %r455, %r456 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r467, %r468, %r469, %r470 }, { %r755, %r756, %r757, %r758 }, { %r759, %r760 }, { %r467, %r468, %r469, %r470 };"
+          ],
+          "ptx_sha256": "3782f5b637a516d9224096fdefbaa6a677767f204e279785f398c728dc3def48",
+          "cubin_sha256": "15cf6aeb2b8798f1cb26da74e2936be6ad8c503b903c9bdb014662a0856a8abc",
+          "registers": 218,
+          "spills": 0,
+          "shared_bytes": 8192
+        },
+        "descend_16_w4": {
+          "ptx_static_counts": {
+            "mma_sync": 96,
+            "wgmma": 0,
+            "tcgen05_mma": 0,
+            "tmem_alloc": 0,
+            "tmem_load": 0,
+            "tmem_store": 0
+          },
+          "sass_matrix_instructions": [
+            "HMMA.1688.F32.TF32"
+          ],
+          "ptx_instruction_examples": [
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r457, %r458, %r459, %r460 }, { %r451, %r452, %r453, %r454 }, { %r441, %r442 }, { %r457, %r458, %r459, %r460 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r471, %r472, %r473, %r474 }, { %r451, %r452, %r453, %r454 }, { %r455, %r456 }, { %r471, %r472, %r473, %r474 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r457, %r458, %r459, %r460 }, { %r479, %r480, %r481, %r482 }, { %r469, %r470 }, { %r457, %r458, %r459, %r460 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r471, %r472, %r473, %r474 }, { %r479, %r480, %r481, %r482 }, { %r483, %r484 }, { %r471, %r472, %r473, %r474 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r457, %r458, %r459, %r460 }, { %r507, %r508, %r509, %r510 }, { %r497, %r498 }, { %r457, %r458, %r459, %r460 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r471, %r472, %r473, %r474 }, { %r507, %r508, %r509, %r510 }, { %r511, %r512 }, { %r471, %r472, %r473, %r474 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r457, %r458, %r459, %r460 }, { %r535, %r536, %r537, %r538 }, { %r525, %r526 }, { %r457, %r458, %r459, %r460 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r471, %r472, %r473, %r474 }, { %r535, %r536, %r537, %r538 }, { %r539, %r540 }, { %r471, %r472, %r473, %r474 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r457, %r458, %r459, %r460 }, { %r563, %r564, %r565, %r566 }, { %r553, %r554 }, { %r457, %r458, %r459, %r460 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r471, %r472, %r473, %r474 }, { %r563, %r564, %r565, %r566 }, { %r567, %r568 }, { %r471, %r472, %r473, %r474 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r457, %r458, %r459, %r460 }, { %r591, %r592, %r593, %r594 }, { %r581, %r582 }, { %r457, %r458, %r459, %r460 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r471, %r472, %r473, %r474 }, { %r591, %r592, %r593, %r594 }, { %r595, %r596 }, { %r471, %r472, %r473, %r474 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r457, %r458, %r459, %r460 }, { %r619, %r620, %r621, %r622 }, { %r609, %r610 }, { %r457, %r458, %r459, %r460 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r471, %r472, %r473, %r474 }, { %r619, %r620, %r621, %r622 }, { %r623, %r624 }, { %r471, %r472, %r473, %r474 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r457, %r458, %r459, %r460 }, { %r647, %r648, %r649, %r650 }, { %r637, %r638 }, { %r457, %r458, %r459, %r460 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r471, %r472, %r473, %r474 }, { %r647, %r648, %r649, %r650 }, { %r651, %r652 }, { %r471, %r472, %r473, %r474 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r457, %r458, %r459, %r460 }, { %r675, %r676, %r677, %r678 }, { %r665, %r666 }, { %r457, %r458, %r459, %r460 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r471, %r472, %r473, %r474 }, { %r675, %r676, %r677, %r678 }, { %r679, %r680 }, { %r471, %r472, %r473, %r474 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r457, %r458, %r459, %r460 }, { %r703, %r704, %r705, %r706 }, { %r693, %r694 }, { %r457, %r458, %r459, %r460 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r471, %r472, %r473, %r474 }, { %r703, %r704, %r705, %r706 }, { %r707, %r708 }, { %r471, %r472, %r473, %r474 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r457, %r458, %r459, %r460 }, { %r731, %r732, %r733, %r734 }, { %r721, %r722 }, { %r457, %r458, %r459, %r460 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r471, %r472, %r473, %r474 }, { %r731, %r732, %r733, %r734 }, { %r735, %r736 }, { %r471, %r472, %r473, %r474 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r457, %r458, %r459, %r460 }, { %r759, %r760, %r761, %r762 }, { %r749, %r750 }, { %r457, %r458, %r459, %r460 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r471, %r472, %r473, %r474 }, { %r759, %r760, %r761, %r762 }, { %r763, %r764 }, { %r471, %r472, %r473, %r474 };"
+          ],
+          "ptx_sha256": "a85ea1cbc929de475a0b82b61499baf615bc98394518f77a99d99a444a547435",
+          "cubin_sha256": "2978db76a712fdc296ac48041294dcee614a5ea7bb42b147e805b4f8c98bb0c3",
+          "registers": 226,
+          "spills": 0,
+          "shared_bytes": 8192
+        }
+      }
+    }
+  ]
+}
