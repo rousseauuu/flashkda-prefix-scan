@@ -1,0 +1,7 @@
+numpy==2.2.6
+einops==0.8.1
+ninja==1.13.0
+pytest==8.4.2
+psutil==7.0.0
+wheel==0.45.1
+setuptools==75.8.0
