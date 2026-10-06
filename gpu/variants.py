@@ -51,11 +51,11 @@ class SegmentPlan:
         self.states[0] = self.carry
 
     def coefficients(self):
-        prepare_wu[(self.h, self.n)](self.ws['kd'], self.ws['inv'], self.c['v'], self.c['beta'],
+        self.last_coefficients = prepare_wu[(self.h, self.n)](self.ws['kd'], self.ws['inv'], self.c['v'], self.c['beta'],
                                      self.w, self.u, self.h, self.n, num_warps=4)
 
     def summaries(self):
-        summary[(self.p, self.h, 8)](self.ws['kr'], self.ws['gt'], self.w, self.u, self.ab,
+        self.last_summary = summary[(self.p, self.h, 8)](self.ws['kr'], self.ws['gt'], self.w, self.u, self.ab,
                                      self.h, self.n, self.l, self.fast, num_warps=4)
 
     def scan_serial(self):
