@@ -1,0 +1,2336 @@
+{
+  "runs": [
+    {
+      "metadata": {
+        "gpu": "NVIDIA B200",
+        "capability": [
+          10,
+          0
+        ],
+        "sm_count": 148,
+        "memory_GiB": 178.3511962890625,
+        "torch": "2.8.0+cu129",
+        "triton": "3.4.0",
+        "cuda": "12.9",
+        "disable_mma_v5": "0",
+        "disable_mma_v3": "0"
+      },
+      "mode": "auto",
+      "rows": [
+        {
+          "scope": "component",
+          "stage": "summary",
+          "H": 12,
+          "chunks": 512,
+          "P": 8,
+          "timing": {
+            "median_ms": 0.25273657634759406,
+            "samples_ms": [
+              0.25240706670851937,
+              0.2527824548105843,
+              0.25273657634759406
+            ]
+          },
+          "transition_vs_fp64": {
+            "rel_rms": 0.000586337991990149,
+            "max_abs": 0.00015551503747701645,
+            "finite": true
+          },
+          "additive_vs_fp64": {
+            "rel_rms": 0.0016912047285586596,
+            "max_abs": 0.0003715008497238159,
+            "finite": true
+          }
+        },
+        {
+          "scope": "component",
+          "stage": "compose",
+          "H": 12,
+          "chunks": 512,
+          "P": 8,
+          "merge_precision": "tf32x3",
+          "timing": {
+            "median_ms": 0.020543917958040416,
+            "samples_ms": [
+              0.020552205799006615,
+              0.020542421104004664,
+              0.020543917958040416
+            ]
+          },
+          "transition_vs_fp64": {
+            "rel_rms": 4.3239424485364e-07,
+            "max_abs": 6.556510925292969e-07,
+            "finite": true
+          },
+          "additive_vs_fp64": {
+            "rel_rms": 2.1018294660279935e-07,
+            "max_abs": 1.4901161193847656e-07,
+            "finite": true
+          }
+        },
+        {
+          "scope": "component",
+          "stage": "compose",
+          "H": 12,
+          "chunks": 512,
+          "P": 8,
+          "merge_precision": "tf32",
+          "timing": {
+            "median_ms": 0.009095669163541771,
+            "samples_ms": [
+              0.009147312183231433,
+              0.009095669163541771,
+              0.009093036558957334
+            ]
+          },
+          "transition_vs_fp64": {
+            "rel_rms": 0.0007362783071585,
+            "max_abs": 0.0007303953170776367,
+            "finite": true
+          },
+          "additive_vs_fp64": {
+            "rel_rms": 0.00045150044024921954,
+            "max_abs": 0.000183984637260437,
+            "finite": true
+          }
+        },
+        {
+          "scope": "component",
+          "stage": "summary",
+          "H": 12,
+          "chunks": 2048,
+          "P": 8,
+          "timing": {
+            "median_ms": 0.9905624485015869,
+            "samples_ms": [
+              0.9905624485015869,
+              0.9909723663330078,
+              0.9903524017333984
+            ]
+          },
+          "transition_vs_fp64": {
+            "rel_rms": 0.0012539854506030679,
+            "max_abs": 0.00012924824841320515,
+            "finite": true
+          },
+          "additive_vs_fp64": {
+            "rel_rms": 0.0018204314401373267,
+            "max_abs": 0.0005489587783813477,
+            "finite": true
+          }
+        },
+        {
+          "scope": "component",
+          "stage": "compose",
+          "H": 12,
+          "chunks": 2048,
+          "P": 8,
+          "merge_precision": "tf32x3",
+          "timing": {
+            "median_ms": 0.020509139105892218,
+            "samples_ms": [
+              0.02050962089900849,
+              0.020509139105892218,
+              0.020503718843126278
+            ]
+          },
+          "transition_vs_fp64": {
+            "rel_rms": 3.7119988860467856e-07,
+            "max_abs": 8.195638656616211e-08,
+            "finite": true
+          },
+          "additive_vs_fp64": {
+            "rel_rms": 1.0598350286272762e-07,
+            "max_abs": 1.043081283569336e-07,
+            "finite": true
+          }
+        },
+        {
+          "scope": "component",
+          "stage": "compose",
+          "H": 12,
+          "chunks": 2048,
+          "P": 8,
+          "merge_precision": "tf32",
+          "timing": {
+            "median_ms": 0.009042161870885778,
+            "samples_ms": [
+              0.009013030447610995,
+              0.009042161870885778,
+              0.00904408345903669
+            ]
+          },
+          "transition_vs_fp64": {
+            "rel_rms": 0.0009131534607149661,
+            "max_abs": 0.00013709068298339844,
+            "finite": true
+          },
+          "additive_vs_fp64": {
+            "rel_rms": 0.00024436067906208336,
+            "max_abs": 0.00014177896082401276,
+            "finite": true
+          }
+        },
+        {
+          "scope": "component",
+          "stage": "summary",
+          "H": 96,
+          "chunks": 512,
+          "P": 8,
+          "timing": {
+            "median_ms": 2.014776376577524,
+            "samples_ms": [
+              2.0149537697816506,
+              2.014776376577524,
+              2.0147089249048475
+            ]
+          },
+          "transition_vs_fp64": {
+            "rel_rms": 0.0005881419638171792,
+            "max_abs": 0.00016112811863422394,
+            "finite": true
+          },
+          "additive_vs_fp64": {
+            "rel_rms": 0.0017270741518586874,
+            "max_abs": 0.00039231032133102417,
+            "finite": true
+          }
+        },
+        {
+          "scope": "component",
+          "stage": "compose",
+          "H": 96,
+          "chunks": 512,
+          "P": 8,
+          "merge_precision": "tf32x3",
+          "timing": {
+            "median_ms": 0.1592943145007622,
+            "samples_ms": [
+              0.1592943145007622,
+              0.15929632574562136,
+              0.1592940415793318
+            ]
+          },
+          "transition_vs_fp64": {
+            "rel_rms": 4.3712273622986686e-07,
+            "max_abs": 7.748603820800781e-07,
+            "finite": true
+          },
+          "additive_vs_fp64": {
+            "rel_rms": 2.0958253799108206e-07,
+            "max_abs": 1.7136335372924805e-07,
+            "finite": true
+          }
+        },
+        {
+          "scope": "component",
+          "stage": "compose",
+          "H": 96,
+          "chunks": 512,
+          "P": 8,
+          "merge_precision": "tf32",
+          "timing": {
+            "median_ms": 0.059276578413250874,
+            "samples_ms": [
+              0.059281536015256195,
+              0.0591913656481433,
+              0.059276578413250874
+            ]
+          },
+          "transition_vs_fp64": {
+            "rel_rms": 0.0007283390150405467,
+            "max_abs": 0.0007228851318359375,
+            "finite": true
+          },
+          "additive_vs_fp64": {
+            "rel_rms": 0.00044653189252130687,
+            "max_abs": 0.00023658573627471924,
+            "finite": true
+          }
+        },
+        {
+          "scope": "full",
+          "method": "original",
+          "T": 8192,
+          "H": 12,
+          "timing": {
+            "median_ms": 0.776011702593635,
+            "samples_ms": [
+              0.7760427886364507,
+              0.776011702593635,
+              0.7759952320772059
+            ]
+          }
+        },
+        {
+          "scope": "full",
+          "method": "segment_tree",
+          "T": 8192,
+          "H": 12,
+          "P": 8,
+          "merge_precision": "tf32x3",
+          "timing": {
+            "median_ms": 0.5056872285754476,
+            "samples_ms": [
+              0.5056872285754476,
+              0.505655367011266,
+              0.5065837046305338
+            ]
+          },
+          "speedup_vs_original": 1.5345685212966687,
+          "output_vs_original": {
+            "rel_rms": 3.181124338880181e-05,
+            "max_abs": 0.0001220703125,
+            "finite": true
+          },
+          "coefficient": {
+            "median_ms": 0.03574858151786257,
+            "samples_ms": [
+              0.035740346140675734,
+              0.03574905714818409,
+              0.03574858151786257
+            ]
+          },
+          "summary": {
+            "median_ms": 0.2529006446131502,
+            "samples_ms": [
+              0.2528918086530302,
+              0.2530118095227324,
+              0.2529006446131502
+            ]
+          },
+          "merge": {
+            "median_ms": 0.06645955178359908,
+            "samples_ms": [
+              0.06645955178359908,
+              0.06635111516444528,
+              0.06647432150430237
+            ]
+          },
+          "replay": {
+            "median_ms": 0.10580271972137538,
+            "samples_ms": [
+              0.10588480379358567,
+              0.10580213298905368,
+              0.10580271972137538
+            ]
+          }
+        },
+        {
+          "scope": "full",
+          "method": "segment_tree",
+          "T": 8192,
+          "H": 12,
+          "P": 8,
+          "merge_precision": "tf32",
+          "timing": {
+            "median_ms": 0.47575916794111145,
+            "samples_ms": [
+              0.4762919569015503,
+              0.47546740664711484,
+              0.47575916794111145
+            ]
+          },
+          "speedup_vs_original": 1.631101941664923,
+          "output_vs_original": {
+            "rel_rms": 3.181124338880181e-05,
+            "max_abs": 0.0001220703125,
+            "finite": true
+          },
+          "coefficient": {
+            "median_ms": 0.035665481908686875,
+            "samples_ms": [
+              0.035665481908686875,
+              0.03561577544195492,
+              0.03567515633515744
+            ]
+          },
+          "summary": {
+            "median_ms": 0.25285564324794674,
+            "samples_ms": [
+              0.2529030502222146,
+              0.2528387446312388,
+              0.25285564324794674
+            ]
+          },
+          "merge": {
+            "median_ms": 0.03756489525156573,
+            "samples_ms": [
+              0.03755737395513625,
+              0.03756489525156573,
+              0.03757335158893496
+            ]
+          },
+          "replay": {
+            "median_ms": 0.10581097215497527,
+            "samples_ms": [
+              0.10606803894042968,
+              0.10581097215497527,
+              0.10579197372998463
+            ]
+          }
+        },
+        {
+          "scope": "full",
+          "method": "original",
+          "T": 32768,
+          "H": 12,
+          "timing": {
+            "median_ms": 3.036098245474008,
+            "samples_ms": [
+              3.0361653841458836,
+              3.0359602708082933,
+              3.036098245474008
+            ]
+          }
+        },
+        {
+          "scope": "full",
+          "method": "segment_tree",
+          "T": 32768,
+          "H": 12,
+          "P": 8,
+          "merge_precision": "tf32x3",
+          "timing": {
+            "median_ms": 1.715043955263884,
+            "samples_ms": [
+              1.7151695251464845,
+              1.7147400068200154,
+              1.715043955263884
+            ]
+          },
+          "speedup_vs_original": 1.7702743047229137,
+          "output_vs_original": {
+            "rel_rms": 1.5770330719533376e-05,
+            "max_abs": 0.0001220703125,
+            "finite": true
+          },
+          "coefficient": {
+            "median_ms": 0.12905629945281366,
+            "samples_ms": [
+              0.12898401698550663,
+              0.12905629945281366,
+              0.12907353599599544
+            ]
+          },
+          "summary": {
+            "median_ms": 0.9906879329681396,
+            "samples_ms": [
+              0.9907052572671469,
+              0.990544605255127,
+              0.9906879329681396
+            ]
+          },
+          "merge": {
+            "median_ms": 0.06653863650101882,
+            "samples_ms": [
+              0.06669036925308347,
+              0.06649482637593894,
+              0.06653863650101882
+            ]
+          },
+          "replay": {
+            "median_ms": 0.3787498068694331,
+            "samples_ms": [
+              0.3787498068694331,
+              0.37860327089466334,
+              0.3791102570612074
+            ]
+          }
+        },
+        {
+          "scope": "full",
+          "method": "segment_tree",
+          "T": 32768,
+          "H": 12,
+          "P": 8,
+          "merge_precision": "tf32",
+          "timing": {
+            "median_ms": 1.6864466128141984,
+            "samples_ms": [
+              1.6858144013778023,
+              1.6867952263873556,
+              1.6864466128141984
+            ]
+          },
+          "speedup_vs_original": 1.8002931266277242,
+          "output_vs_original": {
+            "rel_rms": 1.5770330719533376e-05,
+            "max_abs": 0.0001220703125,
+            "finite": true
+          },
+          "coefficient": {
+            "median_ms": 0.1291996399028189,
+            "samples_ms": [
+              0.12899964754698706,
+              0.1292684510400064,
+              0.1291996399028189
+            ]
+          },
+          "summary": {
+            "median_ms": 0.990572065188561,
+            "samples_ms": [
+              0.9908497500729251,
+              0.990572065188561,
+              0.9903727149963379
+            ]
+          },
+          "merge": {
+            "median_ms": 0.03809720650185257,
+            "samples_ms": [
+              0.03809720650185257,
+              0.03805619446006981,
+              0.03818937056135423
+            ]
+          },
+          "replay": {
+            "median_ms": 0.3788010859834975,
+            "samples_ms": [
+              0.3788010859834975,
+              0.37879487935779166,
+              0.3789174176644588
+            ]
+          }
+        },
+        {
+          "scope": "full",
+          "method": "original",
+          "T": 8192,
+          "H": 96,
+          "timing": {
+            "median_ms": 1.0192077735801797,
+            "samples_ms": [
+              1.019174065527978,
+              1.0192077735801797,
+              1.0195679503601867
+            ]
+          }
+        },
+        {
+          "scope": "full",
+          "method": "segment_tree",
+          "T": 8192,
+          "H": 96,
+          "P": 8,
+          "merge_precision": "tf32x3",
+          "timing": {
+            "median_ms": 3.4144414818805195,
+            "samples_ms": [
+              3.4157037817913554,
+              3.4144414818805195,
+              3.4141131525454314
+            ]
+          },
+          "speedup_vs_original": 0.2984991188130851,
+          "output_vs_original": {
+            "rel_rms": 3.094343264820054e-05,
+            "max_abs": 0.0001220703125,
+            "finite": true
+          },
+          "coefficient": {
+            "median_ms": 0.259002427009253,
+            "samples_ms": [
+              0.25884961618960484,
+              0.25909656235093725,
+              0.259002427009253
+            ]
+          },
+          "summary": {
+            "median_ms": 2.013836376483624,
+            "samples_ms": [
+              2.0138186806126646,
+              2.013836376483624,
+              2.0139281639685995
+            ]
+          },
+          "merge": {
+            "median_ms": 0.4222573811299092,
+            "samples_ms": [
+              0.42195552516627954,
+              0.42243128596125423,
+              0.4222573811299092
+            ]
+          },
+          "replay": {
+            "median_ms": 0.44737671427644055,
+            "samples_ms": [
+              0.445348391690097,
+              0.4476812770600953,
+              0.44737671427644055
+            ]
+          }
+        },
+        {
+          "scope": "full",
+          "method": "segment_tree",
+          "T": 8192,
+          "H": 96,
+          "P": 8,
+          "merge_precision": "tf32",
+          "timing": {
+            "median_ms": 3.177648480733236,
+            "samples_ms": [
+              3.1778377215067546,
+              3.177648480733236,
+              3.177129046122233
+            ]
+          },
+          "speedup_vs_original": 0.32074276930247475,
+          "output_vs_original": {
+            "rel_rms": 3.094343264820054e-05,
+            "max_abs": 0.0001220703125,
+            "finite": true
+          },
+          "coefficient": {
+            "median_ms": 0.2592796805678614,
+            "samples_ms": [
+              0.25907030321633545,
+              0.259337747333855,
+              0.2592796805678614
+            ]
+          },
+          "summary": {
+            "median_ms": 2.0137620779184195,
+            "samples_ms": [
+              2.0139134457236842,
+              2.0137620779184195,
+              2.0136839059682994
+            ]
+          },
+          "merge": {
+            "median_ms": 0.18634085431194947,
+            "samples_ms": [
+              0.18634085431194947,
+              0.18640597350615307,
+              0.18630147933959962
+            ]
+          },
+          "replay": {
+            "median_ms": 0.4475208348621523,
+            "samples_ms": [
+              0.44662058903620794,
+              0.44851593723186867,
+              0.4475208348621523
+            ]
+          }
+        },
+        {
+          "scope": "validation",
+          "method": "original",
+          "gate": "normal",
+          "T": 8192,
+          "H": 12,
+          "output_vs_fp64": {
+            "rel_rms": 0.005724672693759203,
+            "max_abs": 0.000639747828245163,
+            "finite": true
+          },
+          "state_vs_fp64": {
+            "rel_rms": 0.004932678770273924,
+            "max_abs": 0.004193395376205444,
+            "finite": true
+          }
+        },
+        {
+          "scope": "validation",
+          "method": "segment_tree",
+          "gate": "normal",
+          "T": 8192,
+          "H": 12,
+          "P": 8,
+          "merge_precision": "tf32x3",
+          "output_vs_fp64": {
+            "rel_rms": 0.005724685732275248,
+            "max_abs": 0.000639747828245163,
+            "finite": true
+          },
+          "state_vs_fp64": {
+            "rel_rms": 0.004932678770273924,
+            "max_abs": 0.004193395376205444,
+            "finite": true
+          }
+        },
+        {
+          "scope": "validation",
+          "method": "segment_tree",
+          "gate": "normal",
+          "T": 8192,
+          "H": 12,
+          "P": 8,
+          "merge_precision": "tf32",
+          "output_vs_fp64": {
+            "rel_rms": 0.005724685732275248,
+            "max_abs": 0.000639747828245163,
+            "finite": true
+          },
+          "state_vs_fp64": {
+            "rel_rms": 0.004932678770273924,
+            "max_abs": 0.004193395376205444,
+            "finite": true
+          }
+        },
+        {
+          "scope": "validation",
+          "method": "original",
+          "gate": "weak",
+          "T": 8192,
+          "H": 12,
+          "output_vs_fp64": {
+            "rel_rms": 0.007974247448146343,
+            "max_abs": 0.0027879178524017334,
+            "finite": true
+          },
+          "state_vs_fp64": {
+            "rel_rms": 0.007376254536211491,
+            "max_abs": 0.02977299690246582,
+            "finite": true
+          }
+        },
+        {
+          "scope": "validation",
+          "method": "segment_tree",
+          "gate": "weak",
+          "T": 8192,
+          "H": 12,
+          "P": 8,
+          "merge_precision": "tf32x3",
+          "output_vs_fp64": {
+            "rel_rms": 0.007608824409544468,
+            "max_abs": 0.0026055723428726196,
+            "finite": true
+          },
+          "state_vs_fp64": {
+            "rel_rms": 0.007343471981585026,
+            "max_abs": 0.032025814056396484,
+            "finite": true
+          }
+        },
+        {
+          "scope": "validation",
+          "method": "segment_tree",
+          "gate": "weak",
+          "T": 8192,
+          "H": 12,
+          "P": 8,
+          "merge_precision": "tf32",
+          "output_vs_fp64": {
+            "rel_rms": 0.0076074604876339436,
+            "max_abs": 0.0027354061603546143,
+            "finite": true
+          },
+          "state_vs_fp64": {
+            "rel_rms": 0.007381976582109928,
+            "max_abs": 0.03306984901428223,
+            "finite": true
+          }
+        },
+        {
+          "scope": "validation",
+          "method": "original",
+          "gate": "strong",
+          "T": 8192,
+          "H": 12,
+          "output_vs_fp64": {
+            "rel_rms": 0.0052610160782933235,
+            "max_abs": 0.0006321072578430176,
+            "finite": true
+          },
+          "state_vs_fp64": {
+            "rel_rms": 0.004558902699500322,
+            "max_abs": 0.0051094889640808105,
+            "finite": true
+          }
+        },
+        {
+          "scope": "validation",
+          "method": "segment_tree",
+          "gate": "strong",
+          "T": 8192,
+          "H": 12,
+          "P": 8,
+          "merge_precision": "tf32x3",
+          "output_vs_fp64": {
+            "rel_rms": 0.0052610160782933235,
+            "max_abs": 0.0006321072578430176,
+            "finite": true
+          },
+          "state_vs_fp64": {
+            "rel_rms": 0.004558902699500322,
+            "max_abs": 0.0051094889640808105,
+            "finite": true
+          }
+        },
+        {
+          "scope": "validation",
+          "method": "segment_tree",
+          "gate": "strong",
+          "T": 8192,
+          "H": 12,
+          "P": 8,
+          "merge_precision": "tf32",
+          "output_vs_fp64": {
+            "rel_rms": 0.0052610160782933235,
+            "max_abs": 0.0006321072578430176,
+            "finite": true
+          },
+          "state_vs_fp64": {
+            "rel_rms": 0.004558902699500322,
+            "max_abs": 0.0051094889640808105,
+            "finite": true
+          }
+        }
+      ],
+      "evidence": {
+        "component_summary": {
+          "ptx_static_counts": {
+            "mma_sync": 8,
+            "wgmma": 0,
+            "tcgen05_mma": 1,
+            "tmem_alloc": 1,
+            "tmem_load": 1,
+            "tmem_store": 0
+          },
+          "sass_matrix_instructions": [
+            "HMMA.16816.F32.BF16",
+            "LDTM."
+          ],
+          "ptx_instruction_examples": [
+            "@%p1 tcgen05.alloc.cta_group::1.sync.aligned.shared::cta.b32 [%r188], 32;",
+            "@%p1 tcgen05.relinquish_alloc_permit.cta_group::1.sync.aligned;",
+            "tcgen05.ld.sync.aligned.32x32b.x32.b32 {%r725, %r726, %r727, %r728, %r729, %r730, %r731, %r732, %r733, %r734, %r735, %r736, %r737, %r738, %r739, %r740, %r741, %r742, %r743, %r744, %r745, %r746, %r747, %r748, %r749, %r750, %r751, %r752, %r753, %r754, %r755, %r756}, [%r757 + 0];",
+            "tcgen05.wait::ld.sync.aligned;",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r523, %r524, %r525, %r526 }, { %r517, %r518, %r519, %r520 }, { %r489, %r490 }, { %r523, %r524, %r525, %r526 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r523, %r524, %r525, %r526 }, { %r531, %r532, %r533, %r534 }, { %r491, %r492 }, { %r523, %r524, %r525, %r526 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r523, %r524, %r525, %r526 }, { %r545, %r546, %r547, %r548 }, { %r494, %r495 }, { %r523, %r524, %r525, %r526 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r523, %r524, %r525, %r526 }, { %r559, %r560, %r561, %r562 }, { %r496, %r497 }, { %r523, %r524, %r525, %r526 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r523, %r524, %r525, %r526 }, { %r573, %r574, %r575, %r576 }, { %r499, %r500 }, { %r523, %r524, %r525, %r526 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r523, %r524, %r525, %r526 }, { %r587, %r588, %r589, %r590 }, { %r501, %r502 }, { %r523, %r524, %r525, %r526 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r523, %r524, %r525, %r526 }, { %r601, %r602, %r603, %r604 }, { %r504, %r505 }, { %r523, %r524, %r525, %r526 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r523, %r524, %r525, %r526 }, { %r615, %r616, %r617, %r618 }, { %r506, %r507 }, { %r523, %r524, %r525, %r526 };",
+            "@%p43 tcgen05.mma.cta_group::1.kind::f16 [ %r801 + 0 ], %rd53, %rd54, %r714, %p42;",
+            "@%p43 tcgen05.commit.cta_group::1.mbarrier::arrive::one.b64 [%rd55];",
+            "@%p1 tcgen05.dealloc.cta_group::1.sync.aligned.b32 %r801, 32;"
+          ],
+          "ptx_sha256": "acc99544c668c7330c75b9a2cd34de462f4042279b2a697762a22a626cbb126a",
+          "cubin_sha256": "4b618ce1f7492cc601f475ef4567a4c3a3329af188fa70d3f8071e8bf59024ab",
+          "registers": 144,
+          "spills": 0,
+          "shared_bytes": 18432
+        },
+        "component_merge_tf32x3": {
+          "ptx_static_counts": {
+            "mma_sync": 0,
+            "wgmma": 0,
+            "tcgen05_mma": 48,
+            "tmem_alloc": 1,
+            "tmem_load": 3,
+            "tmem_store": 5
+          },
+          "sass_matrix_instructions": [
+            "LDTM.16",
+            "STTM.16"
+          ],
+          "ptx_instruction_examples": [
+            "@%p1 tcgen05.alloc.cta_group::1.sync.aligned.shared::cta.b32 [%r116], 256;",
+            "@%p1 tcgen05.relinquish_alloc_permit.cta_group::1.sync.aligned;",
+            "@%p7 tcgen05.st.sync.aligned.16x32bx2.x32.b32 [%r807 + 0], 32, {%r310, %r311, %r312, %r313, %r314, %r315, %r316, %r317, %r318, %r319, %r320, %r321, %r322, %r323, %r324, %r325, %r326, %r327, %r328, %r329, %r330, %r331, %r332, %r333, %r334, %r335, %r336, %r337, %r338, %r339, %r340, %r341};",
+            "tcgen05.wait::st.sync.aligned;",
+            "@%p7 tcgen05.st.sync.aligned.16x32bx2.x16.b32 [%r1082 + 0], 16, {%r343, %r343, %r343, %r343, %r343, %r343, %r343, %r343, %r343, %r343, %r343, %r343, %r343, %r343, %r343, %r343};",
+            "@%p8 tcgen05.mma.cta_group::1.kind::tf32 [ %r981 + 0 ], [ %r1161 + 0 ], %rd63, %r707, %p7;",
+            "@%p8 tcgen05.mma.cta_group::1.kind::tf32 [ %r981 + 0 ], [ %r1161 + 8 ], %rd64, %r707, %p7;",
+            "@%p8 tcgen05.mma.cta_group::1.kind::tf32 [ %r981 + 0 ], [ %r1161 + 16 ], %rd65, %r707, %p7;",
+            "@%p8 tcgen05.mma.cta_group::1.kind::tf32 [ %r981 + 0 ], [ %r1161 + 24 ], %rd66, %r707, %p7;",
+            "@%p8 tcgen05.mma.cta_group::1.kind::tf32 [ %r981 + 0 ], [ %r1161 + 32 ], %rd67, %r707, %p7;",
+            "@%p8 tcgen05.mma.cta_group::1.kind::tf32 [ %r981 + 0 ], [ %r1161 + 40 ], %rd68, %r707, %p7;",
+            "@%p8 tcgen05.mma.cta_group::1.kind::tf32 [ %r981 + 0 ], [ %r1161 + 48 ], %rd69, %r707, %p7;",
+            "@%p8 tcgen05.mma.cta_group::1.kind::tf32 [ %r981 + 0 ], [ %r1161 + 56 ], %rd70, %r707, %p7;",
+            "@%p8 tcgen05.mma.cta_group::1.kind::tf32 [ %r981 + 0 ], [ %r1161 + 64 ], %rd71, %r707, %p7;",
+            "@%p8 tcgen05.mma.cta_group::1.kind::tf32 [ %r981 + 0 ], [ %r1161 + 72 ], %rd72, %r707, %p7;",
+            "@%p8 tcgen05.mma.cta_group::1.kind::tf32 [ %r981 + 0 ], [ %r1161 + 80 ], %rd73, %r707, %p7;",
+            "@%p8 tcgen05.mma.cta_group::1.kind::tf32 [ %r981 + 0 ], [ %r1161 + 88 ], %rd74, %r707, %p7;",
+            "@%p8 tcgen05.mma.cta_group::1.kind::tf32 [ %r981 + 0 ], [ %r1161 + 96 ], %rd75, %r707, %p7;",
+            "@%p8 tcgen05.mma.cta_group::1.kind::tf32 [ %r981 + 0 ], [ %r1161 + 104 ], %rd76, %r707, %p7;",
+            "@%p8 tcgen05.mma.cta_group::1.kind::tf32 [ %r981 + 0 ], [ %r1161 + 112 ], %rd77, %r707, %p7;",
+            "@%p8 tcgen05.mma.cta_group::1.kind::tf32 [ %r981 + 0 ], [ %r1161 + 120 ], %rd78, %r707, %p7;",
+            "@%p8 tcgen05.commit.cta_group::1.mbarrier::arrive::one.b64 [%rd79];",
+            "tcgen05.ld.sync.aligned.16x32bx2.x16.b32 {%r790, %r791, %r792, %r793, %r794, %r795, %r796, %r797, %r798, %r799, %r800, %r801, %r802, %r803, %r804, %r805}, [%r1082 + 0], 16;",
+            "tcgen05.wait::ld.sync.aligned;"
+          ],
+          "ptx_sha256": "e27f1e3cef00d46a72d3459d9797358040d15a944cae88f599d125d38e04c10d",
+          "cubin_sha256": "eeca655bb698c03d9edb616726973d009dead76459f6cd8fd94a4d530027143e",
+          "registers": 152,
+          "spills": 0,
+          "shared_bytes": 65544
+        },
+        "component_merge_tf32": {
+          "ptx_static_counts": {
+            "mma_sync": 0,
+            "wgmma": 0,
+            "tcgen05_mma": 16,
+            "tmem_alloc": 1,
+            "tmem_load": 1,
+            "tmem_store": 1
+          },
+          "sass_matrix_instructions": [
+            "LDTM.16",
+            "STTM.16"
+          ],
+          "ptx_instruction_examples": [
+            "@%p1 tcgen05.alloc.cta_group::1.sync.aligned.shared::cta.b32 [%r80], 64;",
+            "@%p1 tcgen05.relinquish_alloc_permit.cta_group::1.sync.aligned;",
+            "@%p6 tcgen05.st.sync.aligned.16x32bx2.x16.b32 [%r489 + 0], 16, {%r146, %r146, %r146, %r146, %r146, %r146, %r146, %r146, %r146, %r146, %r146, %r146, %r146, %r146, %r146, %r146};",
+            "tcgen05.wait::st.sync.aligned;",
+            "@%p7 tcgen05.mma.cta_group::1.kind::tf32 [ %r559 + 0 ], %rd63, %rd64, %r373, %p6;",
+            "@%p7 tcgen05.mma.cta_group::1.kind::tf32 [ %r559 + 0 ], %rd65, %rd66, %r373, %p6;",
+            "@%p7 tcgen05.mma.cta_group::1.kind::tf32 [ %r559 + 0 ], %rd67, %rd68, %r373, %p6;",
+            "@%p7 tcgen05.mma.cta_group::1.kind::tf32 [ %r559 + 0 ], %rd69, %rd70, %r373, %p6;",
+            "@%p7 tcgen05.mma.cta_group::1.kind::tf32 [ %r559 + 0 ], %rd71, %rd72, %r373, %p6;",
+            "@%p7 tcgen05.mma.cta_group::1.kind::tf32 [ %r559 + 0 ], %rd73, %rd74, %r373, %p6;",
+            "@%p7 tcgen05.mma.cta_group::1.kind::tf32 [ %r559 + 0 ], %rd75, %rd76, %r373, %p6;",
+            "@%p7 tcgen05.mma.cta_group::1.kind::tf32 [ %r559 + 0 ], %rd77, %rd78, %r373, %p6;",
+            "@%p7 tcgen05.mma.cta_group::1.kind::tf32 [ %r559 + 0 ], %rd79, %rd80, %r373, %p6;",
+            "@%p7 tcgen05.mma.cta_group::1.kind::tf32 [ %r559 + 0 ], %rd81, %rd82, %r373, %p6;",
+            "@%p7 tcgen05.mma.cta_group::1.kind::tf32 [ %r559 + 0 ], %rd83, %rd84, %r373, %p6;",
+            "@%p7 tcgen05.mma.cta_group::1.kind::tf32 [ %r559 + 0 ], %rd85, %rd86, %r373, %p6;",
+            "@%p7 tcgen05.mma.cta_group::1.kind::tf32 [ %r559 + 0 ], %rd87, %rd88, %r373, %p6;",
+            "@%p7 tcgen05.mma.cta_group::1.kind::tf32 [ %r559 + 0 ], %rd89, %rd90, %r373, %p6;",
+            "@%p7 tcgen05.mma.cta_group::1.kind::tf32 [ %r559 + 0 ], %rd91, %rd92, %r373, %p6;",
+            "@%p7 tcgen05.mma.cta_group::1.kind::tf32 [ %r559 + 0 ], %rd93, %rd94, %r373, %p6;",
+            "@%p7 tcgen05.commit.cta_group::1.mbarrier::arrive::one.b64 [%rd95];",
+            "tcgen05.ld.sync.aligned.16x32bx2.x16.b32 {%r473, %r474, %r475, %r476, %r477, %r478, %r479, %r480, %r481, %r482, %r483, %r484, %r485, %r486, %r487, %r488}, [%r489 + 0], 16;",
+            "tcgen05.wait::ld.sync.aligned;",
+            "@%p1 tcgen05.dealloc.cta_group::1.sync.aligned.b32 %r559, 64;"
+          ],
+          "ptx_sha256": "7280a361c82503236b007e4a15a176580293d3c853dc4e33a7e796fde24706e6",
+          "cubin_sha256": "5f94308d9bd7ccea1fafa47af18047d653ee5fa737f7b979faec48f7f2e9f9c5",
+          "registers": 40,
+          "spills": 0,
+          "shared_bytes": 65544
+        },
+        "coefficients": {
+          "ptx_static_counts": {
+            "mma_sync": 48,
+            "wgmma": 0,
+            "tcgen05_mma": 0,
+            "tmem_alloc": 0,
+            "tmem_load": 0,
+            "tmem_store": 0
+          },
+          "sass_matrix_instructions": [
+            "HMMA.1688.F32.TF32"
+          ],
+          "ptx_instruction_examples": [
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r157, %r158, %r159, %r160 }, { %r123, %r124, %r125, %r126 }, { %r113, %r114 }, { %r157, %r158, %r159, %r160 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r171, %r172, %r173, %r174 }, { %r123, %r124, %r125, %r126 }, { %r127, %r128 }, { %r171, %r172, %r173, %r174 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r185, %r186, %r187, %r188 }, { %r123, %r124, %r125, %r126 }, { %r141, %r142 }, { %r185, %r186, %r187, %r188 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r199, %r200, %r201, %r202 }, { %r123, %r124, %r125, %r126 }, { %r155, %r156 }, { %r199, %r200, %r201, %r202 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r157, %r158, %r159, %r160 }, { %r179, %r180, %r181, %r182 }, { %r169, %r170 }, { %r157, %r158, %r159, %r160 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r171, %r172, %r173, %r174 }, { %r179, %r180, %r181, %r182 }, { %r183, %r184 }, { %r171, %r172, %r173, %r174 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r185, %r186, %r187, %r188 }, { %r179, %r180, %r181, %r182 }, { %r197, %r198 }, { %r185, %r186, %r187, %r188 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r199, %r200, %r201, %r202 }, { %r179, %r180, %r181, %r182 }, { %r211, %r212 }, { %r199, %r200, %r201, %r202 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r157, %r158, %r159, %r160 }, { %r221, %r222, %r223, %r224 }, { %r225, %r226 }, { %r157, %r158, %r159, %r160 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r171, %r172, %r173, %r174 }, { %r221, %r222, %r223, %r224 }, { %r239, %r240 }, { %r171, %r172, %r173, %r174 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r185, %r186, %r187, %r188 }, { %r221, %r222, %r223, %r224 }, { %r253, %r254 }, { %r185, %r186, %r187, %r188 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r199, %r200, %r201, %r202 }, { %r221, %r222, %r223, %r224 }, { %r267, %r268 }, { %r199, %r200, %r201, %r202 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r157, %r158, %r159, %r160 }, { %r277, %r278, %r279, %r280 }, { %r281, %r282 }, { %r157, %r158, %r159, %r160 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r171, %r172, %r173, %r174 }, { %r277, %r278, %r279, %r280 }, { %r295, %r296 }, { %r171, %r172, %r173, %r174 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r185, %r186, %r187, %r188 }, { %r277, %r278, %r279, %r280 }, { %r309, %r310 }, { %r185, %r186, %r187, %r188 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r199, %r200, %r201, %r202 }, { %r277, %r278, %r279, %r280 }, { %r323, %r324 }, { %r199, %r200, %r201, %r202 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r381, %r382, %r383, %r384 }, { %r221, %r222, %r223, %r224 }, { %r113, %r114 }, { %r381, %r382, %r383, %r384 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r395, %r396, %r397, %r398 }, { %r221, %r222, %r223, %r224 }, { %r127, %r128 }, { %r395, %r396, %r397, %r398 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r409, %r410, %r411, %r412 }, { %r221, %r222, %r223, %r224 }, { %r141, %r142 }, { %r409, %r410, %r411, %r412 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r423, %r424, %r425, %r426 }, { %r221, %r222, %r223, %r224 }, { %r155, %r156 }, { %r423, %r424, %r425, %r426 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r381, %r382, %r383, %r384 }, { %r277, %r278, %r279, %r280 }, { %r169, %r170 }, { %r381, %r382, %r383, %r384 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r395, %r396, %r397, %r398 }, { %r277, %r278, %r279, %r280 }, { %r183, %r184 }, { %r395, %r396, %r397, %r398 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r409, %r410, %r411, %r412 }, { %r277, %r278, %r279, %r280 }, { %r197, %r198 }, { %r409, %r410, %r411, %r412 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r423, %r424, %r425, %r426 }, { %r277, %r278, %r279, %r280 }, { %r211, %r212 }, { %r423, %r424, %r425, %r426 };"
+          ],
+          "ptx_sha256": "12816be506c07738406ef67231e3656eabe565d4b001ab0df18d0d8e018118b9",
+          "cubin_sha256": "37d5608b3f9b4acd1cb6ab5de6f915360f6d7905ef34cdca055f89eda73a8f14",
+          "registers": 60,
+          "spills": 0,
+          "shared_bytes": 4224
+        },
+        "summary": {
+          "ptx_static_counts": {
+            "mma_sync": 8,
+            "wgmma": 0,
+            "tcgen05_mma": 1,
+            "tmem_alloc": 1,
+            "tmem_load": 1,
+            "tmem_store": 0
+          },
+          "sass_matrix_instructions": [
+            "HMMA.16816.F32.BF16",
+            "LDTM."
+          ],
+          "ptx_instruction_examples": [
+            "@%p1 tcgen05.alloc.cta_group::1.sync.aligned.shared::cta.b32 [%r188], 32;",
+            "@%p1 tcgen05.relinquish_alloc_permit.cta_group::1.sync.aligned;",
+            "tcgen05.ld.sync.aligned.32x32b.x32.b32 {%r725, %r726, %r727, %r728, %r729, %r730, %r731, %r732, %r733, %r734, %r735, %r736, %r737, %r738, %r739, %r740, %r741, %r742, %r743, %r744, %r745, %r746, %r747, %r748, %r749, %r750, %r751, %r752, %r753, %r754, %r755, %r756}, [%r757 + 0];",
+            "tcgen05.wait::ld.sync.aligned;",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r523, %r524, %r525, %r526 }, { %r517, %r518, %r519, %r520 }, { %r489, %r490 }, { %r523, %r524, %r525, %r526 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r523, %r524, %r525, %r526 }, { %r531, %r532, %r533, %r534 }, { %r491, %r492 }, { %r523, %r524, %r525, %r526 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r523, %r524, %r525, %r526 }, { %r545, %r546, %r547, %r548 }, { %r494, %r495 }, { %r523, %r524, %r525, %r526 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r523, %r524, %r525, %r526 }, { %r559, %r560, %r561, %r562 }, { %r496, %r497 }, { %r523, %r524, %r525, %r526 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r523, %r524, %r525, %r526 }, { %r573, %r574, %r575, %r576 }, { %r499, %r500 }, { %r523, %r524, %r525, %r526 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r523, %r524, %r525, %r526 }, { %r587, %r588, %r589, %r590 }, { %r501, %r502 }, { %r523, %r524, %r525, %r526 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r523, %r524, %r525, %r526 }, { %r601, %r602, %r603, %r604 }, { %r504, %r505 }, { %r523, %r524, %r525, %r526 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r523, %r524, %r525, %r526 }, { %r615, %r616, %r617, %r618 }, { %r506, %r507 }, { %r523, %r524, %r525, %r526 };",
+            "@%p43 tcgen05.mma.cta_group::1.kind::f16 [ %r801 + 0 ], %rd53, %rd54, %r714, %p42;",
+            "@%p43 tcgen05.commit.cta_group::1.mbarrier::arrive::one.b64 [%rd55];",
+            "@%p1 tcgen05.dealloc.cta_group::1.sync.aligned.b32 %r801, 32;"
+          ],
+          "ptx_sha256": "acc99544c668c7330c75b9a2cd34de462f4042279b2a697762a22a626cbb126a",
+          "cubin_sha256": "4b618ce1f7492cc601f475ef4567a4c3a3329af188fa70d3f8071e8bf59024ab",
+          "registers": 144,
+          "spills": 0,
+          "shared_bytes": 18432
+        },
+        "compose_tf32x3": {
+          "ptx_static_counts": {
+            "mma_sync": 0,
+            "wgmma": 0,
+            "tcgen05_mma": 48,
+            "tmem_alloc": 1,
+            "tmem_load": 3,
+            "tmem_store": 5
+          },
+          "sass_matrix_instructions": [
+            "LDTM.16",
+            "STTM.16"
+          ],
+          "ptx_instruction_examples": [
+            "@%p1 tcgen05.alloc.cta_group::1.sync.aligned.shared::cta.b32 [%r116], 256;",
+            "@%p1 tcgen05.relinquish_alloc_permit.cta_group::1.sync.aligned;",
+            "@%p7 tcgen05.st.sync.aligned.16x32bx2.x32.b32 [%r807 + 0], 32, {%r310, %r311, %r312, %r313, %r314, %r315, %r316, %r317, %r318, %r319, %r320, %r321, %r322, %r323, %r324, %r325, %r326, %r327, %r328, %r329, %r330, %r331, %r332, %r333, %r334, %r335, %r336, %r337, %r338, %r339, %r340, %r341};",
+            "tcgen05.wait::st.sync.aligned;",
+            "@%p7 tcgen05.st.sync.aligned.16x32bx2.x16.b32 [%r1082 + 0], 16, {%r343, %r343, %r343, %r343, %r343, %r343, %r343, %r343, %r343, %r343, %r343, %r343, %r343, %r343, %r343, %r343};",
+            "@%p8 tcgen05.mma.cta_group::1.kind::tf32 [ %r981 + 0 ], [ %r1161 + 0 ], %rd63, %r707, %p7;",
+            "@%p8 tcgen05.mma.cta_group::1.kind::tf32 [ %r981 + 0 ], [ %r1161 + 8 ], %rd64, %r707, %p7;",
+            "@%p8 tcgen05.mma.cta_group::1.kind::tf32 [ %r981 + 0 ], [ %r1161 + 16 ], %rd65, %r707, %p7;",
+            "@%p8 tcgen05.mma.cta_group::1.kind::tf32 [ %r981 + 0 ], [ %r1161 + 24 ], %rd66, %r707, %p7;",
+            "@%p8 tcgen05.mma.cta_group::1.kind::tf32 [ %r981 + 0 ], [ %r1161 + 32 ], %rd67, %r707, %p7;",
+            "@%p8 tcgen05.mma.cta_group::1.kind::tf32 [ %r981 + 0 ], [ %r1161 + 40 ], %rd68, %r707, %p7;",
+            "@%p8 tcgen05.mma.cta_group::1.kind::tf32 [ %r981 + 0 ], [ %r1161 + 48 ], %rd69, %r707, %p7;",
+            "@%p8 tcgen05.mma.cta_group::1.kind::tf32 [ %r981 + 0 ], [ %r1161 + 56 ], %rd70, %r707, %p7;",
+            "@%p8 tcgen05.mma.cta_group::1.kind::tf32 [ %r981 + 0 ], [ %r1161 + 64 ], %rd71, %r707, %p7;",
+            "@%p8 tcgen05.mma.cta_group::1.kind::tf32 [ %r981 + 0 ], [ %r1161 + 72 ], %rd72, %r707, %p7;",
+            "@%p8 tcgen05.mma.cta_group::1.kind::tf32 [ %r981 + 0 ], [ %r1161 + 80 ], %rd73, %r707, %p7;",
+            "@%p8 tcgen05.mma.cta_group::1.kind::tf32 [ %r981 + 0 ], [ %r1161 + 88 ], %rd74, %r707, %p7;",
+            "@%p8 tcgen05.mma.cta_group::1.kind::tf32 [ %r981 + 0 ], [ %r1161 + 96 ], %rd75, %r707, %p7;",
+            "@%p8 tcgen05.mma.cta_group::1.kind::tf32 [ %r981 + 0 ], [ %r1161 + 104 ], %rd76, %r707, %p7;",
+            "@%p8 tcgen05.mma.cta_group::1.kind::tf32 [ %r981 + 0 ], [ %r1161 + 112 ], %rd77, %r707, %p7;",
+            "@%p8 tcgen05.mma.cta_group::1.kind::tf32 [ %r981 + 0 ], [ %r1161 + 120 ], %rd78, %r707, %p7;",
+            "@%p8 tcgen05.commit.cta_group::1.mbarrier::arrive::one.b64 [%rd79];",
+            "tcgen05.ld.sync.aligned.16x32bx2.x16.b32 {%r790, %r791, %r792, %r793, %r794, %r795, %r796, %r797, %r798, %r799, %r800, %r801, %r802, %r803, %r804, %r805}, [%r1082 + 0], 16;",
+            "tcgen05.wait::ld.sync.aligned;"
+          ],
+          "ptx_sha256": "e27f1e3cef00d46a72d3459d9797358040d15a944cae88f599d125d38e04c10d",
+          "cubin_sha256": "eeca655bb698c03d9edb616726973d009dead76459f6cd8fd94a4d530027143e",
+          "registers": 152,
+          "spills": 0,
+          "shared_bytes": 65544
+        },
+        "descend_tf32x3": {
+          "ptx_static_counts": {
+            "mma_sync": 0,
+            "wgmma": 0,
+            "tcgen05_mma": 48,
+            "tmem_alloc": 1,
+            "tmem_load": 3,
+            "tmem_store": 5
+          },
+          "sass_matrix_instructions": [
+            "LDTM.16",
+            "STTM.16"
+          ],
+          "ptx_instruction_examples": [
+            "@%p1 tcgen05.alloc.cta_group::1.sync.aligned.shared::cta.b32 [%r143], 256;",
+            "@%p1 tcgen05.relinquish_alloc_permit.cta_group::1.sync.aligned;",
+            "@%p8 tcgen05.st.sync.aligned.16x32bx2.x32.b32 [%r872 + 0], 32, {%r360, %r361, %r362, %r363, %r364, %r365, %r366, %r367, %r368, %r369, %r370, %r371, %r372, %r373, %r374, %r375, %r376, %r377, %r378, %r379, %r380, %r381, %r382, %r383, %r384, %r385, %r386, %r387, %r388, %r389, %r390, %r391};",
+            "tcgen05.wait::st.sync.aligned;",
+            "@%p8 tcgen05.st.sync.aligned.16x32bx2.x16.b32 [%r1147 + 0], 16, {%r393, %r393, %r393, %r393, %r393, %r393, %r393, %r393, %r393, %r393, %r393, %r393, %r393, %r393, %r393, %r393};",
+            "@%p9 tcgen05.mma.cta_group::1.kind::tf32 [ %r1046 + 0 ], [ %r1215 + 0 ], %rd70, %r772, %p8;",
+            "@%p9 tcgen05.mma.cta_group::1.kind::tf32 [ %r1046 + 0 ], [ %r1215 + 8 ], %rd71, %r772, %p8;",
+            "@%p9 tcgen05.mma.cta_group::1.kind::tf32 [ %r1046 + 0 ], [ %r1215 + 16 ], %rd72, %r772, %p8;",
+            "@%p9 tcgen05.mma.cta_group::1.kind::tf32 [ %r1046 + 0 ], [ %r1215 + 24 ], %rd73, %r772, %p8;",
+            "@%p9 tcgen05.mma.cta_group::1.kind::tf32 [ %r1046 + 0 ], [ %r1215 + 32 ], %rd74, %r772, %p8;",
+            "@%p9 tcgen05.mma.cta_group::1.kind::tf32 [ %r1046 + 0 ], [ %r1215 + 40 ], %rd75, %r772, %p8;",
+            "@%p9 tcgen05.mma.cta_group::1.kind::tf32 [ %r1046 + 0 ], [ %r1215 + 48 ], %rd76, %r772, %p8;",
+            "@%p9 tcgen05.mma.cta_group::1.kind::tf32 [ %r1046 + 0 ], [ %r1215 + 56 ], %rd77, %r772, %p8;",
+            "@%p9 tcgen05.mma.cta_group::1.kind::tf32 [ %r1046 + 0 ], [ %r1215 + 64 ], %rd78, %r772, %p8;",
+            "@%p9 tcgen05.mma.cta_group::1.kind::tf32 [ %r1046 + 0 ], [ %r1215 + 72 ], %rd79, %r772, %p8;",
+            "@%p9 tcgen05.mma.cta_group::1.kind::tf32 [ %r1046 + 0 ], [ %r1215 + 80 ], %rd80, %r772, %p8;",
+            "@%p9 tcgen05.mma.cta_group::1.kind::tf32 [ %r1046 + 0 ], [ %r1215 + 88 ], %rd81, %r772, %p8;",
+            "@%p9 tcgen05.mma.cta_group::1.kind::tf32 [ %r1046 + 0 ], [ %r1215 + 96 ], %rd82, %r772, %p8;",
+            "@%p9 tcgen05.mma.cta_group::1.kind::tf32 [ %r1046 + 0 ], [ %r1215 + 104 ], %rd83, %r772, %p8;",
+            "@%p9 tcgen05.mma.cta_group::1.kind::tf32 [ %r1046 + 0 ], [ %r1215 + 112 ], %rd84, %r772, %p8;",
+            "@%p9 tcgen05.mma.cta_group::1.kind::tf32 [ %r1046 + 0 ], [ %r1215 + 120 ], %rd85, %r772, %p8;",
+            "@%p9 tcgen05.commit.cta_group::1.mbarrier::arrive::one.b64 [%rd86];",
+            "tcgen05.ld.sync.aligned.16x32bx2.x16.b32 {%r855, %r856, %r857, %r858, %r859, %r860, %r861, %r862, %r863, %r864, %r865, %r866, %r867, %r868, %r869, %r870}, [%r1147 + 0], 16;",
+            "tcgen05.wait::ld.sync.aligned;"
+          ],
+          "ptx_sha256": "aebcd3dc917acad45e116a3b776ea75e2bd737a380f5bcb1efb666762c85623b",
+          "cubin_sha256": "a26111a651ef81d6043a11ebe6c24d74f1113947e97e22df64baaa25b15d3945",
+          "registers": 171,
+          "spills": 0,
+          "shared_bytes": 65544
+        },
+        "compose_tf32": {
+          "ptx_static_counts": {
+            "mma_sync": 0,
+            "wgmma": 0,
+            "tcgen05_mma": 16,
+            "tmem_alloc": 1,
+            "tmem_load": 1,
+            "tmem_store": 1
+          },
+          "sass_matrix_instructions": [
+            "LDTM.16",
+            "STTM.16"
+          ],
+          "ptx_instruction_examples": [
+            "@%p1 tcgen05.alloc.cta_group::1.sync.aligned.shared::cta.b32 [%r80], 64;",
+            "@%p1 tcgen05.relinquish_alloc_permit.cta_group::1.sync.aligned;",
+            "@%p6 tcgen05.st.sync.aligned.16x32bx2.x16.b32 [%r489 + 0], 16, {%r146, %r146, %r146, %r146, %r146, %r146, %r146, %r146, %r146, %r146, %r146, %r146, %r146, %r146, %r146, %r146};",
+            "tcgen05.wait::st.sync.aligned;",
+            "@%p7 tcgen05.mma.cta_group::1.kind::tf32 [ %r559 + 0 ], %rd63, %rd64, %r373, %p6;",
+            "@%p7 tcgen05.mma.cta_group::1.kind::tf32 [ %r559 + 0 ], %rd65, %rd66, %r373, %p6;",
+            "@%p7 tcgen05.mma.cta_group::1.kind::tf32 [ %r559 + 0 ], %rd67, %rd68, %r373, %p6;",
+            "@%p7 tcgen05.mma.cta_group::1.kind::tf32 [ %r559 + 0 ], %rd69, %rd70, %r373, %p6;",
+            "@%p7 tcgen05.mma.cta_group::1.kind::tf32 [ %r559 + 0 ], %rd71, %rd72, %r373, %p6;",
+            "@%p7 tcgen05.mma.cta_group::1.kind::tf32 [ %r559 + 0 ], %rd73, %rd74, %r373, %p6;",
+            "@%p7 tcgen05.mma.cta_group::1.kind::tf32 [ %r559 + 0 ], %rd75, %rd76, %r373, %p6;",
+            "@%p7 tcgen05.mma.cta_group::1.kind::tf32 [ %r559 + 0 ], %rd77, %rd78, %r373, %p6;",
+            "@%p7 tcgen05.mma.cta_group::1.kind::tf32 [ %r559 + 0 ], %rd79, %rd80, %r373, %p6;",
+            "@%p7 tcgen05.mma.cta_group::1.kind::tf32 [ %r559 + 0 ], %rd81, %rd82, %r373, %p6;",
+            "@%p7 tcgen05.mma.cta_group::1.kind::tf32 [ %r559 + 0 ], %rd83, %rd84, %r373, %p6;",
+            "@%p7 tcgen05.mma.cta_group::1.kind::tf32 [ %r559 + 0 ], %rd85, %rd86, %r373, %p6;",
+            "@%p7 tcgen05.mma.cta_group::1.kind::tf32 [ %r559 + 0 ], %rd87, %rd88, %r373, %p6;",
+            "@%p7 tcgen05.mma.cta_group::1.kind::tf32 [ %r559 + 0 ], %rd89, %rd90, %r373, %p6;",
+            "@%p7 tcgen05.mma.cta_group::1.kind::tf32 [ %r559 + 0 ], %rd91, %rd92, %r373, %p6;",
+            "@%p7 tcgen05.mma.cta_group::1.kind::tf32 [ %r559 + 0 ], %rd93, %rd94, %r373, %p6;",
+            "@%p7 tcgen05.commit.cta_group::1.mbarrier::arrive::one.b64 [%rd95];",
+            "tcgen05.ld.sync.aligned.16x32bx2.x16.b32 {%r473, %r474, %r475, %r476, %r477, %r478, %r479, %r480, %r481, %r482, %r483, %r484, %r485, %r486, %r487, %r488}, [%r489 + 0], 16;",
+            "tcgen05.wait::ld.sync.aligned;",
+            "@%p1 tcgen05.dealloc.cta_group::1.sync.aligned.b32 %r559, 64;"
+          ],
+          "ptx_sha256": "7280a361c82503236b007e4a15a176580293d3c853dc4e33a7e796fde24706e6",
+          "cubin_sha256": "5f94308d9bd7ccea1fafa47af18047d653ee5fa737f7b979faec48f7f2e9f9c5",
+          "registers": 40,
+          "spills": 0,
+          "shared_bytes": 65544
+        },
+        "descend_tf32": {
+          "ptx_static_counts": {
+            "mma_sync": 0,
+            "wgmma": 0,
+            "tcgen05_mma": 16,
+            "tmem_alloc": 1,
+            "tmem_load": 1,
+            "tmem_store": 1
+          },
+          "sass_matrix_instructions": [
+            "LDTM.16",
+            "STTM.16"
+          ],
+          "ptx_instruction_examples": [
+            "@%p1 tcgen05.alloc.cta_group::1.sync.aligned.shared::cta.b32 [%r92], 64;",
+            "@%p1 tcgen05.relinquish_alloc_permit.cta_group::1.sync.aligned;",
+            "@%p10 tcgen05.st.sync.aligned.16x32bx2.x16.b32 [%r546 + 0], 16, {%r181, %r182, %r183, %r184, %r185, %r186, %r187, %r188, %r189, %r190, %r191, %r192, %r193, %r194, %r195, %r196};",
+            "tcgen05.wait::st.sync.aligned;",
+            "@%p11 tcgen05.mma.cta_group::1.kind::tf32 [ %r614 + 0 ], %rd70, %rd71, %r430, %p10;",
+            "@%p11 tcgen05.mma.cta_group::1.kind::tf32 [ %r614 + 0 ], %rd72, %rd73, %r430, %p10;",
+            "@%p11 tcgen05.mma.cta_group::1.kind::tf32 [ %r614 + 0 ], %rd74, %rd75, %r430, %p10;",
+            "@%p11 tcgen05.mma.cta_group::1.kind::tf32 [ %r614 + 0 ], %rd76, %rd77, %r430, %p10;",
+            "@%p11 tcgen05.mma.cta_group::1.kind::tf32 [ %r614 + 0 ], %rd78, %rd79, %r430, %p10;",
+            "@%p11 tcgen05.mma.cta_group::1.kind::tf32 [ %r614 + 0 ], %rd80, %rd81, %r430, %p10;",
+            "@%p11 tcgen05.mma.cta_group::1.kind::tf32 [ %r614 + 0 ], %rd82, %rd83, %r430, %p10;",
+            "@%p11 tcgen05.mma.cta_group::1.kind::tf32 [ %r614 + 0 ], %rd84, %rd85, %r430, %p10;",
+            "@%p11 tcgen05.mma.cta_group::1.kind::tf32 [ %r614 + 0 ], %rd86, %rd87, %r430, %p10;",
+            "@%p11 tcgen05.mma.cta_group::1.kind::tf32 [ %r614 + 0 ], %rd88, %rd89, %r430, %p10;",
+            "@%p11 tcgen05.mma.cta_group::1.kind::tf32 [ %r614 + 0 ], %rd90, %rd91, %r430, %p10;",
+            "@%p11 tcgen05.mma.cta_group::1.kind::tf32 [ %r614 + 0 ], %rd92, %rd93, %r430, %p10;",
+            "@%p11 tcgen05.mma.cta_group::1.kind::tf32 [ %r614 + 0 ], %rd94, %rd95, %r430, %p10;",
+            "@%p11 tcgen05.mma.cta_group::1.kind::tf32 [ %r614 + 0 ], %rd96, %rd97, %r430, %p10;",
+            "@%p11 tcgen05.mma.cta_group::1.kind::tf32 [ %r614 + 0 ], %rd98, %rd99, %r430, %p10;",
+            "@%p11 tcgen05.mma.cta_group::1.kind::tf32 [ %r614 + 0 ], %rd100, %rd101, %r430, %p10;",
+            "@%p11 tcgen05.commit.cta_group::1.mbarrier::arrive::one.b64 [%rd102];",
+            "tcgen05.ld.sync.aligned.16x32bx2.x16.b32 {%r755, %r756, %r757, %r758, %r759, %r760, %r761, %r762, %r763, %r764, %r765, %r766, %r767, %r768, %r769, %r770}, [%r546 + 0], 16;",
+            "tcgen05.wait::ld.sync.aligned;",
+            "@%p1 tcgen05.dealloc.cta_group::1.sync.aligned.b32 %r614, 64;"
+          ],
+          "ptx_sha256": "dd05a780334a021e6d6c6c3ccc75b76206bc1677632eb0aaf46432081ae66dc0",
+          "cubin_sha256": "fde56636400da2fd4b0cb9ea8755ff7b8258e4d19a182f12c5fa6f96c7f1b563",
+          "registers": 47,
+          "spills": 0,
+          "shared_bytes": 82944
+        }
+      }
+    },
+    {
+      "metadata": {
+        "gpu": "NVIDIA B200",
+        "capability": [
+          10,
+          0
+        ],
+        "sm_count": 148,
+        "memory_GiB": 178.3511962890625,
+        "torch": "2.8.0+cu129",
+        "triton": "3.4.0",
+        "cuda": "12.9",
+        "disable_mma_v5": "1",
+        "disable_mma_v3": "1"
+      },
+      "mode": "legacy",
+      "rows": [
+        {
+          "scope": "component",
+          "stage": "summary",
+          "H": 12,
+          "chunks": 512,
+          "P": 8,
+          "timing": {
+            "median_ms": 0.24158877684800267,
+            "samples_ms": [
+              0.2412138049391067,
+              0.24164538471245328,
+              0.24158877684800267
+            ]
+          },
+          "transition_vs_fp64": {
+            "rel_rms": 0.000586337991990149,
+            "max_abs": 0.00015551503747701645,
+            "finite": true
+          },
+          "additive_vs_fp64": {
+            "rel_rms": 0.0016912047285586596,
+            "max_abs": 0.0003715008497238159,
+            "finite": true
+          }
+        },
+        {
+          "scope": "component",
+          "stage": "compose",
+          "H": 12,
+          "chunks": 512,
+          "P": 8,
+          "merge_precision": "tf32x3",
+          "timing": {
+            "median_ms": 0.027814879072770436,
+            "samples_ms": [
+              0.027814879072770436,
+              0.02781449371913694,
+              0.027877924755731916
+            ]
+          },
+          "transition_vs_fp64": {
+            "rel_rms": 4.3239424485364e-07,
+            "max_abs": 6.556510925292969e-07,
+            "finite": true
+          },
+          "additive_vs_fp64": {
+            "rel_rms": 2.1018294660279935e-07,
+            "max_abs": 1.4901161193847656e-07,
+            "finite": true
+          }
+        },
+        {
+          "scope": "component",
+          "stage": "compose",
+          "H": 12,
+          "chunks": 512,
+          "P": 8,
+          "merge_precision": "tf32",
+          "timing": {
+            "median_ms": 0.008309218014964863,
+            "samples_ms": [
+              0.00826798678233401,
+              0.008332503046776421,
+              0.008309218014964863
+            ]
+          },
+          "transition_vs_fp64": {
+            "rel_rms": 0.0007362783071585,
+            "max_abs": 0.0007303953170776367,
+            "finite": true
+          },
+          "additive_vs_fp64": {
+            "rel_rms": 0.00045150044024921954,
+            "max_abs": 0.000183984637260437,
+            "finite": true
+          }
+        },
+        {
+          "scope": "component",
+          "stage": "summary",
+          "H": 12,
+          "chunks": 2048,
+          "P": 8,
+          "timing": {
+            "median_ms": 0.9500659620905497,
+            "samples_ms": [
+              0.9503063707466585,
+              0.9498277391706195,
+              0.9500659620905497
+            ]
+          },
+          "transition_vs_fp64": {
+            "rel_rms": 0.0012539854506030679,
+            "max_abs": 0.00012924824841320515,
+            "finite": true
+          },
+          "additive_vs_fp64": {
+            "rel_rms": 0.0018204314401373267,
+            "max_abs": 0.0005489587783813477,
+            "finite": true
+          }
+        },
+        {
+          "scope": "component",
+          "stage": "compose",
+          "H": 12,
+          "chunks": 2048,
+          "P": 8,
+          "merge_precision": "tf32x3",
+          "timing": {
+            "median_ms": 0.027802826908358468,
+            "samples_ms": [
+              0.027802826908358468,
+              0.027715957705864127,
+              0.027802878875446142
+            ]
+          },
+          "transition_vs_fp64": {
+            "rel_rms": 3.7119988860467856e-07,
+            "max_abs": 8.195638656616211e-08,
+            "finite": true
+          },
+          "additive_vs_fp64": {
+            "rel_rms": 1.0598350286272762e-07,
+            "max_abs": 1.043081283569336e-07,
+            "finite": true
+          }
+        },
+        {
+          "scope": "component",
+          "stage": "compose",
+          "H": 12,
+          "chunks": 2048,
+          "P": 8,
+          "merge_precision": "tf32",
+          "timing": {
+            "median_ms": 0.008190575197770132,
+            "samples_ms": [
+              0.008183100379013942,
+              0.008190575197770132,
+              0.008191424339048323
+            ]
+          },
+          "transition_vs_fp64": {
+            "rel_rms": 0.0009131534607149661,
+            "max_abs": 0.00013709068298339844,
+            "finite": true
+          },
+          "additive_vs_fp64": {
+            "rel_rms": 0.00024436067906208336,
+            "max_abs": 0.00014177896082401276,
+            "finite": true
+          }
+        },
+        {
+          "scope": "component",
+          "stage": "summary",
+          "H": 96,
+          "chunks": 512,
+          "P": 8,
+          "timing": {
+            "median_ms": 1.9020387230849847,
+            "samples_ms": [
+              1.9020698361280488,
+              1.9019185747419085,
+              1.9020387230849847
+            ]
+          },
+          "transition_vs_fp64": {
+            "rel_rms": 0.0005881419638171792,
+            "max_abs": 0.00016112811863422394,
+            "finite": true
+          },
+          "additive_vs_fp64": {
+            "rel_rms": 0.0017270741518586874,
+            "max_abs": 0.00039231032133102417,
+            "finite": true
+          }
+        },
+        {
+          "scope": "component",
+          "stage": "compose",
+          "H": 96,
+          "chunks": 512,
+          "P": 8,
+          "merge_precision": "tf32x3",
+          "timing": {
+            "median_ms": 0.20760749654566987,
+            "samples_ms": [
+              0.20761404037475586,
+              0.20755007311266993,
+              0.20760749654566987
+            ]
+          },
+          "transition_vs_fp64": {
+            "rel_rms": 4.3712273622986686e-07,
+            "max_abs": 7.748603820800781e-07,
+            "finite": true
+          },
+          "additive_vs_fp64": {
+            "rel_rms": 2.0958253799108206e-07,
+            "max_abs": 1.7136335372924805e-07,
+            "finite": true
+          }
+        },
+        {
+          "scope": "component",
+          "stage": "compose",
+          "H": 96,
+          "chunks": 512,
+          "P": 8,
+          "merge_precision": "tf32",
+          "timing": {
+            "median_ms": 0.05463231442664752,
+            "samples_ms": [
+              0.054600366745552006,
+              0.05463231442664752,
+              0.05464313870081321
+            ]
+          },
+          "transition_vs_fp64": {
+            "rel_rms": 0.0007283390150405467,
+            "max_abs": 0.0007228851318359375,
+            "finite": true
+          },
+          "additive_vs_fp64": {
+            "rel_rms": 0.00044653189252130687,
+            "max_abs": 0.00023658573627471924,
+            "finite": true
+          }
+        },
+        {
+          "scope": "full",
+          "method": "original",
+          "T": 8192,
+          "H": 12,
+          "timing": {
+            "median_ms": 0.7760256449381511,
+            "samples_ms": [
+              0.7760506349451401,
+              0.7759123409495634,
+              0.7760256449381511
+            ]
+          }
+        },
+        {
+          "scope": "full",
+          "method": "segment_tree",
+          "T": 8192,
+          "H": 12,
+          "P": 8,
+          "merge_precision": "tf32x3",
+          "timing": {
+            "median_ms": 0.6198901514853201,
+            "samples_ms": [
+              0.6198102643412928,
+              0.6198901514853201,
+              0.6212265445340064
+            ]
+          },
+          "speedup_vs_original": 1.2518760672011233,
+          "output_vs_original": {
+            "rel_rms": 3.181124338880181e-05,
+            "max_abs": 0.0001220703125,
+            "finite": true
+          },
+          "coefficient": {
+            "median_ms": 0.03581298362543066,
+            "samples_ms": [
+              0.035751764705124506,
+              0.03581298362543066,
+              0.035814960700200446
+            ]
+          },
+          "summary": {
+            "median_ms": 0.24177493698026506,
+            "samples_ms": [
+              0.24177493698026506,
+              0.24176952420748196,
+              0.24180319549840523
+            ]
+          },
+          "merge": {
+            "median_ms": 0.1921864303317082,
+            "samples_ms": [
+              0.19216746849349783,
+              0.19231521026997628,
+              0.1921864303317082
+            ]
+          },
+          "replay": {
+            "median_ms": 0.105876235509131,
+            "samples_ms": [
+              0.1059856125716823,
+              0.10586671456918344,
+              0.105876235509131
+            ]
+          }
+        },
+        {
+          "scope": "full",
+          "method": "segment_tree",
+          "T": 8192,
+          "H": 12,
+          "P": 8,
+          "merge_precision": "tf32",
+          "timing": {
+            "median_ms": 0.4633798599243164,
+            "samples_ms": [
+              0.4633798599243164,
+              0.46366973504787534,
+              0.4631852452347918
+            ]
+          },
+          "speedup_vs_original": 1.6747073234147443,
+          "output_vs_original": {
+            "rel_rms": 3.181124338880181e-05,
+            "max_abs": 0.0001220703125,
+            "finite": true
+          },
+          "coefficient": {
+            "median_ms": 0.03554538099938273,
+            "samples_ms": [
+              0.03554140236887265,
+              0.03554683140965603,
+              0.03554538099938273
+            ]
+          },
+          "summary": {
+            "median_ms": 0.2419318242904243,
+            "samples_ms": [
+              0.24188582999574626,
+              0.24193889606254182,
+              0.2419318242904243
+            ]
+          },
+          "merge": {
+            "median_ms": 0.033091055654710336,
+            "samples_ms": [
+              0.033091055654710336,
+              0.03312980960445437,
+              0.03308773228687606
+            ]
+          },
+          "replay": {
+            "median_ms": 0.10599297141759029,
+            "samples_ms": [
+              0.10599297141759029,
+              0.10613858801686865,
+              0.10593251360593921
+            ]
+          }
+        },
+        {
+          "scope": "full",
+          "method": "original",
+          "T": 32768,
+          "H": 12,
+          "timing": {
+            "median_ms": 3.0387521010178786,
+            "samples_ms": [
+              3.038759554349459,
+              3.0387521010178786,
+              3.0386273017296426
+            ]
+          }
+        },
+        {
+          "scope": "full",
+          "method": "segment_tree",
+          "T": 32768,
+          "H": 12,
+          "P": 8,
+          "merge_precision": "tf32x3",
+          "timing": {
+            "median_ms": 1.8000037082405977,
+            "samples_ms": [
+              1.8000908785088119,
+              1.8000037082405977,
+              1.799717192216353
+            ]
+          },
+          "speedup_vs_original": 1.6881921337751509,
+          "output_vs_original": {
+            "rel_rms": 1.5770330719533376e-05,
+            "max_abs": 0.0001220703125,
+            "finite": true
+          },
+          "coefficient": {
+            "median_ms": 0.1291094914378736,
+            "samples_ms": [
+              0.12916929694337545,
+              0.1290889842055713,
+              0.1291094914378736
+            ]
+          },
+          "summary": {
+            "median_ms": 0.9499134109680911,
+            "samples_ms": [
+              0.9498646206325955,
+              0.9500569079295699,
+              0.9499134109680911
+            ]
+          },
+          "merge": {
+            "median_ms": 0.1923621880253659,
+            "samples_ms": [
+              0.19201120141171088,
+              0.1923621880253659,
+              0.19238544147020623
+            ]
+          },
+          "replay": {
+            "median_ms": 0.3787691023743268,
+            "samples_ms": [
+              0.3787404193970316,
+              0.37894638950384935,
+              0.3787691023743268
+            ]
+          }
+        },
+        {
+          "scope": "full",
+          "method": "segment_tree",
+          "T": 32768,
+          "H": 12,
+          "P": 8,
+          "merge_precision": "tf32",
+          "timing": {
+            "median_ms": 1.643211793899536,
+            "samples_ms": [
+              1.643538808822632,
+              1.6431687196095786,
+              1.643211793899536
+            ]
+          },
+          "speedup_vs_original": 1.8492759803083936,
+          "output_vs_original": {
+            "rel_rms": 1.5770330719533376e-05,
+            "max_abs": 0.0001220703125,
+            "finite": true
+          },
+          "coefficient": {
+            "median_ms": 0.12932866712079,
+            "samples_ms": [
+              0.12906385042768348,
+              0.12934122277586252,
+              0.12932866712079
+            ]
+          },
+          "summary": {
+            "median_ms": 0.9497802552722749,
+            "samples_ms": [
+              0.9497872905966677,
+              0.9495027723766508,
+              0.9497802552722749
+            ]
+          },
+          "merge": {
+            "median_ms": 0.03332043743133545,
+            "samples_ms": [
+              0.03332043743133545,
+              0.033381246900641114,
+              0.03317337381212335
+            ]
+          },
+          "replay": {
+            "median_ms": 0.37891892880057365,
+            "samples_ms": [
+              0.37891892880057365,
+              0.378912872018166,
+              0.3789190209430197
+            ]
+          }
+        },
+        {
+          "scope": "full",
+          "method": "original",
+          "T": 8192,
+          "H": 96,
+          "timing": {
+            "median_ms": 1.018713858188727,
+            "samples_ms": [
+              1.0187117341276886,
+              1.018718501499721,
+              1.018713858188727
+            ]
+          }
+        },
+        {
+          "scope": "full",
+          "method": "segment_tree",
+          "T": 8192,
+          "H": 96,
+          "P": 8,
+          "merge_precision": "tf32x3",
+          "timing": {
+            "median_ms": 3.8947958374023437,
+            "samples_ms": [
+              3.895216827392578,
+              3.894634552001953,
+              3.8947958374023437
+            ]
+          },
+          "speedup_vs_original": 0.261557704361768,
+          "output_vs_original": {
+            "rel_rms": 3.094343264820054e-05,
+            "max_abs": 0.0001220703125,
+            "finite": true
+          },
+          "coefficient": {
+            "median_ms": 0.25958365760372326,
+            "samples_ms": [
+              0.2593627114897793,
+              0.25958365760372326,
+              0.25999779606497053
+            ]
+          },
+          "summary": {
+            "median_ms": 1.9013370513916015,
+            "samples_ms": [
+              1.9014751815795898,
+              1.9013370513916015,
+              1.9012125106084914
+            ]
+          },
+          "merge": {
+            "median_ms": 1.014848297911805,
+            "samples_ms": [
+              1.014892122342989,
+              1.014848297911805,
+              1.0148135296710126
+            ]
+          },
+          "replay": {
+            "median_ms": 0.45049479284951854,
+            "samples_ms": [
+              0.44827305720402644,
+              0.45049479284951854,
+              0.4517209151695515
+            ]
+          }
+        },
+        {
+          "scope": "full",
+          "method": "segment_tree",
+          "T": 8192,
+          "H": 96,
+          "P": 8,
+          "merge_precision": "tf32",
+          "timing": {
+            "median_ms": 3.039103493323693,
+            "samples_ms": [
+              3.039103493323693,
+              3.0393587846022387,
+              3.038823054387019
+            ]
+          },
+          "speedup_vs_original": 0.3352020951002949,
+          "output_vs_original": {
+            "rel_rms": 3.094343264820054e-05,
+            "max_abs": 0.0001220703125,
+            "finite": true
+          },
+          "coefficient": {
+            "median_ms": 0.26048182744124404,
+            "samples_ms": [
+              0.26030299032888105,
+              0.26048182744124404,
+              0.26063987503812164
+            ]
+          },
+          "summary": {
+            "median_ms": 1.9010738554454985,
+            "samples_ms": [
+              1.9028454399108887,
+              1.900983628772554,
+              1.9010738554454985
+            ]
+          },
+          "merge": {
+            "median_ms": 0.16112230107284778,
+            "samples_ms": [
+              0.16112230107284778,
+              0.16114484423881548,
+              0.16095049339428283
+            ]
+          },
+          "replay": {
+            "median_ms": 0.4514897575155336,
+            "samples_ms": [
+              0.4502019525884272,
+              0.4514897575155336,
+              0.45283553809450383
+            ]
+          }
+        },
+        {
+          "scope": "validation",
+          "method": "original",
+          "gate": "normal",
+          "T": 8192,
+          "H": 12,
+          "output_vs_fp64": {
+            "rel_rms": 0.005724672693759203,
+            "max_abs": 0.000639747828245163,
+            "finite": true
+          },
+          "state_vs_fp64": {
+            "rel_rms": 0.004932678770273924,
+            "max_abs": 0.004193395376205444,
+            "finite": true
+          }
+        },
+        {
+          "scope": "validation",
+          "method": "segment_tree",
+          "gate": "normal",
+          "T": 8192,
+          "H": 12,
+          "P": 8,
+          "merge_precision": "tf32x3",
+          "output_vs_fp64": {
+            "rel_rms": 0.005724685732275248,
+            "max_abs": 0.000639747828245163,
+            "finite": true
+          },
+          "state_vs_fp64": {
+            "rel_rms": 0.004932678770273924,
+            "max_abs": 0.004193395376205444,
+            "finite": true
+          }
+        },
+        {
+          "scope": "validation",
+          "method": "segment_tree",
+          "gate": "normal",
+          "T": 8192,
+          "H": 12,
+          "P": 8,
+          "merge_precision": "tf32",
+          "output_vs_fp64": {
+            "rel_rms": 0.005724685732275248,
+            "max_abs": 0.000639747828245163,
+            "finite": true
+          },
+          "state_vs_fp64": {
+            "rel_rms": 0.004932678770273924,
+            "max_abs": 0.004193395376205444,
+            "finite": true
+          }
+        },
+        {
+          "scope": "validation",
+          "method": "original",
+          "gate": "weak",
+          "T": 8192,
+          "H": 12,
+          "output_vs_fp64": {
+            "rel_rms": 0.007974247448146343,
+            "max_abs": 0.0027879178524017334,
+            "finite": true
+          },
+          "state_vs_fp64": {
+            "rel_rms": 0.007376254536211491,
+            "max_abs": 0.02977299690246582,
+            "finite": true
+          }
+        },
+        {
+          "scope": "validation",
+          "method": "segment_tree",
+          "gate": "weak",
+          "T": 8192,
+          "H": 12,
+          "P": 8,
+          "merge_precision": "tf32x3",
+          "output_vs_fp64": {
+            "rel_rms": 0.007608824409544468,
+            "max_abs": 0.0026055723428726196,
+            "finite": true
+          },
+          "state_vs_fp64": {
+            "rel_rms": 0.007343471981585026,
+            "max_abs": 0.032025814056396484,
+            "finite": true
+          }
+        },
+        {
+          "scope": "validation",
+          "method": "segment_tree",
+          "gate": "weak",
+          "T": 8192,
+          "H": 12,
+          "P": 8,
+          "merge_precision": "tf32",
+          "output_vs_fp64": {
+            "rel_rms": 0.0076074604876339436,
+            "max_abs": 0.0027354061603546143,
+            "finite": true
+          },
+          "state_vs_fp64": {
+            "rel_rms": 0.007381976582109928,
+            "max_abs": 0.03306984901428223,
+            "finite": true
+          }
+        },
+        {
+          "scope": "validation",
+          "method": "original",
+          "gate": "strong",
+          "T": 8192,
+          "H": 12,
+          "output_vs_fp64": {
+            "rel_rms": 0.0052610160782933235,
+            "max_abs": 0.0006321072578430176,
+            "finite": true
+          },
+          "state_vs_fp64": {
+            "rel_rms": 0.004558902699500322,
+            "max_abs": 0.0051094889640808105,
+            "finite": true
+          }
+        },
+        {
+          "scope": "validation",
+          "method": "segment_tree",
+          "gate": "strong",
+          "T": 8192,
+          "H": 12,
+          "P": 8,
+          "merge_precision": "tf32x3",
+          "output_vs_fp64": {
+            "rel_rms": 0.0052610160782933235,
+            "max_abs": 0.0006321072578430176,
+            "finite": true
+          },
+          "state_vs_fp64": {
+            "rel_rms": 0.004558902699500322,
+            "max_abs": 0.0051094889640808105,
+            "finite": true
+          }
+        },
+        {
+          "scope": "validation",
+          "method": "segment_tree",
+          "gate": "strong",
+          "T": 8192,
+          "H": 12,
+          "P": 8,
+          "merge_precision": "tf32",
+          "output_vs_fp64": {
+            "rel_rms": 0.0052610160782933235,
+            "max_abs": 0.0006321072578430176,
+            "finite": true
+          },
+          "state_vs_fp64": {
+            "rel_rms": 0.004558902699500322,
+            "max_abs": 0.0051094889640808105,
+            "finite": true
+          }
+        }
+      ],
+      "evidence": {
+        "component_summary": {
+          "ptx_static_counts": {
+            "mma_sync": 16,
+            "wgmma": 0,
+            "tcgen05_mma": 0,
+            "tmem_alloc": 0,
+            "tmem_load": 0,
+            "tmem_store": 0
+          },
+          "sass_matrix_instructions": [
+            "HMMA.16816.F32.BF16"
+          ],
+          "ptx_instruction_examples": [
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r660, %r661, %r662, %r663 }, { %r668, %r669, %r670, %r671 }, { %r672, %r673 }, { %r660, %r661, %r662, %r663 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r674, %r675, %r676, %r677 }, { %r668, %r669, %r670, %r671 }, { %r686, %r687 }, { %r674, %r675, %r676, %r677 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r688, %r689, %r690, %r691 }, { %r668, %r669, %r670, %r671 }, { %r700, %r701 }, { %r688, %r689, %r690, %r691 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r702, %r703, %r704, %r705 }, { %r668, %r669, %r670, %r671 }, { %r714, %r715 }, { %r702, %r703, %r704, %r705 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r716, %r717, %r718, %r719 }, { %r724, %r725, %r726, %r727 }, { %r672, %r673 }, { %r716, %r717, %r718, %r719 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r730, %r731, %r732, %r733 }, { %r724, %r725, %r726, %r727 }, { %r686, %r687 }, { %r730, %r731, %r732, %r733 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r744, %r745, %r746, %r747 }, { %r724, %r725, %r726, %r727 }, { %r700, %r701 }, { %r744, %r745, %r746, %r747 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r758, %r759, %r760, %r761 }, { %r724, %r725, %r726, %r727 }, { %r714, %r715 }, { %r758, %r759, %r760, %r761 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r456, %r457, %r458, %r459 }, { %r450, %r451, %r452, %r453 }, { %r422, %r423 }, { %r456, %r457, %r458, %r459 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r456, %r457, %r458, %r459 }, { %r464, %r465, %r466, %r467 }, { %r424, %r425 }, { %r456, %r457, %r458, %r459 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r456, %r457, %r458, %r459 }, { %r478, %r479, %r480, %r481 }, { %r427, %r428 }, { %r456, %r457, %r458, %r459 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r456, %r457, %r458, %r459 }, { %r492, %r493, %r494, %r495 }, { %r429, %r430 }, { %r456, %r457, %r458, %r459 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r456, %r457, %r458, %r459 }, { %r506, %r507, %r508, %r509 }, { %r432, %r433 }, { %r456, %r457, %r458, %r459 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r456, %r457, %r458, %r459 }, { %r520, %r521, %r522, %r523 }, { %r434, %r435 }, { %r456, %r457, %r458, %r459 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r456, %r457, %r458, %r459 }, { %r534, %r535, %r536, %r537 }, { %r437, %r438 }, { %r456, %r457, %r458, %r459 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r456, %r457, %r458, %r459 }, { %r548, %r549, %r550, %r551 }, { %r439, %r440 }, { %r456, %r457, %r458, %r459 };"
+          ],
+          "ptx_sha256": "f102aa1c75641ef43c13e175d2b7f4e3fd8ab097a0da1b6cb338fde686ab53f9",
+          "cubin_sha256": "a2d1f03fe9272a72c182dc6d02868ed06758b9ee4118ded018a89870e417cf4e",
+          "registers": 146,
+          "spills": 0,
+          "shared_bytes": 16384
+        },
+        "component_merge_tf32x3": {
+          "ptx_static_counts": {
+            "mma_sync": 384,
+            "wgmma": 0,
+            "tcgen05_mma": 0,
+            "tmem_alloc": 0,
+            "tmem_load": 0,
+            "tmem_store": 0
+          },
+          "sass_matrix_instructions": [
+            "HMMA.1688.F32.TF32"
+          ],
+          "ptx_instruction_examples": [
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1081, %r1082, %r1083, %r1084 }, { %r991, %r992, %r993, %r994 }, { %r981, %r982 }, { %r1081, %r1082, %r1083, %r1084 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1095, %r1096, %r1097, %r1098 }, { %r991, %r992, %r993, %r994 }, { %r995, %r996 }, { %r1095, %r1096, %r1097, %r1098 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1109, %r1110, %r1111, %r1112 }, { %r991, %r992, %r993, %r994 }, { %r1009, %r1010 }, { %r1109, %r1110, %r1111, %r1112 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1123, %r1124, %r1125, %r1126 }, { %r991, %r992, %r993, %r994 }, { %r1023, %r1024 }, { %r1123, %r1124, %r1125, %r1126 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1137, %r1138, %r1139, %r1140 }, { %r991, %r992, %r993, %r994 }, { %r1037, %r1038 }, { %r1137, %r1138, %r1139, %r1140 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1151, %r1152, %r1153, %r1154 }, { %r991, %r992, %r993, %r994 }, { %r1051, %r1052 }, { %r1151, %r1152, %r1153, %r1154 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1165, %r1166, %r1167, %r1168 }, { %r991, %r992, %r993, %r994 }, { %r1065, %r1066 }, { %r1165, %r1166, %r1167, %r1168 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1179, %r1180, %r1181, %r1182 }, { %r991, %r992, %r993, %r994 }, { %r1079, %r1080 }, { %r1179, %r1180, %r1181, %r1182 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1081, %r1082, %r1083, %r1084 }, { %r1103, %r1104, %r1105, %r1106 }, { %r1093, %r1094 }, { %r1081, %r1082, %r1083, %r1084 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1095, %r1096, %r1097, %r1098 }, { %r1103, %r1104, %r1105, %r1106 }, { %r1107, %r1108 }, { %r1095, %r1096, %r1097, %r1098 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1109, %r1110, %r1111, %r1112 }, { %r1103, %r1104, %r1105, %r1106 }, { %r1121, %r1122 }, { %r1109, %r1110, %r1111, %r1112 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1123, %r1124, %r1125, %r1126 }, { %r1103, %r1104, %r1105, %r1106 }, { %r1135, %r1136 }, { %r1123, %r1124, %r1125, %r1126 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1137, %r1138, %r1139, %r1140 }, { %r1103, %r1104, %r1105, %r1106 }, { %r1149, %r1150 }, { %r1137, %r1138, %r1139, %r1140 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1151, %r1152, %r1153, %r1154 }, { %r1103, %r1104, %r1105, %r1106 }, { %r1163, %r1164 }, { %r1151, %r1152, %r1153, %r1154 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1165, %r1166, %r1167, %r1168 }, { %r1103, %r1104, %r1105, %r1106 }, { %r1177, %r1178 }, { %r1165, %r1166, %r1167, %r1168 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1179, %r1180, %r1181, %r1182 }, { %r1103, %r1104, %r1105, %r1106 }, { %r1191, %r1192 }, { %r1179, %r1180, %r1181, %r1182 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1081, %r1082, %r1083, %r1084 }, { %r1215, %r1216, %r1217, %r1218 }, { %r1205, %r1206 }, { %r1081, %r1082, %r1083, %r1084 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1095, %r1096, %r1097, %r1098 }, { %r1215, %r1216, %r1217, %r1218 }, { %r1219, %r1220 }, { %r1095, %r1096, %r1097, %r1098 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1109, %r1110, %r1111, %r1112 }, { %r1215, %r1216, %r1217, %r1218 }, { %r1233, %r1234 }, { %r1109, %r1110, %r1111, %r1112 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1123, %r1124, %r1125, %r1126 }, { %r1215, %r1216, %r1217, %r1218 }, { %r1247, %r1248 }, { %r1123, %r1124, %r1125, %r1126 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1137, %r1138, %r1139, %r1140 }, { %r1215, %r1216, %r1217, %r1218 }, { %r1261, %r1262 }, { %r1137, %r1138, %r1139, %r1140 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1151, %r1152, %r1153, %r1154 }, { %r1215, %r1216, %r1217, %r1218 }, { %r1275, %r1276 }, { %r1151, %r1152, %r1153, %r1154 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1165, %r1166, %r1167, %r1168 }, { %r1215, %r1216, %r1217, %r1218 }, { %r1289, %r1290 }, { %r1165, %r1166, %r1167, %r1168 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1179, %r1180, %r1181, %r1182 }, { %r1215, %r1216, %r1217, %r1218 }, { %r1303, %r1304 }, { %r1179, %r1180, %r1181, %r1182 };"
+          ],
+          "ptx_sha256": "570a410e9b0b14ffec4a89d7fd09538875757dfe8869c27a8a24ca1e20b9d379",
+          "cubin_sha256": "5950e4d75aedca34e34104ea6010fae85c2bb2e96cd1aa275148d1e104646b46",
+          "registers": 255,
+          "spills": 144,
+          "shared_bytes": 32768
+        },
+        "component_merge_tf32": {
+          "ptx_static_counts": {
+            "mma_sync": 64,
+            "wgmma": 0,
+            "tcgen05_mma": 0,
+            "tmem_alloc": 0,
+            "tmem_load": 0,
+            "tmem_store": 0
+          },
+          "sass_matrix_instructions": [
+            "HMMA.1688.F32.TF32"
+          ],
+          "ptx_instruction_examples": [
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r387, %r388, %r389, %r390 }, { %r339, %r340, %r341, %r342 }, { %r343, %r344 }, { %r387, %r388, %r389, %r390 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r401, %r402, %r403, %r404 }, { %r339, %r340, %r341, %r342 }, { %r357, %r358 }, { %r401, %r402, %r403, %r404 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r415, %r416, %r417, %r418 }, { %r367, %r368, %r369, %r370 }, { %r343, %r344 }, { %r415, %r416, %r417, %r418 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r429, %r430, %r431, %r432 }, { %r367, %r368, %r369, %r370 }, { %r357, %r358 }, { %r429, %r430, %r431, %r432 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r387, %r388, %r389, %r390 }, { %r395, %r396, %r397, %r398 }, { %r399, %r400 }, { %r387, %r388, %r389, %r390 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r401, %r402, %r403, %r404 }, { %r395, %r396, %r397, %r398 }, { %r413, %r414 }, { %r401, %r402, %r403, %r404 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r415, %r416, %r417, %r418 }, { %r423, %r424, %r425, %r426 }, { %r399, %r400 }, { %r415, %r416, %r417, %r418 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r429, %r430, %r431, %r432 }, { %r423, %r424, %r425, %r426 }, { %r413, %r414 }, { %r429, %r430, %r431, %r432 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r387, %r388, %r389, %r390 }, { %r451, %r452, %r453, %r454 }, { %r455, %r456 }, { %r387, %r388, %r389, %r390 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r401, %r402, %r403, %r404 }, { %r451, %r452, %r453, %r454 }, { %r469, %r470 }, { %r401, %r402, %r403, %r404 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r415, %r416, %r417, %r418 }, { %r479, %r480, %r481, %r482 }, { %r455, %r456 }, { %r415, %r416, %r417, %r418 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r429, %r430, %r431, %r432 }, { %r479, %r480, %r481, %r482 }, { %r469, %r470 }, { %r429, %r430, %r431, %r432 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r387, %r388, %r389, %r390 }, { %r507, %r508, %r509, %r510 }, { %r511, %r512 }, { %r387, %r388, %r389, %r390 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r401, %r402, %r403, %r404 }, { %r507, %r508, %r509, %r510 }, { %r525, %r526 }, { %r401, %r402, %r403, %r404 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r415, %r416, %r417, %r418 }, { %r535, %r536, %r537, %r538 }, { %r511, %r512 }, { %r415, %r416, %r417, %r418 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r429, %r430, %r431, %r432 }, { %r535, %r536, %r537, %r538 }, { %r525, %r526 }, { %r429, %r430, %r431, %r432 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r387, %r388, %r389, %r390 }, { %r563, %r564, %r565, %r566 }, { %r567, %r568 }, { %r387, %r388, %r389, %r390 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r401, %r402, %r403, %r404 }, { %r563, %r564, %r565, %r566 }, { %r581, %r582 }, { %r401, %r402, %r403, %r404 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r415, %r416, %r417, %r418 }, { %r591, %r592, %r593, %r594 }, { %r567, %r568 }, { %r415, %r416, %r417, %r418 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r429, %r430, %r431, %r432 }, { %r591, %r592, %r593, %r594 }, { %r581, %r582 }, { %r429, %r430, %r431, %r432 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r387, %r388, %r389, %r390 }, { %r619, %r620, %r621, %r622 }, { %r623, %r624 }, { %r387, %r388, %r389, %r390 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r401, %r402, %r403, %r404 }, { %r619, %r620, %r621, %r622 }, { %r637, %r638 }, { %r401, %r402, %r403, %r404 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r415, %r416, %r417, %r418 }, { %r647, %r648, %r649, %r650 }, { %r623, %r624 }, { %r415, %r416, %r417, %r418 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r429, %r430, %r431, %r432 }, { %r647, %r648, %r649, %r650 }, { %r637, %r638 }, { %r429, %r430, %r431, %r432 };"
+          ],
+          "ptx_sha256": "b6b1c8df4709be30771ee7c7d809409b9eb74953e83cee7ec38781d1a05d3f28",
+          "cubin_sha256": "25af5f04fdc3434d32abbe50fc5f1669a66e3069998736ec009709101bccdb7f",
+          "registers": 64,
+          "spills": 0,
+          "shared_bytes": 65536
+        },
+        "coefficients": {
+          "ptx_static_counts": {
+            "mma_sync": 48,
+            "wgmma": 0,
+            "tcgen05_mma": 0,
+            "tmem_alloc": 0,
+            "tmem_load": 0,
+            "tmem_store": 0
+          },
+          "sass_matrix_instructions": [
+            "HMMA.1688.F32.TF32"
+          ],
+          "ptx_instruction_examples": [
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r157, %r158, %r159, %r160 }, { %r123, %r124, %r125, %r126 }, { %r113, %r114 }, { %r157, %r158, %r159, %r160 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r171, %r172, %r173, %r174 }, { %r123, %r124, %r125, %r126 }, { %r127, %r128 }, { %r171, %r172, %r173, %r174 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r185, %r186, %r187, %r188 }, { %r123, %r124, %r125, %r126 }, { %r141, %r142 }, { %r185, %r186, %r187, %r188 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r199, %r200, %r201, %r202 }, { %r123, %r124, %r125, %r126 }, { %r155, %r156 }, { %r199, %r200, %r201, %r202 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r157, %r158, %r159, %r160 }, { %r179, %r180, %r181, %r182 }, { %r169, %r170 }, { %r157, %r158, %r159, %r160 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r171, %r172, %r173, %r174 }, { %r179, %r180, %r181, %r182 }, { %r183, %r184 }, { %r171, %r172, %r173, %r174 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r185, %r186, %r187, %r188 }, { %r179, %r180, %r181, %r182 }, { %r197, %r198 }, { %r185, %r186, %r187, %r188 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r199, %r200, %r201, %r202 }, { %r179, %r180, %r181, %r182 }, { %r211, %r212 }, { %r199, %r200, %r201, %r202 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r157, %r158, %r159, %r160 }, { %r221, %r222, %r223, %r224 }, { %r225, %r226 }, { %r157, %r158, %r159, %r160 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r171, %r172, %r173, %r174 }, { %r221, %r222, %r223, %r224 }, { %r239, %r240 }, { %r171, %r172, %r173, %r174 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r185, %r186, %r187, %r188 }, { %r221, %r222, %r223, %r224 }, { %r253, %r254 }, { %r185, %r186, %r187, %r188 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r199, %r200, %r201, %r202 }, { %r221, %r222, %r223, %r224 }, { %r267, %r268 }, { %r199, %r200, %r201, %r202 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r157, %r158, %r159, %r160 }, { %r277, %r278, %r279, %r280 }, { %r281, %r282 }, { %r157, %r158, %r159, %r160 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r171, %r172, %r173, %r174 }, { %r277, %r278, %r279, %r280 }, { %r295, %r296 }, { %r171, %r172, %r173, %r174 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r185, %r186, %r187, %r188 }, { %r277, %r278, %r279, %r280 }, { %r309, %r310 }, { %r185, %r186, %r187, %r188 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r199, %r200, %r201, %r202 }, { %r277, %r278, %r279, %r280 }, { %r323, %r324 }, { %r199, %r200, %r201, %r202 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r381, %r382, %r383, %r384 }, { %r221, %r222, %r223, %r224 }, { %r113, %r114 }, { %r381, %r382, %r383, %r384 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r395, %r396, %r397, %r398 }, { %r221, %r222, %r223, %r224 }, { %r127, %r128 }, { %r395, %r396, %r397, %r398 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r409, %r410, %r411, %r412 }, { %r221, %r222, %r223, %r224 }, { %r141, %r142 }, { %r409, %r410, %r411, %r412 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r423, %r424, %r425, %r426 }, { %r221, %r222, %r223, %r224 }, { %r155, %r156 }, { %r423, %r424, %r425, %r426 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r381, %r382, %r383, %r384 }, { %r277, %r278, %r279, %r280 }, { %r169, %r170 }, { %r381, %r382, %r383, %r384 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r395, %r396, %r397, %r398 }, { %r277, %r278, %r279, %r280 }, { %r183, %r184 }, { %r395, %r396, %r397, %r398 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r409, %r410, %r411, %r412 }, { %r277, %r278, %r279, %r280 }, { %r197, %r198 }, { %r409, %r410, %r411, %r412 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r423, %r424, %r425, %r426 }, { %r277, %r278, %r279, %r280 }, { %r211, %r212 }, { %r423, %r424, %r425, %r426 };"
+          ],
+          "ptx_sha256": "12816be506c07738406ef67231e3656eabe565d4b001ab0df18d0d8e018118b9",
+          "cubin_sha256": "37d5608b3f9b4acd1cb6ab5de6f915360f6d7905ef34cdca055f89eda73a8f14",
+          "registers": 60,
+          "spills": 0,
+          "shared_bytes": 4224
+        },
+        "summary": {
+          "ptx_static_counts": {
+            "mma_sync": 16,
+            "wgmma": 0,
+            "tcgen05_mma": 0,
+            "tmem_alloc": 0,
+            "tmem_load": 0,
+            "tmem_store": 0
+          },
+          "sass_matrix_instructions": [
+            "HMMA.16816.F32.BF16"
+          ],
+          "ptx_instruction_examples": [
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r660, %r661, %r662, %r663 }, { %r668, %r669, %r670, %r671 }, { %r672, %r673 }, { %r660, %r661, %r662, %r663 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r674, %r675, %r676, %r677 }, { %r668, %r669, %r670, %r671 }, { %r686, %r687 }, { %r674, %r675, %r676, %r677 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r688, %r689, %r690, %r691 }, { %r668, %r669, %r670, %r671 }, { %r700, %r701 }, { %r688, %r689, %r690, %r691 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r702, %r703, %r704, %r705 }, { %r668, %r669, %r670, %r671 }, { %r714, %r715 }, { %r702, %r703, %r704, %r705 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r716, %r717, %r718, %r719 }, { %r724, %r725, %r726, %r727 }, { %r672, %r673 }, { %r716, %r717, %r718, %r719 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r730, %r731, %r732, %r733 }, { %r724, %r725, %r726, %r727 }, { %r686, %r687 }, { %r730, %r731, %r732, %r733 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r744, %r745, %r746, %r747 }, { %r724, %r725, %r726, %r727 }, { %r700, %r701 }, { %r744, %r745, %r746, %r747 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r758, %r759, %r760, %r761 }, { %r724, %r725, %r726, %r727 }, { %r714, %r715 }, { %r758, %r759, %r760, %r761 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r456, %r457, %r458, %r459 }, { %r450, %r451, %r452, %r453 }, { %r422, %r423 }, { %r456, %r457, %r458, %r459 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r456, %r457, %r458, %r459 }, { %r464, %r465, %r466, %r467 }, { %r424, %r425 }, { %r456, %r457, %r458, %r459 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r456, %r457, %r458, %r459 }, { %r478, %r479, %r480, %r481 }, { %r427, %r428 }, { %r456, %r457, %r458, %r459 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r456, %r457, %r458, %r459 }, { %r492, %r493, %r494, %r495 }, { %r429, %r430 }, { %r456, %r457, %r458, %r459 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r456, %r457, %r458, %r459 }, { %r506, %r507, %r508, %r509 }, { %r432, %r433 }, { %r456, %r457, %r458, %r459 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r456, %r457, %r458, %r459 }, { %r520, %r521, %r522, %r523 }, { %r434, %r435 }, { %r456, %r457, %r458, %r459 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r456, %r457, %r458, %r459 }, { %r534, %r535, %r536, %r537 }, { %r437, %r438 }, { %r456, %r457, %r458, %r459 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r456, %r457, %r458, %r459 }, { %r548, %r549, %r550, %r551 }, { %r439, %r440 }, { %r456, %r457, %r458, %r459 };"
+          ],
+          "ptx_sha256": "f102aa1c75641ef43c13e175d2b7f4e3fd8ab097a0da1b6cb338fde686ab53f9",
+          "cubin_sha256": "a2d1f03fe9272a72c182dc6d02868ed06758b9ee4118ded018a89870e417cf4e",
+          "registers": 146,
+          "spills": 0,
+          "shared_bytes": 16384
+        },
+        "compose_tf32x3": {
+          "ptx_static_counts": {
+            "mma_sync": 384,
+            "wgmma": 0,
+            "tcgen05_mma": 0,
+            "tmem_alloc": 0,
+            "tmem_load": 0,
+            "tmem_store": 0
+          },
+          "sass_matrix_instructions": [
+            "HMMA.1688.F32.TF32"
+          ],
+          "ptx_instruction_examples": [
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1081, %r1082, %r1083, %r1084 }, { %r991, %r992, %r993, %r994 }, { %r981, %r982 }, { %r1081, %r1082, %r1083, %r1084 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1095, %r1096, %r1097, %r1098 }, { %r991, %r992, %r993, %r994 }, { %r995, %r996 }, { %r1095, %r1096, %r1097, %r1098 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1109, %r1110, %r1111, %r1112 }, { %r991, %r992, %r993, %r994 }, { %r1009, %r1010 }, { %r1109, %r1110, %r1111, %r1112 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1123, %r1124, %r1125, %r1126 }, { %r991, %r992, %r993, %r994 }, { %r1023, %r1024 }, { %r1123, %r1124, %r1125, %r1126 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1137, %r1138, %r1139, %r1140 }, { %r991, %r992, %r993, %r994 }, { %r1037, %r1038 }, { %r1137, %r1138, %r1139, %r1140 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1151, %r1152, %r1153, %r1154 }, { %r991, %r992, %r993, %r994 }, { %r1051, %r1052 }, { %r1151, %r1152, %r1153, %r1154 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1165, %r1166, %r1167, %r1168 }, { %r991, %r992, %r993, %r994 }, { %r1065, %r1066 }, { %r1165, %r1166, %r1167, %r1168 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1179, %r1180, %r1181, %r1182 }, { %r991, %r992, %r993, %r994 }, { %r1079, %r1080 }, { %r1179, %r1180, %r1181, %r1182 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1081, %r1082, %r1083, %r1084 }, { %r1103, %r1104, %r1105, %r1106 }, { %r1093, %r1094 }, { %r1081, %r1082, %r1083, %r1084 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1095, %r1096, %r1097, %r1098 }, { %r1103, %r1104, %r1105, %r1106 }, { %r1107, %r1108 }, { %r1095, %r1096, %r1097, %r1098 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1109, %r1110, %r1111, %r1112 }, { %r1103, %r1104, %r1105, %r1106 }, { %r1121, %r1122 }, { %r1109, %r1110, %r1111, %r1112 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1123, %r1124, %r1125, %r1126 }, { %r1103, %r1104, %r1105, %r1106 }, { %r1135, %r1136 }, { %r1123, %r1124, %r1125, %r1126 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1137, %r1138, %r1139, %r1140 }, { %r1103, %r1104, %r1105, %r1106 }, { %r1149, %r1150 }, { %r1137, %r1138, %r1139, %r1140 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1151, %r1152, %r1153, %r1154 }, { %r1103, %r1104, %r1105, %r1106 }, { %r1163, %r1164 }, { %r1151, %r1152, %r1153, %r1154 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1165, %r1166, %r1167, %r1168 }, { %r1103, %r1104, %r1105, %r1106 }, { %r1177, %r1178 }, { %r1165, %r1166, %r1167, %r1168 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1179, %r1180, %r1181, %r1182 }, { %r1103, %r1104, %r1105, %r1106 }, { %r1191, %r1192 }, { %r1179, %r1180, %r1181, %r1182 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1081, %r1082, %r1083, %r1084 }, { %r1215, %r1216, %r1217, %r1218 }, { %r1205, %r1206 }, { %r1081, %r1082, %r1083, %r1084 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1095, %r1096, %r1097, %r1098 }, { %r1215, %r1216, %r1217, %r1218 }, { %r1219, %r1220 }, { %r1095, %r1096, %r1097, %r1098 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1109, %r1110, %r1111, %r1112 }, { %r1215, %r1216, %r1217, %r1218 }, { %r1233, %r1234 }, { %r1109, %r1110, %r1111, %r1112 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1123, %r1124, %r1125, %r1126 }, { %r1215, %r1216, %r1217, %r1218 }, { %r1247, %r1248 }, { %r1123, %r1124, %r1125, %r1126 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1137, %r1138, %r1139, %r1140 }, { %r1215, %r1216, %r1217, %r1218 }, { %r1261, %r1262 }, { %r1137, %r1138, %r1139, %r1140 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1151, %r1152, %r1153, %r1154 }, { %r1215, %r1216, %r1217, %r1218 }, { %r1275, %r1276 }, { %r1151, %r1152, %r1153, %r1154 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1165, %r1166, %r1167, %r1168 }, { %r1215, %r1216, %r1217, %r1218 }, { %r1289, %r1290 }, { %r1165, %r1166, %r1167, %r1168 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1179, %r1180, %r1181, %r1182 }, { %r1215, %r1216, %r1217, %r1218 }, { %r1303, %r1304 }, { %r1179, %r1180, %r1181, %r1182 };"
+          ],
+          "ptx_sha256": "570a410e9b0b14ffec4a89d7fd09538875757dfe8869c27a8a24ca1e20b9d379",
+          "cubin_sha256": "5950e4d75aedca34e34104ea6010fae85c2bb2e96cd1aa275148d1e104646b46",
+          "registers": 255,
+          "spills": 144,
+          "shared_bytes": 32768
+        },
+        "descend_tf32x3": {
+          "ptx_static_counts": {
+            "mma_sync": 384,
+            "wgmma": 0,
+            "tcgen05_mma": 0,
+            "tmem_alloc": 0,
+            "tmem_load": 0,
+            "tmem_store": 0
+          },
+          "sass_matrix_instructions": [
+            "HMMA.1688.F32.TF32"
+          ],
+          "ptx_instruction_examples": [
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1052, %r1053, %r1054, %r1055 }, { %r962, %r963, %r964, %r965 }, { %r952, %r953 }, { %r1052, %r1053, %r1054, %r1055 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1066, %r1067, %r1068, %r1069 }, { %r962, %r963, %r964, %r965 }, { %r966, %r967 }, { %r1066, %r1067, %r1068, %r1069 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1080, %r1081, %r1082, %r1083 }, { %r962, %r963, %r964, %r965 }, { %r980, %r981 }, { %r1080, %r1081, %r1082, %r1083 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1094, %r1095, %r1096, %r1097 }, { %r962, %r963, %r964, %r965 }, { %r994, %r995 }, { %r1094, %r1095, %r1096, %r1097 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1108, %r1109, %r1110, %r1111 }, { %r962, %r963, %r964, %r965 }, { %r1008, %r1009 }, { %r1108, %r1109, %r1110, %r1111 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1122, %r1123, %r1124, %r1125 }, { %r962, %r963, %r964, %r965 }, { %r1022, %r1023 }, { %r1122, %r1123, %r1124, %r1125 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1136, %r1137, %r1138, %r1139 }, { %r962, %r963, %r964, %r965 }, { %r1036, %r1037 }, { %r1136, %r1137, %r1138, %r1139 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1150, %r1151, %r1152, %r1153 }, { %r962, %r963, %r964, %r965 }, { %r1050, %r1051 }, { %r1150, %r1151, %r1152, %r1153 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1052, %r1053, %r1054, %r1055 }, { %r1074, %r1075, %r1076, %r1077 }, { %r1064, %r1065 }, { %r1052, %r1053, %r1054, %r1055 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1066, %r1067, %r1068, %r1069 }, { %r1074, %r1075, %r1076, %r1077 }, { %r1078, %r1079 }, { %r1066, %r1067, %r1068, %r1069 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1080, %r1081, %r1082, %r1083 }, { %r1074, %r1075, %r1076, %r1077 }, { %r1092, %r1093 }, { %r1080, %r1081, %r1082, %r1083 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1094, %r1095, %r1096, %r1097 }, { %r1074, %r1075, %r1076, %r1077 }, { %r1106, %r1107 }, { %r1094, %r1095, %r1096, %r1097 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1108, %r1109, %r1110, %r1111 }, { %r1074, %r1075, %r1076, %r1077 }, { %r1120, %r1121 }, { %r1108, %r1109, %r1110, %r1111 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1122, %r1123, %r1124, %r1125 }, { %r1074, %r1075, %r1076, %r1077 }, { %r1134, %r1135 }, { %r1122, %r1123, %r1124, %r1125 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1136, %r1137, %r1138, %r1139 }, { %r1074, %r1075, %r1076, %r1077 }, { %r1148, %r1149 }, { %r1136, %r1137, %r1138, %r1139 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1150, %r1151, %r1152, %r1153 }, { %r1074, %r1075, %r1076, %r1077 }, { %r1162, %r1163 }, { %r1150, %r1151, %r1152, %r1153 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1052, %r1053, %r1054, %r1055 }, { %r1186, %r1187, %r1188, %r1189 }, { %r1176, %r1177 }, { %r1052, %r1053, %r1054, %r1055 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1066, %r1067, %r1068, %r1069 }, { %r1186, %r1187, %r1188, %r1189 }, { %r1190, %r1191 }, { %r1066, %r1067, %r1068, %r1069 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1080, %r1081, %r1082, %r1083 }, { %r1186, %r1187, %r1188, %r1189 }, { %r1204, %r1205 }, { %r1080, %r1081, %r1082, %r1083 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1094, %r1095, %r1096, %r1097 }, { %r1186, %r1187, %r1188, %r1189 }, { %r1218, %r1219 }, { %r1094, %r1095, %r1096, %r1097 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1108, %r1109, %r1110, %r1111 }, { %r1186, %r1187, %r1188, %r1189 }, { %r1232, %r1233 }, { %r1108, %r1109, %r1110, %r1111 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1122, %r1123, %r1124, %r1125 }, { %r1186, %r1187, %r1188, %r1189 }, { %r1246, %r1247 }, { %r1122, %r1123, %r1124, %r1125 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1136, %r1137, %r1138, %r1139 }, { %r1186, %r1187, %r1188, %r1189 }, { %r1260, %r1261 }, { %r1136, %r1137, %r1138, %r1139 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1150, %r1151, %r1152, %r1153 }, { %r1186, %r1187, %r1188, %r1189 }, { %r1274, %r1275 }, { %r1150, %r1151, %r1152, %r1153 };"
+          ],
+          "ptx_sha256": "a1fcb717ee6ea1ab2b7a087ec91a212c023fe9b8268230d4b4fc0d4a22148bf1",
+          "cubin_sha256": "90d882ca6813792effce3402c71de23cc6f845928811eb9e7f61fafe090b9418",
+          "registers": 255,
+          "spills": 194,
+          "shared_bytes": 32768
+        },
+        "compose_tf32": {
+          "ptx_static_counts": {
+            "mma_sync": 64,
+            "wgmma": 0,
+            "tcgen05_mma": 0,
+            "tmem_alloc": 0,
+            "tmem_load": 0,
+            "tmem_store": 0
+          },
+          "sass_matrix_instructions": [
+            "HMMA.1688.F32.TF32"
+          ],
+          "ptx_instruction_examples": [
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r387, %r388, %r389, %r390 }, { %r339, %r340, %r341, %r342 }, { %r343, %r344 }, { %r387, %r388, %r389, %r390 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r401, %r402, %r403, %r404 }, { %r339, %r340, %r341, %r342 }, { %r357, %r358 }, { %r401, %r402, %r403, %r404 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r415, %r416, %r417, %r418 }, { %r367, %r368, %r369, %r370 }, { %r343, %r344 }, { %r415, %r416, %r417, %r418 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r429, %r430, %r431, %r432 }, { %r367, %r368, %r369, %r370 }, { %r357, %r358 }, { %r429, %r430, %r431, %r432 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r387, %r388, %r389, %r390 }, { %r395, %r396, %r397, %r398 }, { %r399, %r400 }, { %r387, %r388, %r389, %r390 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r401, %r402, %r403, %r404 }, { %r395, %r396, %r397, %r398 }, { %r413, %r414 }, { %r401, %r402, %r403, %r404 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r415, %r416, %r417, %r418 }, { %r423, %r424, %r425, %r426 }, { %r399, %r400 }, { %r415, %r416, %r417, %r418 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r429, %r430, %r431, %r432 }, { %r423, %r424, %r425, %r426 }, { %r413, %r414 }, { %r429, %r430, %r431, %r432 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r387, %r388, %r389, %r390 }, { %r451, %r452, %r453, %r454 }, { %r455, %r456 }, { %r387, %r388, %r389, %r390 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r401, %r402, %r403, %r404 }, { %r451, %r452, %r453, %r454 }, { %r469, %r470 }, { %r401, %r402, %r403, %r404 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r415, %r416, %r417, %r418 }, { %r479, %r480, %r481, %r482 }, { %r455, %r456 }, { %r415, %r416, %r417, %r418 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r429, %r430, %r431, %r432 }, { %r479, %r480, %r481, %r482 }, { %r469, %r470 }, { %r429, %r430, %r431, %r432 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r387, %r388, %r389, %r390 }, { %r507, %r508, %r509, %r510 }, { %r511, %r512 }, { %r387, %r388, %r389, %r390 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r401, %r402, %r403, %r404 }, { %r507, %r508, %r509, %r510 }, { %r525, %r526 }, { %r401, %r402, %r403, %r404 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r415, %r416, %r417, %r418 }, { %r535, %r536, %r537, %r538 }, { %r511, %r512 }, { %r415, %r416, %r417, %r418 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r429, %r430, %r431, %r432 }, { %r535, %r536, %r537, %r538 }, { %r525, %r526 }, { %r429, %r430, %r431, %r432 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r387, %r388, %r389, %r390 }, { %r563, %r564, %r565, %r566 }, { %r567, %r568 }, { %r387, %r388, %r389, %r390 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r401, %r402, %r403, %r404 }, { %r563, %r564, %r565, %r566 }, { %r581, %r582 }, { %r401, %r402, %r403, %r404 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r415, %r416, %r417, %r418 }, { %r591, %r592, %r593, %r594 }, { %r567, %r568 }, { %r415, %r416, %r417, %r418 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r429, %r430, %r431, %r432 }, { %r591, %r592, %r593, %r594 }, { %r581, %r582 }, { %r429, %r430, %r431, %r432 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r387, %r388, %r389, %r390 }, { %r619, %r620, %r621, %r622 }, { %r623, %r624 }, { %r387, %r388, %r389, %r390 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r401, %r402, %r403, %r404 }, { %r619, %r620, %r621, %r622 }, { %r637, %r638 }, { %r401, %r402, %r403, %r404 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r415, %r416, %r417, %r418 }, { %r647, %r648, %r649, %r650 }, { %r623, %r624 }, { %r415, %r416, %r417, %r418 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r429, %r430, %r431, %r432 }, { %r647, %r648, %r649, %r650 }, { %r637, %r638 }, { %r429, %r430, %r431, %r432 };"
+          ],
+          "ptx_sha256": "b6b1c8df4709be30771ee7c7d809409b9eb74953e83cee7ec38781d1a05d3f28",
+          "cubin_sha256": "25af5f04fdc3434d32abbe50fc5f1669a66e3069998736ec009709101bccdb7f",
+          "registers": 64,
+          "spills": 0,
+          "shared_bytes": 65536
+        },
+        "descend_tf32": {
+          "ptx_static_counts": {
+            "mma_sync": 64,
+            "wgmma": 0,
+            "tcgen05_mma": 0,
+            "tmem_alloc": 0,
+            "tmem_load": 0,
+            "tmem_store": 0
+          },
+          "sass_matrix_instructions": [
+            "HMMA.1688.F32.TF32"
+          ],
+          "ptx_instruction_examples": [
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r398, %r399, %r400, %r401 }, { %r350, %r351, %r352, %r353 }, { %r354, %r355 }, { %r398, %r399, %r400, %r401 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r412, %r413, %r414, %r415 }, { %r350, %r351, %r352, %r353 }, { %r368, %r369 }, { %r412, %r413, %r414, %r415 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r426, %r427, %r428, %r429 }, { %r378, %r379, %r380, %r381 }, { %r354, %r355 }, { %r426, %r427, %r428, %r429 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r440, %r441, %r442, %r443 }, { %r378, %r379, %r380, %r381 }, { %r368, %r369 }, { %r440, %r441, %r442, %r443 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r398, %r399, %r400, %r401 }, { %r406, %r407, %r408, %r409 }, { %r410, %r411 }, { %r398, %r399, %r400, %r401 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r412, %r413, %r414, %r415 }, { %r406, %r407, %r408, %r409 }, { %r424, %r425 }, { %r412, %r413, %r414, %r415 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r426, %r427, %r428, %r429 }, { %r434, %r435, %r436, %r437 }, { %r410, %r411 }, { %r426, %r427, %r428, %r429 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r440, %r441, %r442, %r443 }, { %r434, %r435, %r436, %r437 }, { %r424, %r425 }, { %r440, %r441, %r442, %r443 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r398, %r399, %r400, %r401 }, { %r462, %r463, %r464, %r465 }, { %r466, %r467 }, { %r398, %r399, %r400, %r401 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r412, %r413, %r414, %r415 }, { %r462, %r463, %r464, %r465 }, { %r480, %r481 }, { %r412, %r413, %r414, %r415 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r426, %r427, %r428, %r429 }, { %r490, %r491, %r492, %r493 }, { %r466, %r467 }, { %r426, %r427, %r428, %r429 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r440, %r441, %r442, %r443 }, { %r490, %r491, %r492, %r493 }, { %r480, %r481 }, { %r440, %r441, %r442, %r443 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r398, %r399, %r400, %r401 }, { %r518, %r519, %r520, %r521 }, { %r522, %r523 }, { %r398, %r399, %r400, %r401 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r412, %r413, %r414, %r415 }, { %r518, %r519, %r520, %r521 }, { %r536, %r537 }, { %r412, %r413, %r414, %r415 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r426, %r427, %r428, %r429 }, { %r546, %r547, %r548, %r549 }, { %r522, %r523 }, { %r426, %r427, %r428, %r429 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r440, %r441, %r442, %r443 }, { %r546, %r547, %r548, %r549 }, { %r536, %r537 }, { %r440, %r441, %r442, %r443 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r398, %r399, %r400, %r401 }, { %r574, %r575, %r576, %r577 }, { %r578, %r579 }, { %r398, %r399, %r400, %r401 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r412, %r413, %r414, %r415 }, { %r574, %r575, %r576, %r577 }, { %r592, %r593 }, { %r412, %r413, %r414, %r415 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r426, %r427, %r428, %r429 }, { %r602, %r603, %r604, %r605 }, { %r578, %r579 }, { %r426, %r427, %r428, %r429 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r440, %r441, %r442, %r443 }, { %r602, %r603, %r604, %r605 }, { %r592, %r593 }, { %r440, %r441, %r442, %r443 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r398, %r399, %r400, %r401 }, { %r630, %r631, %r632, %r633 }, { %r634, %r635 }, { %r398, %r399, %r400, %r401 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r412, %r413, %r414, %r415 }, { %r630, %r631, %r632, %r633 }, { %r648, %r649 }, { %r412, %r413, %r414, %r415 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r426, %r427, %r428, %r429 }, { %r658, %r659, %r660, %r661 }, { %r634, %r635 }, { %r426, %r427, %r428, %r429 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r440, %r441, %r442, %r443 }, { %r658, %r659, %r660, %r661 }, { %r648, %r649 }, { %r440, %r441, %r442, %r443 };"
+          ],
+          "ptx_sha256": "4d166d2b5f84543faf64769d9fa70d90f66557f57d96b3f0b2141e11b8cc06b1",
+          "cubin_sha256": "fe02a94c11f95dc51eb909f4add6f33c479874b150dfdeedf55c8e7395bcbc79",
+          "registers": 48,
+          "spills": 0,
+          "shared_bytes": 74240
+        }
+      }
+    }
+  ]
+}

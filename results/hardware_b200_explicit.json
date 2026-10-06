@@ -1,0 +1,480 @@
+{
+  "runs": [
+    {
+      "metadata": {
+        "gpu": "NVIDIA B200",
+        "capability": [
+          10,
+          0
+        ],
+        "sm_count": 148,
+        "memory_GiB": 178.3511962890625,
+        "torch": "2.8.0+cu129",
+        "triton": "3.4.0",
+        "cuda": "12.9",
+        "disable_mma_v5": "0",
+        "disable_mma_v3": "0"
+      },
+      "mode": "explicit",
+      "rows": [
+        {
+          "scope": "component",
+          "P": 8,
+          "H": 12,
+          "automatic": {
+            "median_ms": 0.009125436836749748,
+            "samples_ms": [
+              0.00913092160800025,
+              0.00910511870261061,
+              0.009125436836749748
+            ]
+          },
+          "explicit": {
+            "median_ms": 0.0075454571150325766,
+            "samples_ms": [
+              0.007542045601231142,
+              0.007607316549466882,
+              0.0075454571150325766
+            ]
+          },
+          "explicit_vs_auto": {
+            "rel_rms": 0.0,
+            "max_abs": 0.0,
+            "finite": true
+          },
+          "explicit_vs_fp64": {
+            "rel_rms": 0.0005832134047523141,
+            "max_abs": 0.0009076595306396484,
+            "finite": true
+          },
+          "auto_vs_fp64": {
+            "rel_rms": 0.0005832134047523141,
+            "max_abs": 0.0009076595306396484,
+            "finite": true
+          }
+        },
+        {
+          "scope": "component",
+          "P": 64,
+          "H": 12,
+          "automatic": {
+            "median_ms": 0.05887140810489654,
+            "samples_ms": [
+              0.05891935474677772,
+              0.058828946056193,
+              0.05887140810489654
+            ]
+          },
+          "explicit": {
+            "median_ms": 0.05091963231764257,
+            "samples_ms": [
+              0.05098211044713885,
+              0.05089421301611628,
+              0.05091963231764257
+            ]
+          },
+          "explicit_vs_auto": {
+            "rel_rms": 0.0,
+            "max_abs": 0.0,
+            "finite": true
+          },
+          "explicit_vs_fp64": {
+            "rel_rms": 0.0005854363553225994,
+            "max_abs": 0.0011700987815856934,
+            "finite": true
+          },
+          "auto_vs_fp64": {
+            "rel_rms": 0.0005854363553225994,
+            "max_abs": 0.0011700987815856934,
+            "finite": true
+          }
+        },
+        {
+          "scope": "component",
+          "P": 8,
+          "H": 96,
+          "automatic": {
+            "median_ms": 0.05879760251897256,
+            "samples_ms": [
+              0.058862354252012035,
+              0.05879760251897256,
+              0.058790223186010536
+            ]
+          },
+          "explicit": {
+            "median_ms": 0.05099110209858501,
+            "samples_ms": [
+              0.05102844916681584,
+              0.05099110209858501,
+              0.05098073008274837
+            ]
+          },
+          "explicit_vs_auto": {
+            "rel_rms": 0.0,
+            "max_abs": 0.0,
+            "finite": true
+          },
+          "explicit_vs_fp64": {
+            "rel_rms": 0.0005853975308127701,
+            "max_abs": 0.0012848973274230957,
+            "finite": true
+          },
+          "auto_vs_fp64": {
+            "rel_rms": 0.0005853975308127701,
+            "max_abs": 0.0012848973274230957,
+            "finite": true
+          }
+        },
+        {
+          "scope": "full",
+          "method": "SegmentPlan",
+          "T": 8192,
+          "H": 12,
+          "timing": {
+            "median_ms": 0.4728032224666998,
+            "samples_ms": [
+              0.4728912922166149,
+              0.4728032224666998,
+              0.4722302454598942
+            ]
+          },
+          "original": {
+            "median_ms": 0.7768175386915019,
+            "samples_ms": [
+              0.7768791198730469,
+              0.7768175386915019,
+              0.776774066102271
+            ]
+          },
+          "speedup_vs_original": 1.643003900520611,
+          "merge": {
+            "median_ms": 0.03764232242622249,
+            "samples_ms": [
+              0.037638999575041424,
+              0.03764232242622249,
+              0.03765276568276542
+            ]
+          }
+        },
+        {
+          "scope": "full",
+          "method": "ExplicitMergePlan",
+          "T": 8192,
+          "H": 12,
+          "timing": {
+            "median_ms": 0.469611628751577,
+            "samples_ms": [
+              0.469611628751577,
+              0.4696037339868012,
+              0.46976878954016643
+            ]
+          },
+          "original": {
+            "median_ms": 0.7768175386915019,
+            "samples_ms": [
+              0.7768791198730469,
+              0.7768175386915019,
+              0.776774066102271
+            ]
+          },
+          "speedup_vs_original": 1.6541701506766473,
+          "merge": {
+            "median_ms": 0.035184859898929166,
+            "samples_ms": [
+              0.03512902139867627,
+              0.035184859898929166,
+              0.035313307126363117
+            ]
+          }
+        },
+        {
+          "scope": "full",
+          "method": "SegmentPlan",
+          "T": 32768,
+          "H": 12,
+          "timing": {
+            "median_ms": 1.674158575179729,
+            "samples_ms": [
+              1.6734329872942986,
+              1.674158575179729,
+              1.6743544720588845
+            ]
+          },
+          "original": {
+            "median_ms": 3.044828092134916,
+            "samples_ms": [
+              3.044828092134916,
+              3.0447130349966196,
+              3.044868205143855
+            ]
+          },
+          "speedup_vs_original": 1.8187214385041388,
+          "merge": {
+            "median_ms": 0.037448388909640376,
+            "samples_ms": [
+              0.03770028665637817,
+              0.037340532634852285,
+              0.037448388909640376
+            ]
+          }
+        },
+        {
+          "scope": "full",
+          "method": "ExplicitMergePlan",
+          "T": 32768,
+          "H": 12,
+          "timing": {
+            "median_ms": 1.6711065251776513,
+            "samples_ms": [
+              1.671247847536777,
+              1.6703671394510473,
+              1.6711065251776513
+            ]
+          },
+          "original": {
+            "median_ms": 3.044828092134916,
+            "samples_ms": [
+              3.044828092134916,
+              3.0447130349966196,
+              3.044868205143855
+            ]
+          },
+          "speedup_vs_original": 1.8220430871761617,
+          "merge": {
+            "median_ms": 0.03513201497635751,
+            "samples_ms": [
+              0.03513201497635751,
+              0.034871813138326005,
+              0.0352310251665196
+            ]
+          }
+        },
+        {
+          "scope": "full",
+          "method": "SegmentPlan",
+          "T": 8192,
+          "H": 96,
+          "timing": {
+            "median_ms": 3.1522763977050783,
+            "samples_ms": [
+              3.1522763977050783,
+              3.152050048828125,
+              3.152375152587891
+            ]
+          },
+          "original": {
+            "median_ms": 1.0199725658862622,
+            "samples_ms": [
+              1.0199753897530692,
+              1.0199725658862622,
+              1.019722064129718
+            ]
+          },
+          "speedup_vs_original": 0.323566983729226,
+          "merge": {
+            "median_ms": 0.18543997766919124,
+            "samples_ms": [
+              0.18514364102991615,
+              0.1854468214745615,
+              0.18543997766919124
+            ]
+          }
+        },
+        {
+          "scope": "full",
+          "method": "ExplicitMergePlan",
+          "T": 8192,
+          "H": 96,
+          "timing": {
+            "median_ms": 3.139616485595703,
+            "samples_ms": [
+              3.1395056152343748,
+              3.139726165771484,
+              3.139616485595703
+            ]
+          },
+          "original": {
+            "median_ms": 1.0199725658862622,
+            "samples_ms": [
+              1.0199753897530692,
+              1.0199725658862622,
+              1.019722064129718
+            ]
+          },
+          "speedup_vs_original": 0.3248717066450029,
+          "merge": {
+            "median_ms": 0.1724858829892915,
+            "samples_ms": [
+              0.1724858829892915,
+              0.172510887285985,
+              0.17236049214347465
+            ]
+          }
+        },
+        {
+          "scope": "validation",
+          "gate": "normal",
+          "output_vs_automatic": {
+            "rel_rms": 0.0,
+            "max_abs": 0.0,
+            "finite": true
+          },
+          "state_vs_automatic": {
+            "rel_rms": 0.0,
+            "max_abs": 0.0,
+            "finite": true
+          },
+          "output_vs_fp64": {
+            "rel_rms": 0.005724685732275248,
+            "max_abs": 0.000639747828245163,
+            "finite": true
+          },
+          "state_vs_fp64": {
+            "rel_rms": 0.004932678770273924,
+            "max_abs": 0.004193395376205444,
+            "finite": true
+          }
+        },
+        {
+          "scope": "validation",
+          "gate": "weak",
+          "output_vs_automatic": {
+            "rel_rms": 0.0,
+            "max_abs": 0.0,
+            "finite": true
+          },
+          "state_vs_automatic": {
+            "rel_rms": 0.0,
+            "max_abs": 0.0,
+            "finite": true
+          },
+          "output_vs_fp64": {
+            "rel_rms": 0.0076074604876339436,
+            "max_abs": 0.0027354061603546143,
+            "finite": true
+          },
+          "state_vs_fp64": {
+            "rel_rms": 0.007381976582109928,
+            "max_abs": 0.03306984901428223,
+            "finite": true
+          }
+        },
+        {
+          "scope": "validation",
+          "gate": "strong",
+          "output_vs_automatic": {
+            "rel_rms": 0.0,
+            "max_abs": 0.0,
+            "finite": true
+          },
+          "state_vs_automatic": {
+            "rel_rms": 0.0,
+            "max_abs": 0.0,
+            "finite": true
+          },
+          "output_vs_fp64": {
+            "rel_rms": 0.0052610160782933235,
+            "max_abs": 0.0006321072578430176,
+            "finite": true
+          },
+          "state_vs_fp64": {
+            "rel_rms": 0.004558902699500322,
+            "max_abs": 0.0051094889640808105,
+            "finite": true
+          }
+        }
+      ],
+      "evidence": {
+        "automatic": {
+          "ptx_static_counts": {
+            "mma_sync": 0,
+            "wgmma": 0,
+            "tcgen05_mma": 16,
+            "tmem_alloc": 1,
+            "tmem_load": 1,
+            "tmem_store": 1
+          },
+          "sass_matrix_instructions": [
+            "LDTM.16",
+            "STTM.16",
+            "UTCHMMA"
+          ],
+          "ptx_instruction_examples": [
+            "@%p1 tcgen05.alloc.cta_group::1.sync.aligned.shared::cta.b32 [%r80], 64;",
+            "@%p1 tcgen05.relinquish_alloc_permit.cta_group::1.sync.aligned;",
+            "@%p6 tcgen05.st.sync.aligned.16x32bx2.x16.b32 [%r489 + 0], 16, {%r146, %r146, %r146, %r146, %r146, %r146, %r146, %r146, %r146, %r146, %r146, %r146, %r146, %r146, %r146, %r146};",
+            "tcgen05.wait::st.sync.aligned;",
+            "@%p7 tcgen05.mma.cta_group::1.kind::tf32 [ %r559 + 0 ], %rd63, %rd64, %r373, %p6;",
+            "@%p7 tcgen05.mma.cta_group::1.kind::tf32 [ %r559 + 0 ], %rd65, %rd66, %r373, %p6;",
+            "@%p7 tcgen05.mma.cta_group::1.kind::tf32 [ %r559 + 0 ], %rd67, %rd68, %r373, %p6;",
+            "@%p7 tcgen05.mma.cta_group::1.kind::tf32 [ %r559 + 0 ], %rd69, %rd70, %r373, %p6;",
+            "@%p7 tcgen05.mma.cta_group::1.kind::tf32 [ %r559 + 0 ], %rd71, %rd72, %r373, %p6;",
+            "@%p7 tcgen05.mma.cta_group::1.kind::tf32 [ %r559 + 0 ], %rd73, %rd74, %r373, %p6;",
+            "@%p7 tcgen05.mma.cta_group::1.kind::tf32 [ %r559 + 0 ], %rd75, %rd76, %r373, %p6;",
+            "@%p7 tcgen05.mma.cta_group::1.kind::tf32 [ %r559 + 0 ], %rd77, %rd78, %r373, %p6;",
+            "@%p7 tcgen05.mma.cta_group::1.kind::tf32 [ %r559 + 0 ], %rd79, %rd80, %r373, %p6;",
+            "@%p7 tcgen05.mma.cta_group::1.kind::tf32 [ %r559 + 0 ], %rd81, %rd82, %r373, %p6;",
+            "@%p7 tcgen05.mma.cta_group::1.kind::tf32 [ %r559 + 0 ], %rd83, %rd84, %r373, %p6;",
+            "@%p7 tcgen05.mma.cta_group::1.kind::tf32 [ %r559 + 0 ], %rd85, %rd86, %r373, %p6;",
+            "@%p7 tcgen05.mma.cta_group::1.kind::tf32 [ %r559 + 0 ], %rd87, %rd88, %r373, %p6;",
+            "@%p7 tcgen05.mma.cta_group::1.kind::tf32 [ %r559 + 0 ], %rd89, %rd90, %r373, %p6;",
+            "@%p7 tcgen05.mma.cta_group::1.kind::tf32 [ %r559 + 0 ], %rd91, %rd92, %r373, %p6;",
+            "@%p7 tcgen05.mma.cta_group::1.kind::tf32 [ %r559 + 0 ], %rd93, %rd94, %r373, %p6;",
+            "@%p7 tcgen05.commit.cta_group::1.mbarrier::arrive::one.b64 [%rd95];",
+            "tcgen05.ld.sync.aligned.16x32bx2.x16.b32 {%r473, %r474, %r475, %r476, %r477, %r478, %r479, %r480, %r481, %r482, %r483, %r484, %r485, %r486, %r487, %r488}, [%r489 + 0], 16;",
+            "tcgen05.wait::ld.sync.aligned;",
+            "@%p1 tcgen05.dealloc.cta_group::1.sync.aligned.b32 %r559, 64;"
+          ],
+          "ptx_sha256": "7280a361c82503236b007e4a15a176580293d3c853dc4e33a7e796fde24706e6",
+          "cubin_sha256": "5f94308d9bd7ccea1fafa47af18047d653ee5fa737f7b979faec48f7f2e9f9c5",
+          "registers": 40,
+          "spills": 0,
+          "shared_bytes": 65544
+        },
+        "explicit": {
+          "ptx_static_counts": {
+            "mma_sync": 0,
+            "wgmma": 0,
+            "tcgen05_mma": 16,
+            "tmem_alloc": 1,
+            "tmem_load": 1,
+            "tmem_store": 0
+          },
+          "sass_matrix_instructions": [
+            "LDTM.16",
+            "UTCHMMA"
+          ],
+          "ptx_instruction_examples": [
+            "@%p1 tcgen05.alloc.cta_group::1.sync.aligned.shared::cta.b32 [%r61], 64;",
+            "@%p1 tcgen05.relinquish_alloc_permit.cta_group::1.sync.aligned;",
+            "@%p6 tcgen05.mma.cta_group::1.kind::tf32 [ %r530 + 0 ], %rd57, %rd58, %r338, %p5;",
+            "@%p6 tcgen05.mma.cta_group::1.kind::tf32 [ %r530 + 0 ], %rd59, %rd60, %r338, %p7;",
+            "@%p6 tcgen05.mma.cta_group::1.kind::tf32 [ %r530 + 0 ], %rd61, %rd62, %r338, %p7;",
+            "@%p6 tcgen05.mma.cta_group::1.kind::tf32 [ %r530 + 0 ], %rd63, %rd64, %r338, %p7;",
+            "@%p6 tcgen05.mma.cta_group::1.kind::tf32 [ %r530 + 0 ], %rd65, %rd66, %r338, %p7;",
+            "@%p6 tcgen05.mma.cta_group::1.kind::tf32 [ %r530 + 0 ], %rd67, %rd68, %r338, %p7;",
+            "@%p6 tcgen05.mma.cta_group::1.kind::tf32 [ %r530 + 0 ], %rd69, %rd70, %r338, %p7;",
+            "@%p6 tcgen05.mma.cta_group::1.kind::tf32 [ %r530 + 0 ], %rd71, %rd72, %r338, %p7;",
+            "@%p6 tcgen05.mma.cta_group::1.kind::tf32 [ %r530 + 0 ], %rd73, %rd74, %r338, %p7;",
+            "@%p6 tcgen05.mma.cta_group::1.kind::tf32 [ %r530 + 0 ], %rd75, %rd76, %r338, %p7;",
+            "@%p6 tcgen05.mma.cta_group::1.kind::tf32 [ %r530 + 0 ], %rd77, %rd78, %r338, %p7;",
+            "@%p6 tcgen05.mma.cta_group::1.kind::tf32 [ %r530 + 0 ], %rd79, %rd80, %r338, %p7;",
+            "@%p6 tcgen05.mma.cta_group::1.kind::tf32 [ %r530 + 0 ], %rd81, %rd82, %r338, %p7;",
+            "@%p6 tcgen05.mma.cta_group::1.kind::tf32 [ %r530 + 0 ], %rd83, %rd84, %r338, %p7;",
+            "@%p6 tcgen05.mma.cta_group::1.kind::tf32 [ %r530 + 0 ], %rd85, %rd86, %r338, %p7;",
+            "@%p6 tcgen05.mma.cta_group::1.kind::tf32 [ %r530 + 0 ], %rd87, %rd88, %r338, %p7;",
+            "@%p6 tcgen05.commit.cta_group::1.mbarrier::arrive::one.b64 [%rd89];",
+            "tcgen05.ld.sync.aligned.16x32bx2.x16.b32 {%r437, %r438, %r439, %r440, %r441, %r442, %r443, %r444, %r445, %r446, %r447, %r448, %r449, %r450, %r451, %r452}, [%r453 + 0], 16;",
+            "tcgen05.wait::ld.sync.aligned;",
+            "@%p1 tcgen05.dealloc.cta_group::1.sync.aligned.b32 %r530, 64;"
+          ],
+          "ptx_sha256": "eaf3199c67f97fb8dce60d7d761ded16a5eface81a1f7e3210ba439583633207",
+          "cubin_sha256": "afd66ab71bf8ef5d228848959511baf847dc94473855dd8258cb568b35c26ccf",
+          "registers": 48,
+          "spills": 0,
+          "shared_bytes": 65544
+        }
+      }
+    }
+  ]
+}

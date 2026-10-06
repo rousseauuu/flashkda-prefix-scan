@@ -1,0 +1,756 @@
+{
+  "runs": [
+    {
+      "metadata": {
+        "gpu": "NVIDIA A100-SXM4-80GB",
+        "capability": [
+          8,
+          0
+        ],
+        "sm_count": 108,
+        "memory_GiB": 79.250732421875,
+        "torch": "2.8.0+cu129",
+        "triton": "3.4.0",
+        "cuda": "12.9",
+        "disable_mma_v5": "0",
+        "disable_mma_v3": "0"
+      },
+      "mode": "auto",
+      "rows": [
+        {
+          "scope": "component",
+          "stage": "summary",
+          "H": 12,
+          "chunks": 512,
+          "P": 8,
+          "timing": {
+            "median_ms": 0.4576492750575777,
+            "samples_ms": [
+              0.47101120471954344,
+              0.4576338406266837,
+              0.4576492750575777
+            ]
+          },
+          "transition_vs_fp64": {
+            "rel_rms": 0.0005862686084583402,
+            "max_abs": 0.00015551503747701645,
+            "finite": true
+          },
+          "additive_vs_fp64": {
+            "rel_rms": 0.0016914133448153734,
+            "max_abs": 0.0003715008497238159,
+            "finite": true
+          }
+        },
+        {
+          "scope": "component",
+          "stage": "compose",
+          "H": 12,
+          "chunks": 512,
+          "P": 8,
+          "merge_precision": "tf32x3",
+          "timing": {
+            "median_ms": 0.07727230216115417,
+            "samples_ms": [
+              0.07865252014358537,
+              0.07725558408290059,
+              0.07727230216115417
+            ]
+          },
+          "transition_vs_fp64": {
+            "rel_rms": 6.039431923454686e-07,
+            "max_abs": 1.1920928955078125e-06,
+            "finite": true
+          },
+          "additive_vs_fp64": {
+            "rel_rms": 2.846228994712874e-07,
+            "max_abs": 2.682209014892578e-07,
+            "finite": true
+          }
+        },
+        {
+          "scope": "component",
+          "stage": "compose",
+          "H": 12,
+          "chunks": 512,
+          "P": 8,
+          "merge_precision": "tf32",
+          "timing": {
+            "median_ms": 0.01526490967343925,
+            "samples_ms": [
+              0.015261854525098054,
+              0.015266791366949315,
+              0.01526490967343925
+            ]
+          },
+          "transition_vs_fp64": {
+            "rel_rms": 0.0007370205130428076,
+            "max_abs": 0.0007306933403015137,
+            "finite": true
+          },
+          "additive_vs_fp64": {
+            "rel_rms": 0.00045173309626989067,
+            "max_abs": 0.00018411874771118164,
+            "finite": true
+          }
+        },
+        {
+          "scope": "component",
+          "stage": "summary",
+          "H": 12,
+          "chunks": 2048,
+          "P": 8,
+          "timing": {
+            "median_ms": 1.8791106996082125,
+            "samples_ms": [
+              1.8793154943557013,
+              1.8789473215738932,
+              1.8791106996082125
+            ]
+          },
+          "transition_vs_fp64": {
+            "rel_rms": 0.0012543067568913102,
+            "max_abs": 0.0001331171952188015,
+            "finite": true
+          },
+          "additive_vs_fp64": {
+            "rel_rms": 0.0018216405296698213,
+            "max_abs": 0.0005489587783813477,
+            "finite": true
+          }
+        },
+        {
+          "scope": "component",
+          "stage": "compose",
+          "H": 12,
+          "chunks": 2048,
+          "P": 8,
+          "merge_precision": "tf32x3",
+          "timing": {
+            "median_ms": 0.07746458186306963,
+            "samples_ms": [
+              0.07746820897608252,
+              0.07746458186306963,
+              0.07746189521963462
+            ]
+          },
+          "transition_vs_fp64": {
+            "rel_rms": 5.020328330829216e-07,
+            "max_abs": 1.1920928955078125e-07,
+            "finite": true
+          },
+          "additive_vs_fp64": {
+            "rel_rms": 1.399071436480881e-07,
+            "max_abs": 1.1548399925231934e-07,
+            "finite": true
+          }
+        },
+        {
+          "scope": "component",
+          "stage": "compose",
+          "H": 12,
+          "chunks": 2048,
+          "P": 8,
+          "merge_precision": "tf32",
+          "timing": {
+            "median_ms": 0.015184701685568658,
+            "samples_ms": [
+              0.015184701685568658,
+              0.01518814959253456,
+              0.015179030141207688
+            ]
+          },
+          "transition_vs_fp64": {
+            "rel_rms": 0.0009124468197114766,
+            "max_abs": 0.00013712793588638306,
+            "finite": true
+          },
+          "additive_vs_fp64": {
+            "rel_rms": 0.00024431358906440437,
+            "max_abs": 0.00014368630945682526,
+            "finite": true
+          }
+        },
+        {
+          "scope": "component",
+          "stage": "summary",
+          "H": 96,
+          "chunks": 512,
+          "P": 8,
+          "timing": {
+            "median_ms": 3.6383402506510416,
+            "samples_ms": [
+              3.659624771844773,
+              3.6383402506510416,
+              3.6378233773367743
+            ]
+          },
+          "transition_vs_fp64": {
+            "rel_rms": 0.0005880917888134718,
+            "max_abs": 0.00016112811863422394,
+            "finite": true
+          },
+          "additive_vs_fp64": {
+            "rel_rms": 0.0017270806711167097,
+            "max_abs": 0.00039231032133102417,
+            "finite": true
+          }
+        },
+        {
+          "scope": "component",
+          "stage": "compose",
+          "H": 96,
+          "chunks": 512,
+          "P": 8,
+          "merge_precision": "tf32x3",
+          "timing": {
+            "median_ms": 0.5631622422671487,
+            "samples_ms": [
+              0.5630463935959508,
+              0.5631622422671487,
+              0.5633182633091026
+            ]
+          },
+          "transition_vs_fp64": {
+            "rel_rms": 5.980667765470571e-07,
+            "max_abs": 1.1324882507324219e-06,
+            "finite": true
+          },
+          "additive_vs_fp64": {
+            "rel_rms": 2.838233967850101e-07,
+            "max_abs": 2.682209014892578e-07,
+            "finite": true
+          }
+        },
+        {
+          "scope": "component",
+          "stage": "compose",
+          "H": 96,
+          "chunks": 512,
+          "P": 8,
+          "merge_precision": "tf32",
+          "timing": {
+            "median_ms": 0.16827931229786205,
+            "samples_ms": [
+              0.16827931229786205,
+              0.16830774616991354,
+              0.16827414005360705
+            ]
+          },
+          "transition_vs_fp64": {
+            "rel_rms": 0.0007285285391844809,
+            "max_abs": 0.0007231831550598145,
+            "finite": true
+          },
+          "additive_vs_fp64": {
+            "rel_rms": 0.00044664577580988407,
+            "max_abs": 0.00023652613162994385,
+            "finite": true
+          }
+        }
+      ],
+      "evidence": {
+        "component_summary": {
+          "ptx_static_counts": {
+            "mma_sync": 16,
+            "wgmma": 0,
+            "tcgen05_mma": 0,
+            "tmem_alloc": 0,
+            "tmem_load": 0,
+            "tmem_store": 0
+          },
+          "sass_matrix_instructions": [
+            "HMMA.16816.F32.BF16"
+          ],
+          "ptx_instruction_examples": [
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r692, %r693, %r694, %r695 }, { %r700, %r701, %r702, %r703 }, { %r704, %r705 }, { %r692, %r693, %r694, %r695 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r706, %r707, %r708, %r709 }, { %r700, %r701, %r702, %r703 }, { %r718, %r719 }, { %r706, %r707, %r708, %r709 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r720, %r721, %r722, %r723 }, { %r700, %r701, %r702, %r703 }, { %r732, %r733 }, { %r720, %r721, %r722, %r723 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r734, %r735, %r736, %r737 }, { %r700, %r701, %r702, %r703 }, { %r746, %r747 }, { %r734, %r735, %r736, %r737 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r748, %r749, %r750, %r751 }, { %r756, %r757, %r758, %r759 }, { %r704, %r705 }, { %r748, %r749, %r750, %r751 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r762, %r763, %r764, %r765 }, { %r756, %r757, %r758, %r759 }, { %r718, %r719 }, { %r762, %r763, %r764, %r765 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r776, %r777, %r778, %r779 }, { %r756, %r757, %r758, %r759 }, { %r732, %r733 }, { %r776, %r777, %r778, %r779 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r790, %r791, %r792, %r793 }, { %r756, %r757, %r758, %r759 }, { %r746, %r747 }, { %r790, %r791, %r792, %r793 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r475, %r476, %r477, %r478 }, { %r469, %r470, %r471, %r472 }, { %r441, %r442 }, { %r475, %r476, %r477, %r478 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r475, %r476, %r477, %r478 }, { %r483, %r484, %r485, %r486 }, { %r443, %r444 }, { %r475, %r476, %r477, %r478 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r475, %r476, %r477, %r478 }, { %r497, %r498, %r499, %r500 }, { %r446, %r447 }, { %r475, %r476, %r477, %r478 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r475, %r476, %r477, %r478 }, { %r511, %r512, %r513, %r514 }, { %r448, %r449 }, { %r475, %r476, %r477, %r478 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r475, %r476, %r477, %r478 }, { %r525, %r526, %r527, %r528 }, { %r451, %r452 }, { %r475, %r476, %r477, %r478 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r475, %r476, %r477, %r478 }, { %r539, %r540, %r541, %r542 }, { %r453, %r454 }, { %r475, %r476, %r477, %r478 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r475, %r476, %r477, %r478 }, { %r553, %r554, %r555, %r556 }, { %r456, %r457 }, { %r475, %r476, %r477, %r478 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r475, %r476, %r477, %r478 }, { %r567, %r568, %r569, %r570 }, { %r458, %r459 }, { %r475, %r476, %r477, %r478 };"
+          ],
+          "ptx_sha256": "06982edaf72e1f5bcc9927775f4d1381880fb03aee6adc986291ef56414bb551",
+          "cubin_sha256": "8f9c9f63594dad4071c2eb844f42651c2ad4619f329a7acafed59a6ea32a9bb6",
+          "registers": 168,
+          "spills": 0,
+          "shared_bytes": 16384
+        },
+        "component_merge_tf32x3": {
+          "ptx_static_counts": {
+            "mma_sync": 384,
+            "wgmma": 0,
+            "tcgen05_mma": 0,
+            "tmem_alloc": 0,
+            "tmem_load": 0,
+            "tmem_store": 0
+          },
+          "sass_matrix_instructions": [
+            "HMMA.1688.F32.TF32"
+          ],
+          "ptx_instruction_examples": [
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1081, %r1082, %r1083, %r1084 }, { %r991, %r992, %r993, %r994 }, { %r981, %r982 }, { %r1081, %r1082, %r1083, %r1084 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1095, %r1096, %r1097, %r1098 }, { %r991, %r992, %r993, %r994 }, { %r995, %r996 }, { %r1095, %r1096, %r1097, %r1098 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1109, %r1110, %r1111, %r1112 }, { %r991, %r992, %r993, %r994 }, { %r1009, %r1010 }, { %r1109, %r1110, %r1111, %r1112 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1123, %r1124, %r1125, %r1126 }, { %r991, %r992, %r993, %r994 }, { %r1023, %r1024 }, { %r1123, %r1124, %r1125, %r1126 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1137, %r1138, %r1139, %r1140 }, { %r991, %r992, %r993, %r994 }, { %r1037, %r1038 }, { %r1137, %r1138, %r1139, %r1140 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1151, %r1152, %r1153, %r1154 }, { %r991, %r992, %r993, %r994 }, { %r1051, %r1052 }, { %r1151, %r1152, %r1153, %r1154 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1165, %r1166, %r1167, %r1168 }, { %r991, %r992, %r993, %r994 }, { %r1065, %r1066 }, { %r1165, %r1166, %r1167, %r1168 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1179, %r1180, %r1181, %r1182 }, { %r991, %r992, %r993, %r994 }, { %r1079, %r1080 }, { %r1179, %r1180, %r1181, %r1182 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1081, %r1082, %r1083, %r1084 }, { %r1103, %r1104, %r1105, %r1106 }, { %r1093, %r1094 }, { %r1081, %r1082, %r1083, %r1084 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1095, %r1096, %r1097, %r1098 }, { %r1103, %r1104, %r1105, %r1106 }, { %r1107, %r1108 }, { %r1095, %r1096, %r1097, %r1098 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1109, %r1110, %r1111, %r1112 }, { %r1103, %r1104, %r1105, %r1106 }, { %r1121, %r1122 }, { %r1109, %r1110, %r1111, %r1112 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1123, %r1124, %r1125, %r1126 }, { %r1103, %r1104, %r1105, %r1106 }, { %r1135, %r1136 }, { %r1123, %r1124, %r1125, %r1126 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1137, %r1138, %r1139, %r1140 }, { %r1103, %r1104, %r1105, %r1106 }, { %r1149, %r1150 }, { %r1137, %r1138, %r1139, %r1140 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1151, %r1152, %r1153, %r1154 }, { %r1103, %r1104, %r1105, %r1106 }, { %r1163, %r1164 }, { %r1151, %r1152, %r1153, %r1154 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1165, %r1166, %r1167, %r1168 }, { %r1103, %r1104, %r1105, %r1106 }, { %r1177, %r1178 }, { %r1165, %r1166, %r1167, %r1168 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1179, %r1180, %r1181, %r1182 }, { %r1103, %r1104, %r1105, %r1106 }, { %r1191, %r1192 }, { %r1179, %r1180, %r1181, %r1182 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1081, %r1082, %r1083, %r1084 }, { %r1215, %r1216, %r1217, %r1218 }, { %r1205, %r1206 }, { %r1081, %r1082, %r1083, %r1084 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1095, %r1096, %r1097, %r1098 }, { %r1215, %r1216, %r1217, %r1218 }, { %r1219, %r1220 }, { %r1095, %r1096, %r1097, %r1098 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1109, %r1110, %r1111, %r1112 }, { %r1215, %r1216, %r1217, %r1218 }, { %r1233, %r1234 }, { %r1109, %r1110, %r1111, %r1112 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1123, %r1124, %r1125, %r1126 }, { %r1215, %r1216, %r1217, %r1218 }, { %r1247, %r1248 }, { %r1123, %r1124, %r1125, %r1126 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1137, %r1138, %r1139, %r1140 }, { %r1215, %r1216, %r1217, %r1218 }, { %r1261, %r1262 }, { %r1137, %r1138, %r1139, %r1140 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1151, %r1152, %r1153, %r1154 }, { %r1215, %r1216, %r1217, %r1218 }, { %r1275, %r1276 }, { %r1151, %r1152, %r1153, %r1154 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1165, %r1166, %r1167, %r1168 }, { %r1215, %r1216, %r1217, %r1218 }, { %r1289, %r1290 }, { %r1165, %r1166, %r1167, %r1168 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1179, %r1180, %r1181, %r1182 }, { %r1215, %r1216, %r1217, %r1218 }, { %r1303, %r1304 }, { %r1179, %r1180, %r1181, %r1182 };"
+          ],
+          "ptx_sha256": "d133b5ffb2c30c859690f54cbc28f3f7b59450a5d1f043d618b7a0b0ea9e072b",
+          "cubin_sha256": "1fc62b76f796e1f0864741c2057288917a0d818ee6599af747ce80cc6d2a537f",
+          "registers": 255,
+          "spills": 200,
+          "shared_bytes": 32768
+        },
+        "component_merge_tf32": {
+          "ptx_static_counts": {
+            "mma_sync": 64,
+            "wgmma": 0,
+            "tcgen05_mma": 0,
+            "tmem_alloc": 0,
+            "tmem_load": 0,
+            "tmem_store": 0
+          },
+          "sass_matrix_instructions": [
+            "HMMA.1688.F32.TF32"
+          ],
+          "ptx_instruction_examples": [
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r387, %r388, %r389, %r390 }, { %r339, %r340, %r341, %r342 }, { %r343, %r344 }, { %r387, %r388, %r389, %r390 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r401, %r402, %r403, %r404 }, { %r339, %r340, %r341, %r342 }, { %r357, %r358 }, { %r401, %r402, %r403, %r404 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r415, %r416, %r417, %r418 }, { %r367, %r368, %r369, %r370 }, { %r343, %r344 }, { %r415, %r416, %r417, %r418 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r429, %r430, %r431, %r432 }, { %r367, %r368, %r369, %r370 }, { %r357, %r358 }, { %r429, %r430, %r431, %r432 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r387, %r388, %r389, %r390 }, { %r395, %r396, %r397, %r398 }, { %r399, %r400 }, { %r387, %r388, %r389, %r390 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r401, %r402, %r403, %r404 }, { %r395, %r396, %r397, %r398 }, { %r413, %r414 }, { %r401, %r402, %r403, %r404 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r415, %r416, %r417, %r418 }, { %r423, %r424, %r425, %r426 }, { %r399, %r400 }, { %r415, %r416, %r417, %r418 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r429, %r430, %r431, %r432 }, { %r423, %r424, %r425, %r426 }, { %r413, %r414 }, { %r429, %r430, %r431, %r432 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r387, %r388, %r389, %r390 }, { %r451, %r452, %r453, %r454 }, { %r455, %r456 }, { %r387, %r388, %r389, %r390 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r401, %r402, %r403, %r404 }, { %r451, %r452, %r453, %r454 }, { %r469, %r470 }, { %r401, %r402, %r403, %r404 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r415, %r416, %r417, %r418 }, { %r479, %r480, %r481, %r482 }, { %r455, %r456 }, { %r415, %r416, %r417, %r418 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r429, %r430, %r431, %r432 }, { %r479, %r480, %r481, %r482 }, { %r469, %r470 }, { %r429, %r430, %r431, %r432 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r387, %r388, %r389, %r390 }, { %r507, %r508, %r509, %r510 }, { %r511, %r512 }, { %r387, %r388, %r389, %r390 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r401, %r402, %r403, %r404 }, { %r507, %r508, %r509, %r510 }, { %r525, %r526 }, { %r401, %r402, %r403, %r404 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r415, %r416, %r417, %r418 }, { %r535, %r536, %r537, %r538 }, { %r511, %r512 }, { %r415, %r416, %r417, %r418 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r429, %r430, %r431, %r432 }, { %r535, %r536, %r537, %r538 }, { %r525, %r526 }, { %r429, %r430, %r431, %r432 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r387, %r388, %r389, %r390 }, { %r563, %r564, %r565, %r566 }, { %r567, %r568 }, { %r387, %r388, %r389, %r390 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r401, %r402, %r403, %r404 }, { %r563, %r564, %r565, %r566 }, { %r581, %r582 }, { %r401, %r402, %r403, %r404 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r415, %r416, %r417, %r418 }, { %r591, %r592, %r593, %r594 }, { %r567, %r568 }, { %r415, %r416, %r417, %r418 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r429, %r430, %r431, %r432 }, { %r591, %r592, %r593, %r594 }, { %r581, %r582 }, { %r429, %r430, %r431, %r432 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r387, %r388, %r389, %r390 }, { %r619, %r620, %r621, %r622 }, { %r623, %r624 }, { %r387, %r388, %r389, %r390 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r401, %r402, %r403, %r404 }, { %r619, %r620, %r621, %r622 }, { %r637, %r638 }, { %r401, %r402, %r403, %r404 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r415, %r416, %r417, %r418 }, { %r647, %r648, %r649, %r650 }, { %r623, %r624 }, { %r415, %r416, %r417, %r418 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r429, %r430, %r431, %r432 }, { %r647, %r648, %r649, %r650 }, { %r637, %r638 }, { %r429, %r430, %r431, %r432 };"
+          ],
+          "ptx_sha256": "1d6ef805c87550fa452e59519176fa495aca2a72b33842c6c69aed9a664d0663",
+          "cubin_sha256": "17fed35193a6bcae9b5aad04ec9d89dfe58644d8c8f70cff78722b9bd687c831",
+          "registers": 61,
+          "spills": 0,
+          "shared_bytes": 65536
+        }
+      }
+    },
+    {
+      "metadata": {
+        "gpu": "NVIDIA A100-SXM4-80GB",
+        "capability": [
+          8,
+          0
+        ],
+        "sm_count": 108,
+        "memory_GiB": 79.250732421875,
+        "torch": "2.8.0+cu129",
+        "triton": "3.4.0",
+        "cuda": "12.9",
+        "disable_mma_v5": "1",
+        "disable_mma_v3": "1"
+      },
+      "mode": "legacy",
+      "rows": [
+        {
+          "scope": "component",
+          "stage": "summary",
+          "H": 12,
+          "chunks": 512,
+          "P": 8,
+          "timing": {
+            "median_ms": 0.4576605295170249,
+            "samples_ms": [
+              0.46861696243286133,
+              0.4576605295170249,
+              0.4576291431581354
+            ]
+          },
+          "transition_vs_fp64": {
+            "rel_rms": 0.0005862686084583402,
+            "max_abs": 0.00015551503747701645,
+            "finite": true
+          },
+          "additive_vs_fp64": {
+            "rel_rms": 0.0016914133448153734,
+            "max_abs": 0.0003715008497238159,
+            "finite": true
+          }
+        },
+        {
+          "scope": "component",
+          "stage": "compose",
+          "H": 12,
+          "chunks": 512,
+          "P": 8,
+          "merge_precision": "tf32x3",
+          "timing": {
+            "median_ms": 0.07727036528534942,
+            "samples_ms": [
+              0.07825072181859052,
+              0.07727036528534942,
+              0.07725750230348737
+            ]
+          },
+          "transition_vs_fp64": {
+            "rel_rms": 6.039431923454686e-07,
+            "max_abs": 1.1920928955078125e-06,
+            "finite": true
+          },
+          "additive_vs_fp64": {
+            "rel_rms": 2.846228994712874e-07,
+            "max_abs": 2.682209014892578e-07,
+            "finite": true
+          }
+        },
+        {
+          "scope": "component",
+          "stage": "compose",
+          "H": 12,
+          "chunks": 512,
+          "P": 8,
+          "merge_precision": "tf32",
+          "timing": {
+            "median_ms": 0.015258598443867592,
+            "samples_ms": [
+              0.015258598443867592,
+              0.015258908695644804,
+              0.015256301259606834
+            ]
+          },
+          "transition_vs_fp64": {
+            "rel_rms": 0.0007370205130428076,
+            "max_abs": 0.0007306933403015137,
+            "finite": true
+          },
+          "additive_vs_fp64": {
+            "rel_rms": 0.00045173309626989067,
+            "max_abs": 0.00018411874771118164,
+            "finite": true
+          }
+        },
+        {
+          "scope": "component",
+          "stage": "summary",
+          "H": 12,
+          "chunks": 2048,
+          "P": 8,
+          "timing": {
+            "median_ms": 1.8795446850004651,
+            "samples_ms": [
+              1.879015640985398,
+              1.8802200317382813,
+              1.8795446850004651
+            ]
+          },
+          "transition_vs_fp64": {
+            "rel_rms": 0.0012543067568913102,
+            "max_abs": 0.0001331171952188015,
+            "finite": true
+          },
+          "additive_vs_fp64": {
+            "rel_rms": 0.0018216405296698213,
+            "max_abs": 0.0005489587783813477,
+            "finite": true
+          }
+        },
+        {
+          "scope": "component",
+          "stage": "compose",
+          "H": 12,
+          "chunks": 2048,
+          "P": 8,
+          "merge_precision": "tf32x3",
+          "timing": {
+            "median_ms": 0.07747404807604567,
+            "samples_ms": [
+              0.07746362147411577,
+              0.07747404807604567,
+              0.07748202061748125
+            ]
+          },
+          "transition_vs_fp64": {
+            "rel_rms": 5.020328330829216e-07,
+            "max_abs": 1.1920928955078125e-07,
+            "finite": true
+          },
+          "additive_vs_fp64": {
+            "rel_rms": 1.399071436480881e-07,
+            "max_abs": 1.1548399925231934e-07,
+            "finite": true
+          }
+        },
+        {
+          "scope": "component",
+          "stage": "compose",
+          "H": 12,
+          "chunks": 2048,
+          "P": 8,
+          "merge_precision": "tf32",
+          "timing": {
+            "median_ms": 0.015182671552844798,
+            "samples_ms": [
+              0.015182671552844798,
+              0.015182249691323995,
+              0.015182979755688192
+            ]
+          },
+          "transition_vs_fp64": {
+            "rel_rms": 0.0009124468197114766,
+            "max_abs": 0.00013712793588638306,
+            "finite": true
+          },
+          "additive_vs_fp64": {
+            "rel_rms": 0.00024431358906440437,
+            "max_abs": 0.00014368630945682526,
+            "finite": true
+          }
+        },
+        {
+          "scope": "component",
+          "stage": "summary",
+          "H": 96,
+          "chunks": 512,
+          "P": 8,
+          "timing": {
+            "median_ms": 3.63858406430199,
+            "samples_ms": [
+              3.6527592250279017,
+              3.6384134565080917,
+              3.63858406430199
+            ]
+          },
+          "transition_vs_fp64": {
+            "rel_rms": 0.0005880917888134718,
+            "max_abs": 0.00016112811863422394,
+            "finite": true
+          },
+          "additive_vs_fp64": {
+            "rel_rms": 0.0017270806711167097,
+            "max_abs": 0.00039231032133102417,
+            "finite": true
+          }
+        },
+        {
+          "scope": "component",
+          "stage": "compose",
+          "H": 96,
+          "chunks": 512,
+          "P": 8,
+          "merge_precision": "tf32x3",
+          "timing": {
+            "median_ms": 0.5631444742981817,
+            "samples_ms": [
+              0.5632627406590421,
+              0.5631444742981817,
+              0.5630312530087753
+            ]
+          },
+          "transition_vs_fp64": {
+            "rel_rms": 5.980667765470571e-07,
+            "max_abs": 1.1324882507324219e-06,
+            "finite": true
+          },
+          "additive_vs_fp64": {
+            "rel_rms": 2.838233967850101e-07,
+            "max_abs": 2.682209014892578e-07,
+            "finite": true
+          }
+        },
+        {
+          "scope": "component",
+          "stage": "compose",
+          "H": 96,
+          "chunks": 512,
+          "P": 8,
+          "merge_precision": "tf32",
+          "timing": {
+            "median_ms": 0.16832043114355055,
+            "samples_ms": [
+              0.16829692178926325,
+              0.16832043114355055,
+              0.16832650718042408
+            ]
+          },
+          "transition_vs_fp64": {
+            "rel_rms": 0.0007285285391844809,
+            "max_abs": 0.0007231831550598145,
+            "finite": true
+          },
+          "additive_vs_fp64": {
+            "rel_rms": 0.00044664577580988407,
+            "max_abs": 0.00023652613162994385,
+            "finite": true
+          }
+        }
+      ],
+      "evidence": {
+        "component_summary": {
+          "ptx_static_counts": {
+            "mma_sync": 16,
+            "wgmma": 0,
+            "tcgen05_mma": 0,
+            "tmem_alloc": 0,
+            "tmem_load": 0,
+            "tmem_store": 0
+          },
+          "sass_matrix_instructions": [
+            "HMMA.16816.F32.BF16"
+          ],
+          "ptx_instruction_examples": [
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r692, %r693, %r694, %r695 }, { %r700, %r701, %r702, %r703 }, { %r704, %r705 }, { %r692, %r693, %r694, %r695 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r706, %r707, %r708, %r709 }, { %r700, %r701, %r702, %r703 }, { %r718, %r719 }, { %r706, %r707, %r708, %r709 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r720, %r721, %r722, %r723 }, { %r700, %r701, %r702, %r703 }, { %r732, %r733 }, { %r720, %r721, %r722, %r723 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r734, %r735, %r736, %r737 }, { %r700, %r701, %r702, %r703 }, { %r746, %r747 }, { %r734, %r735, %r736, %r737 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r748, %r749, %r750, %r751 }, { %r756, %r757, %r758, %r759 }, { %r704, %r705 }, { %r748, %r749, %r750, %r751 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r762, %r763, %r764, %r765 }, { %r756, %r757, %r758, %r759 }, { %r718, %r719 }, { %r762, %r763, %r764, %r765 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r776, %r777, %r778, %r779 }, { %r756, %r757, %r758, %r759 }, { %r732, %r733 }, { %r776, %r777, %r778, %r779 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r790, %r791, %r792, %r793 }, { %r756, %r757, %r758, %r759 }, { %r746, %r747 }, { %r790, %r791, %r792, %r793 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r475, %r476, %r477, %r478 }, { %r469, %r470, %r471, %r472 }, { %r441, %r442 }, { %r475, %r476, %r477, %r478 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r475, %r476, %r477, %r478 }, { %r483, %r484, %r485, %r486 }, { %r443, %r444 }, { %r475, %r476, %r477, %r478 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r475, %r476, %r477, %r478 }, { %r497, %r498, %r499, %r500 }, { %r446, %r447 }, { %r475, %r476, %r477, %r478 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r475, %r476, %r477, %r478 }, { %r511, %r512, %r513, %r514 }, { %r448, %r449 }, { %r475, %r476, %r477, %r478 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r475, %r476, %r477, %r478 }, { %r525, %r526, %r527, %r528 }, { %r451, %r452 }, { %r475, %r476, %r477, %r478 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r475, %r476, %r477, %r478 }, { %r539, %r540, %r541, %r542 }, { %r453, %r454 }, { %r475, %r476, %r477, %r478 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r475, %r476, %r477, %r478 }, { %r553, %r554, %r555, %r556 }, { %r456, %r457 }, { %r475, %r476, %r477, %r478 };",
+            "mma.sync.aligned.m16n8k16.row.col.f32.bf16.bf16.f32 { %r475, %r476, %r477, %r478 }, { %r567, %r568, %r569, %r570 }, { %r458, %r459 }, { %r475, %r476, %r477, %r478 };"
+          ],
+          "ptx_sha256": "06982edaf72e1f5bcc9927775f4d1381880fb03aee6adc986291ef56414bb551",
+          "cubin_sha256": "8f9c9f63594dad4071c2eb844f42651c2ad4619f329a7acafed59a6ea32a9bb6",
+          "registers": 168,
+          "spills": 0,
+          "shared_bytes": 16384
+        },
+        "component_merge_tf32x3": {
+          "ptx_static_counts": {
+            "mma_sync": 384,
+            "wgmma": 0,
+            "tcgen05_mma": 0,
+            "tmem_alloc": 0,
+            "tmem_load": 0,
+            "tmem_store": 0
+          },
+          "sass_matrix_instructions": [
+            "HMMA.1688.F32.TF32"
+          ],
+          "ptx_instruction_examples": [
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1081, %r1082, %r1083, %r1084 }, { %r991, %r992, %r993, %r994 }, { %r981, %r982 }, { %r1081, %r1082, %r1083, %r1084 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1095, %r1096, %r1097, %r1098 }, { %r991, %r992, %r993, %r994 }, { %r995, %r996 }, { %r1095, %r1096, %r1097, %r1098 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1109, %r1110, %r1111, %r1112 }, { %r991, %r992, %r993, %r994 }, { %r1009, %r1010 }, { %r1109, %r1110, %r1111, %r1112 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1123, %r1124, %r1125, %r1126 }, { %r991, %r992, %r993, %r994 }, { %r1023, %r1024 }, { %r1123, %r1124, %r1125, %r1126 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1137, %r1138, %r1139, %r1140 }, { %r991, %r992, %r993, %r994 }, { %r1037, %r1038 }, { %r1137, %r1138, %r1139, %r1140 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1151, %r1152, %r1153, %r1154 }, { %r991, %r992, %r993, %r994 }, { %r1051, %r1052 }, { %r1151, %r1152, %r1153, %r1154 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1165, %r1166, %r1167, %r1168 }, { %r991, %r992, %r993, %r994 }, { %r1065, %r1066 }, { %r1165, %r1166, %r1167, %r1168 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1179, %r1180, %r1181, %r1182 }, { %r991, %r992, %r993, %r994 }, { %r1079, %r1080 }, { %r1179, %r1180, %r1181, %r1182 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1081, %r1082, %r1083, %r1084 }, { %r1103, %r1104, %r1105, %r1106 }, { %r1093, %r1094 }, { %r1081, %r1082, %r1083, %r1084 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1095, %r1096, %r1097, %r1098 }, { %r1103, %r1104, %r1105, %r1106 }, { %r1107, %r1108 }, { %r1095, %r1096, %r1097, %r1098 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1109, %r1110, %r1111, %r1112 }, { %r1103, %r1104, %r1105, %r1106 }, { %r1121, %r1122 }, { %r1109, %r1110, %r1111, %r1112 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1123, %r1124, %r1125, %r1126 }, { %r1103, %r1104, %r1105, %r1106 }, { %r1135, %r1136 }, { %r1123, %r1124, %r1125, %r1126 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1137, %r1138, %r1139, %r1140 }, { %r1103, %r1104, %r1105, %r1106 }, { %r1149, %r1150 }, { %r1137, %r1138, %r1139, %r1140 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1151, %r1152, %r1153, %r1154 }, { %r1103, %r1104, %r1105, %r1106 }, { %r1163, %r1164 }, { %r1151, %r1152, %r1153, %r1154 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1165, %r1166, %r1167, %r1168 }, { %r1103, %r1104, %r1105, %r1106 }, { %r1177, %r1178 }, { %r1165, %r1166, %r1167, %r1168 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1179, %r1180, %r1181, %r1182 }, { %r1103, %r1104, %r1105, %r1106 }, { %r1191, %r1192 }, { %r1179, %r1180, %r1181, %r1182 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1081, %r1082, %r1083, %r1084 }, { %r1215, %r1216, %r1217, %r1218 }, { %r1205, %r1206 }, { %r1081, %r1082, %r1083, %r1084 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1095, %r1096, %r1097, %r1098 }, { %r1215, %r1216, %r1217, %r1218 }, { %r1219, %r1220 }, { %r1095, %r1096, %r1097, %r1098 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1109, %r1110, %r1111, %r1112 }, { %r1215, %r1216, %r1217, %r1218 }, { %r1233, %r1234 }, { %r1109, %r1110, %r1111, %r1112 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1123, %r1124, %r1125, %r1126 }, { %r1215, %r1216, %r1217, %r1218 }, { %r1247, %r1248 }, { %r1123, %r1124, %r1125, %r1126 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1137, %r1138, %r1139, %r1140 }, { %r1215, %r1216, %r1217, %r1218 }, { %r1261, %r1262 }, { %r1137, %r1138, %r1139, %r1140 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1151, %r1152, %r1153, %r1154 }, { %r1215, %r1216, %r1217, %r1218 }, { %r1275, %r1276 }, { %r1151, %r1152, %r1153, %r1154 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1165, %r1166, %r1167, %r1168 }, { %r1215, %r1216, %r1217, %r1218 }, { %r1289, %r1290 }, { %r1165, %r1166, %r1167, %r1168 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r1179, %r1180, %r1181, %r1182 }, { %r1215, %r1216, %r1217, %r1218 }, { %r1303, %r1304 }, { %r1179, %r1180, %r1181, %r1182 };"
+          ],
+          "ptx_sha256": "d133b5ffb2c30c859690f54cbc28f3f7b59450a5d1f043d618b7a0b0ea9e072b",
+          "cubin_sha256": "1fc62b76f796e1f0864741c2057288917a0d818ee6599af747ce80cc6d2a537f",
+          "registers": 255,
+          "spills": 200,
+          "shared_bytes": 32768
+        },
+        "component_merge_tf32": {
+          "ptx_static_counts": {
+            "mma_sync": 64,
+            "wgmma": 0,
+            "tcgen05_mma": 0,
+            "tmem_alloc": 0,
+            "tmem_load": 0,
+            "tmem_store": 0
+          },
+          "sass_matrix_instructions": [
+            "HMMA.1688.F32.TF32"
+          ],
+          "ptx_instruction_examples": [
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r387, %r388, %r389, %r390 }, { %r339, %r340, %r341, %r342 }, { %r343, %r344 }, { %r387, %r388, %r389, %r390 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r401, %r402, %r403, %r404 }, { %r339, %r340, %r341, %r342 }, { %r357, %r358 }, { %r401, %r402, %r403, %r404 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r415, %r416, %r417, %r418 }, { %r367, %r368, %r369, %r370 }, { %r343, %r344 }, { %r415, %r416, %r417, %r418 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r429, %r430, %r431, %r432 }, { %r367, %r368, %r369, %r370 }, { %r357, %r358 }, { %r429, %r430, %r431, %r432 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r387, %r388, %r389, %r390 }, { %r395, %r396, %r397, %r398 }, { %r399, %r400 }, { %r387, %r388, %r389, %r390 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r401, %r402, %r403, %r404 }, { %r395, %r396, %r397, %r398 }, { %r413, %r414 }, { %r401, %r402, %r403, %r404 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r415, %r416, %r417, %r418 }, { %r423, %r424, %r425, %r426 }, { %r399, %r400 }, { %r415, %r416, %r417, %r418 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r429, %r430, %r431, %r432 }, { %r423, %r424, %r425, %r426 }, { %r413, %r414 }, { %r429, %r430, %r431, %r432 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r387, %r388, %r389, %r390 }, { %r451, %r452, %r453, %r454 }, { %r455, %r456 }, { %r387, %r388, %r389, %r390 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r401, %r402, %r403, %r404 }, { %r451, %r452, %r453, %r454 }, { %r469, %r470 }, { %r401, %r402, %r403, %r404 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r415, %r416, %r417, %r418 }, { %r479, %r480, %r481, %r482 }, { %r455, %r456 }, { %r415, %r416, %r417, %r418 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r429, %r430, %r431, %r432 }, { %r479, %r480, %r481, %r482 }, { %r469, %r470 }, { %r429, %r430, %r431, %r432 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r387, %r388, %r389, %r390 }, { %r507, %r508, %r509, %r510 }, { %r511, %r512 }, { %r387, %r388, %r389, %r390 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r401, %r402, %r403, %r404 }, { %r507, %r508, %r509, %r510 }, { %r525, %r526 }, { %r401, %r402, %r403, %r404 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r415, %r416, %r417, %r418 }, { %r535, %r536, %r537, %r538 }, { %r511, %r512 }, { %r415, %r416, %r417, %r418 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r429, %r430, %r431, %r432 }, { %r535, %r536, %r537, %r538 }, { %r525, %r526 }, { %r429, %r430, %r431, %r432 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r387, %r388, %r389, %r390 }, { %r563, %r564, %r565, %r566 }, { %r567, %r568 }, { %r387, %r388, %r389, %r390 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r401, %r402, %r403, %r404 }, { %r563, %r564, %r565, %r566 }, { %r581, %r582 }, { %r401, %r402, %r403, %r404 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r415, %r416, %r417, %r418 }, { %r591, %r592, %r593, %r594 }, { %r567, %r568 }, { %r415, %r416, %r417, %r418 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r429, %r430, %r431, %r432 }, { %r591, %r592, %r593, %r594 }, { %r581, %r582 }, { %r429, %r430, %r431, %r432 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r387, %r388, %r389, %r390 }, { %r619, %r620, %r621, %r622 }, { %r623, %r624 }, { %r387, %r388, %r389, %r390 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r401, %r402, %r403, %r404 }, { %r619, %r620, %r621, %r622 }, { %r637, %r638 }, { %r401, %r402, %r403, %r404 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r415, %r416, %r417, %r418 }, { %r647, %r648, %r649, %r650 }, { %r623, %r624 }, { %r415, %r416, %r417, %r418 };",
+            "mma.sync.aligned.m16n8k8.row.col.f32.tf32.tf32.f32 { %r429, %r430, %r431, %r432 }, { %r647, %r648, %r649, %r650 }, { %r637, %r638 }, { %r429, %r430, %r431, %r432 };"
+          ],
+          "ptx_sha256": "1d6ef805c87550fa452e59519176fa495aca2a72b33842c6c69aed9a664d0663",
+          "cubin_sha256": "17fed35193a6bcae9b5aad04ec9d89dfe58644d8c8f70cff78722b9bd687c831",
+          "registers": 61,
+          "spills": 0,
+          "shared_bytes": 65536
+        }
+      }
+    }
+  ]
+}

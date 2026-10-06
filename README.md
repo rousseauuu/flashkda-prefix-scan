@@ -6,6 +6,8 @@ On a single NVIDIA B200, an eight-segment tree prototype achieves **1.64x at 8K 
 
 This repository contains research prototypes, numerical checks, and measured results. It is not a production replacement for FlashKDA.
 
+**Hardware follow-up:** [Ampere, Hopper, and Blackwell migration experiments](HARDWARE_MIGRATION.md) verify the generated instruction families, compare native and forced-legacy lowering on the same GPU, and implement an explicit TMEM/tcgen05 composition kernel. The initial B200 prototype already used compiler-generated tcgen05. The follow-up separates that backend contribution from algorithmic parallelism.
+
 ## Algorithm
 
 Using a key-by-value state layout, one chunk has the affine form
@@ -52,7 +54,7 @@ Other measured outcomes:
 - At 8K tokens and 96 heads, the original took about 1.019 ms. The best initial segmented candidate took about 3.098 ms. Keep the original path for this tested shape.
 - A direct 512-leaf tree at 8K/12-head took 2.742 ms even after increasing the merge tile and using TF32. That is about 3.5x slower than the original.
 - Splitting independent value columns into separate Triton programs matched the original output exactly in the tested cases, but did not improve performance.
-- SASS inspection of the upstream binary found `HMMA.16816` instructions. This study changes parallelism; it does not establish the performance of a `tcgen05` implementation.
+- SASS inspection of the upstream binary found `HMMA.16816` instructions. The initial study changed parallelism; the [hardware follow-up](HARDWARE_MIGRATION.md) adds instruction-verified tcgen05/WGMMA comparisons and an explicit SM100 composition implementation.
 
 Low head counts leave less independent work for the original inter-chunk recurrence. Segmentation trades additional summary computation and memory traffic for more parallel work. At larger head counts, the extra work can dominate. These measurements support shape-dependent dispatch, not a universal replacement.
 
@@ -110,7 +112,7 @@ The setup script downloads upstream FlashKDA into ignored `vendor/FlashKDA` and 
 
 New runs write `results/*_local.json` by default, leaving the recorded data intact. Timings are medians of three CUDA Graph measurements, each targeting 80 ms. Full-pipeline timings include K1, coefficient preparation, summaries, scanning, and K2 replay. They exclude buffer allocation and most Python/host launch overhead. Compilation is outside the timed region. Separately measured stage times need not sum exactly to full-pipeline times.
 
-The GPU experiments require dense, chunk-aligned sequences that divide evenly into the selected power-of-two segment counts. No backward pass, production variable-length integration, B300 results, or real-model quality evaluation is included. The provider-independent runner packages the measured kernels; its local CLI and CPU checks have been validated, but this packaging was not used for a new GPU timing run.
+The GPU experiments require dense, chunk-aligned sequences that divide evenly into the selected power-of-two segment counts. No backward pass, production variable-length integration, B300 results, or real-model quality evaluation is included. The initial study used B200; the follow-up adds H100 full-pipeline and A100 component measurements. The standalone hardware comparison scripts were subsequently executed on these GPUs.
 
 ## Files
 
@@ -121,6 +123,9 @@ The GPU experiments require dense, chunk-aligned sequences that divide evenly in
 | `gpu/benchmark.py` | Inputs, upstream baseline, timing, and reference metrics |
 | `scripts/patch_flashkda.py` | Host launch-stage selector for the pinned upstream revision |
 | `scripts/check_prefix_scan.py` | NumPy algebra checks and a rounding counterexample |
+| `scripts/run_hardware.py` | Isolated automatic/legacy backend comparisons and instruction evidence |
+| `gpu/blackwell_merge.py` | Explicit Gluon/TMEM/tcgen05 affine composition for SM100 |
+| `HARDWARE_MIGRATION.md` | Same-GPU migration controls, cross-GPU components, and explicit-kernel results |
 | `results/` | Recorded CPU, baseline, sweep, tuning, and confirmation data |
 
 ## Related work and attribution
