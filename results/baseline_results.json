@@ -1,0 +1,181 @@
+{
+  "metadata": {
+    "gpu": "NVIDIA B200",
+    "capability": [
+      10,
+      0
+    ],
+    "sm_count": 148,
+    "memory_GiB": 178.3511962890625,
+    "torch": "2.8.0+cu129",
+    "triton": "3.4.0",
+    "cuda": "12.9",
+    "flashkda_commit": "1ce47ea3bb22c84eb9cc665028399cf35e8ffb0b",
+    "cutlass_commit": "5c149f52a436782210263fb2f19b354443a61c6a"
+  },
+  "suite": "baseline",
+  "rows": [
+    {
+      "type": "correctness",
+      "gate": "normal",
+      "stage_split_bitwise_equal": true,
+      "output_vs_fp64": {
+        "rel_rms": 0.005863857921212912,
+        "max_abs": 0.00037634000182151794,
+        "finite": true
+      },
+      "state_vs_fp64": {
+        "rel_rms": 0.004999486263841391,
+        "max_abs": 0.004189401865005493,
+        "finite": true
+      }
+    },
+    {
+      "type": "correctness",
+      "gate": "weak",
+      "stage_split_bitwise_equal": true,
+      "output_vs_fp64": {
+        "rel_rms": 0.006232097744941711,
+        "max_abs": 0.0014565438032150269,
+        "finite": true
+      },
+      "state_vs_fp64": {
+        "rel_rms": 0.0059748305939137936,
+        "max_abs": 0.016021251678466797,
+        "finite": true
+      }
+    },
+    {
+      "type": "correctness",
+      "gate": "strong",
+      "stage_split_bitwise_equal": true,
+      "output_vs_fp64": {
+        "rel_rms": 0.005177339538931847,
+        "max_abs": 0.0003290809690952301,
+        "finite": true
+      },
+      "state_vs_fp64": {
+        "rel_rms": 0.004432359244674444,
+        "max_abs": 0.005632221698760986,
+        "finite": true
+      }
+    },
+    {
+      "type": "timing",
+      "T": 8192,
+      "H": 12,
+      "full": {
+        "median_ms": 0.7768092660342946,
+        "samples_ms": [
+          0.7768042096904679,
+          0.7768092660342946,
+          0.7769621979956534
+        ]
+      },
+      "K1": {
+        "median_ms": 0.043976431877256174,
+        "samples_ms": [
+          0.043940340957083227,
+          0.043976431877256174,
+          0.04401871961160801
+        ]
+      },
+      "K2": {
+        "median_ms": 0.7357743664322612,
+        "samples_ms": [
+          0.7360087101276104,
+          0.7357743664322612,
+          0.735773503338849
+        ]
+      }
+    },
+    {
+      "type": "timing",
+      "T": 8192,
+      "H": 96,
+      "full": {
+        "median_ms": 1.0196055622843954,
+        "samples_ms": [
+          1.0196055622843954,
+          1.0197455864448053,
+          1.0192539997589893
+        ]
+      },
+      "K1": {
+        "median_ms": 0.31383013122778936,
+        "samples_ms": [
+          0.31383013122778936,
+          0.3141567357853886,
+          0.3132300396354831
+        ]
+      },
+      "K2": {
+        "median_ms": 0.7436367355774496,
+        "samples_ms": [
+          0.7460218761278236,
+          0.7435236157111402,
+          0.7436367355774496
+        ]
+      }
+    },
+    {
+      "type": "timing",
+      "T": 32768,
+      "H": 12,
+      "full": {
+        "median_ms": 3.0442163614126354,
+        "samples_ms": [
+          3.044168941791241,
+          3.0442862584040715,
+          3.0442163614126354
+        ]
+      },
+      "K1": {
+        "median_ms": 0.1592189500916679,
+        "samples_ms": [
+          0.1592189500916679,
+          0.1594701042471006,
+          0.15921793554583166
+        ]
+      },
+      "K2": {
+        "median_ms": 2.896478808367694,
+        "samples_ms": [
+          2.898015594482422,
+          2.896478808367694,
+          2.89638838591399
+        ]
+      }
+    },
+    {
+      "type": "timing",
+      "T": 32768,
+      "H": 96,
+      "full": {
+        "median_ms": 4.026532584742496,
+        "samples_ms": [
+          4.026532584742496,
+          4.026925378096731,
+          4.025962588661596
+        ]
+      },
+      "K1": {
+        "median_ms": 1.243565187000093,
+        "samples_ms": [
+          1.244847509596083,
+          1.243565187000093,
+          1.2429288591657366
+        ]
+      },
+      "K2": {
+        "median_ms": 2.9385677478931567,
+        "samples_ms": [
+          2.939300791422526,
+          2.938454437255859,
+          2.9385677478931567
+        ]
+      }
+    }
+  ],
+  "note": "Recovered from complete remote JSON logs after local TorchVersion deserialization failure. All seven checks and timing rows completed."
+}

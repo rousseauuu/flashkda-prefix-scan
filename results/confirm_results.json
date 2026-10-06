@@ -1,0 +1,923 @@
+{
+  "metadata": {
+    "gpu": "NVIDIA B200",
+    "capability": [
+      10,
+      0
+    ],
+    "sm_count": 148,
+    "memory_GiB": 178.3511962890625,
+    "torch": "2.8.0+cu129",
+    "triton": "3.4.0",
+    "cuda": "12.9",
+    "flashkda_commit": "1ce47ea3bb22c84eb9cc665028399cf35e8ffb0b",
+    "cutlass_commit": "5c149f52a436782210263fb2f19b354443a61c6a"
+  },
+  "suite": "confirm",
+  "rows": [
+    {
+      "T": 8192,
+      "H": 12,
+      "gate": "normal",
+      "method": "original",
+      "output_vs_fp64": {
+        "rel_rms": 0.005724672693759203,
+        "max_abs": 0.000639747828245163,
+        "finite": true
+      },
+      "state_vs_fp64": {
+        "rel_rms": 0.004932678770273924,
+        "max_abs": 0.004193395376205444,
+        "finite": true
+      },
+      "timing": {
+        "median_ms": 0.7768362381879022,
+        "samples_ms": [
+          0.7768362381879022,
+          0.7767680253132735,
+          0.776997091255936
+        ]
+      }
+    },
+    {
+      "T": 8192,
+      "H": 12,
+      "gate": "normal",
+      "method": "segment_tree",
+      "P": 8,
+      "tile": 64,
+      "merge_precision": "tf32x3",
+      "output_vs_fp64": {
+        "rel_rms": 0.005724685732275248,
+        "max_abs": 0.000639747828245163,
+        "finite": true
+      },
+      "state_vs_fp64": {
+        "rel_rms": 0.004932678770273924,
+        "max_abs": 0.004193395376205444,
+        "finite": true
+      },
+      "timing": {
+        "median_ms": 0.5038940379494115,
+        "samples_ms": [
+          0.5038940379494115,
+          0.5039202489350971,
+          0.5033641965765702
+        ]
+      },
+      "speedup": 1.5416658656038569
+    },
+    {
+      "T": 8192,
+      "H": 12,
+      "gate": "normal",
+      "method": "segment_tree",
+      "P": 8,
+      "tile": 64,
+      "merge_precision": "tf32",
+      "output_vs_fp64": {
+        "rel_rms": 0.005724685732275248,
+        "max_abs": 0.000639747828245163,
+        "finite": true
+      },
+      "state_vs_fp64": {
+        "rel_rms": 0.004932678770273924,
+        "max_abs": 0.004193395376205444,
+        "finite": true
+      },
+      "timing": {
+        "median_ms": 0.4741663837432861,
+        "samples_ms": [
+          0.4743826019097559,
+          0.4740720476422991,
+          0.4741663837432861
+        ]
+      },
+      "speedup": 1.6383199333010532
+    },
+    {
+      "T": 8192,
+      "H": 12,
+      "gate": "normal",
+      "method": "segment_tree",
+      "P": 16,
+      "tile": 64,
+      "merge_precision": "tf32x3",
+      "output_vs_fp64": {
+        "rel_rms": 0.005724678747355938,
+        "max_abs": 0.000639747828245163,
+        "finite": true
+      },
+      "state_vs_fp64": {
+        "rel_rms": 0.004932678770273924,
+        "max_abs": 0.004193395376205444,
+        "finite": true
+      },
+      "timing": {
+        "median_ms": 0.5672115895285536,
+        "samples_ms": [
+          0.5673459636631297,
+          0.5672115895285536,
+          0.5671032521262097
+        ]
+      },
+      "speedup": 1.369570461057718
+    },
+    {
+      "T": 8192,
+      "H": 12,
+      "gate": "normal",
+      "method": "segment_tree",
+      "P": 16,
+      "tile": 64,
+      "merge_precision": "tf32",
+      "output_vs_fp64": {
+        "rel_rms": 0.005724678747355938,
+        "max_abs": 0.000639747828245163,
+        "finite": true
+      },
+      "state_vs_fp64": {
+        "rel_rms": 0.004932678770273924,
+        "max_abs": 0.004193395376205444,
+        "finite": true
+      },
+      "timing": {
+        "median_ms": 0.49901257063213145,
+        "samples_ms": [
+          0.49901257063213145,
+          0.49901768766491617,
+          0.4989582945968931
+        ]
+      },
+      "speedup": 1.5567468314552346
+    },
+    {
+      "T": 8192,
+      "H": 12,
+      "gate": "normal",
+      "method": "segment_tree",
+      "P": 32,
+      "tile": 64,
+      "merge_precision": "tf32x3",
+      "output_vs_fp64": {
+        "rel_rms": 0.005724605172872543,
+        "max_abs": 0.000639747828245163,
+        "finite": true
+      },
+      "state_vs_fp64": {
+        "rel_rms": 0.004932678770273924,
+        "max_abs": 0.004193395376205444,
+        "finite": true
+      },
+      "timing": {
+        "median_ms": 0.67767060143607,
+        "samples_ms": [
+          0.67775330670112,
+          0.67767060143607,
+          0.6775712612455925
+        ]
+      },
+      "speedup": 1.1463330953736042
+    },
+    {
+      "T": 8192,
+      "H": 12,
+      "gate": "normal",
+      "method": "segment_tree",
+      "P": 32,
+      "tile": 64,
+      "merge_precision": "tf32",
+      "output_vs_fp64": {
+        "rel_rms": 0.005724605172872543,
+        "max_abs": 0.000639747828245163,
+        "finite": true
+      },
+      "state_vs_fp64": {
+        "rel_rms": 0.004932678770273924,
+        "max_abs": 0.004193395376205444,
+        "finite": true
+      },
+      "timing": {
+        "median_ms": 0.5374629974365235,
+        "samples_ms": [
+          0.5370576412119764,
+          0.5375882775442941,
+          0.5374629974365235
+        ]
+      },
+      "speedup": 1.4453762247691286
+    },
+    {
+      "T": 8192,
+      "H": 12,
+      "gate": "weak",
+      "method": "original",
+      "output_vs_fp64": {
+        "rel_rms": 0.007974247448146343,
+        "max_abs": 0.0027879178524017334,
+        "finite": true
+      },
+      "state_vs_fp64": {
+        "rel_rms": 0.007376254536211491,
+        "max_abs": 0.02977299690246582,
+        "finite": true
+      }
+    },
+    {
+      "T": 8192,
+      "H": 12,
+      "gate": "weak",
+      "method": "segment_tree",
+      "P": 8,
+      "tile": 64,
+      "merge_precision": "tf32x3",
+      "output_vs_fp64": {
+        "rel_rms": 0.007608824409544468,
+        "max_abs": 0.0026055723428726196,
+        "finite": true
+      },
+      "state_vs_fp64": {
+        "rel_rms": 0.007343471981585026,
+        "max_abs": 0.032025814056396484,
+        "finite": true
+      }
+    },
+    {
+      "T": 8192,
+      "H": 12,
+      "gate": "weak",
+      "method": "segment_tree",
+      "P": 8,
+      "tile": 64,
+      "merge_precision": "tf32",
+      "output_vs_fp64": {
+        "rel_rms": 0.0076074604876339436,
+        "max_abs": 0.0027354061603546143,
+        "finite": true
+      },
+      "state_vs_fp64": {
+        "rel_rms": 0.007381976582109928,
+        "max_abs": 0.03306984901428223,
+        "finite": true
+      }
+    },
+    {
+      "T": 8192,
+      "H": 12,
+      "gate": "weak",
+      "method": "segment_tree",
+      "P": 16,
+      "tile": 64,
+      "merge_precision": "tf32x3",
+      "output_vs_fp64": {
+        "rel_rms": 0.0072294375859200954,
+        "max_abs": 0.002832576632499695,
+        "finite": true
+      },
+      "state_vs_fp64": {
+        "rel_rms": 0.0072187441401183605,
+        "max_abs": 0.03444170951843262,
+        "finite": true
+      }
+    },
+    {
+      "T": 8192,
+      "H": 12,
+      "gate": "weak",
+      "method": "segment_tree",
+      "P": 16,
+      "tile": 64,
+      "merge_precision": "tf32",
+      "output_vs_fp64": {
+        "rel_rms": 0.007234048563987017,
+        "max_abs": 0.002584099769592285,
+        "finite": true
+      },
+      "state_vs_fp64": {
+        "rel_rms": 0.007213789504021406,
+        "max_abs": 0.030744552612304688,
+        "finite": true
+      }
+    },
+    {
+      "T": 8192,
+      "H": 12,
+      "gate": "weak",
+      "method": "segment_tree",
+      "P": 32,
+      "tile": 64,
+      "merge_precision": "tf32x3",
+      "output_vs_fp64": {
+        "rel_rms": 0.006705665960907936,
+        "max_abs": 0.002584099769592285,
+        "finite": true
+      },
+      "state_vs_fp64": {
+        "rel_rms": 0.006754124071449041,
+        "max_abs": 0.029958724975585938,
+        "finite": true
+      }
+    },
+    {
+      "T": 8192,
+      "H": 12,
+      "gate": "weak",
+      "method": "segment_tree",
+      "P": 32,
+      "tile": 64,
+      "merge_precision": "tf32",
+      "output_vs_fp64": {
+        "rel_rms": 0.006711503490805626,
+        "max_abs": 0.002584099769592285,
+        "finite": true
+      },
+      "state_vs_fp64": {
+        "rel_rms": 0.006743330508470535,
+        "max_abs": 0.029306650161743164,
+        "finite": true
+      }
+    },
+    {
+      "T": 8192,
+      "H": 12,
+      "gate": "strong",
+      "method": "original",
+      "output_vs_fp64": {
+        "rel_rms": 0.0052610160782933235,
+        "max_abs": 0.0006321072578430176,
+        "finite": true
+      },
+      "state_vs_fp64": {
+        "rel_rms": 0.004558902699500322,
+        "max_abs": 0.0051094889640808105,
+        "finite": true
+      }
+    },
+    {
+      "T": 8192,
+      "H": 12,
+      "gate": "strong",
+      "method": "segment_tree",
+      "P": 8,
+      "tile": 64,
+      "merge_precision": "tf32x3",
+      "output_vs_fp64": {
+        "rel_rms": 0.0052610160782933235,
+        "max_abs": 0.0006321072578430176,
+        "finite": true
+      },
+      "state_vs_fp64": {
+        "rel_rms": 0.004558902699500322,
+        "max_abs": 0.0051094889640808105,
+        "finite": true
+      }
+    },
+    {
+      "T": 8192,
+      "H": 12,
+      "gate": "strong",
+      "method": "segment_tree",
+      "P": 8,
+      "tile": 64,
+      "merge_precision": "tf32",
+      "output_vs_fp64": {
+        "rel_rms": 0.0052610160782933235,
+        "max_abs": 0.0006321072578430176,
+        "finite": true
+      },
+      "state_vs_fp64": {
+        "rel_rms": 0.004558902699500322,
+        "max_abs": 0.0051094889640808105,
+        "finite": true
+      }
+    },
+    {
+      "T": 8192,
+      "H": 12,
+      "gate": "strong",
+      "method": "segment_tree",
+      "P": 16,
+      "tile": 64,
+      "merge_precision": "tf32x3",
+      "output_vs_fp64": {
+        "rel_rms": 0.005261016543954611,
+        "max_abs": 0.0006321072578430176,
+        "finite": true
+      },
+      "state_vs_fp64": {
+        "rel_rms": 0.004558902699500322,
+        "max_abs": 0.0051094889640808105,
+        "finite": true
+      }
+    },
+    {
+      "T": 8192,
+      "H": 12,
+      "gate": "strong",
+      "method": "segment_tree",
+      "P": 16,
+      "tile": 64,
+      "merge_precision": "tf32",
+      "output_vs_fp64": {
+        "rel_rms": 0.005261016543954611,
+        "max_abs": 0.0006321072578430176,
+        "finite": true
+      },
+      "state_vs_fp64": {
+        "rel_rms": 0.004558902699500322,
+        "max_abs": 0.0051094889640808105,
+        "finite": true
+      }
+    },
+    {
+      "T": 8192,
+      "H": 12,
+      "gate": "strong",
+      "method": "segment_tree",
+      "P": 32,
+      "tile": 64,
+      "merge_precision": "tf32x3",
+      "output_vs_fp64": {
+        "rel_rms": 0.005261016543954611,
+        "max_abs": 0.0006321072578430176,
+        "finite": true
+      },
+      "state_vs_fp64": {
+        "rel_rms": 0.004558902699500322,
+        "max_abs": 0.0051094889640808105,
+        "finite": true
+      }
+    },
+    {
+      "T": 8192,
+      "H": 12,
+      "gate": "strong",
+      "method": "segment_tree",
+      "P": 32,
+      "tile": 64,
+      "merge_precision": "tf32",
+      "output_vs_fp64": {
+        "rel_rms": 0.005261016543954611,
+        "max_abs": 0.0006321072578430176,
+        "finite": true
+      },
+      "state_vs_fp64": {
+        "rel_rms": 0.004558902699500322,
+        "max_abs": 0.0051094889640808105,
+        "finite": true
+      }
+    },
+    {
+      "T": 32768,
+      "H": 12,
+      "gate": "normal",
+      "method": "original",
+      "output_vs_fp64": {
+        "rel_rms": 0.005719807930290699,
+        "max_abs": 0.0007534697651863098,
+        "finite": true
+      },
+      "state_vs_fp64": {
+        "rel_rms": 0.004926436580717564,
+        "max_abs": 0.00772702693939209,
+        "finite": true
+      },
+      "timing": {
+        "median_ms": 3.0476535210242637,
+        "samples_ms": [
+          3.0474652510422926,
+          3.0476535210242637,
+          3.047654283963717
+        ]
+      }
+    },
+    {
+      "T": 32768,
+      "H": 12,
+      "gate": "normal",
+      "method": "segment_tree",
+      "P": 8,
+      "tile": 64,
+      "merge_precision": "tf32x3",
+      "output_vs_fp64": {
+        "rel_rms": 0.005719808861613274,
+        "max_abs": 0.0007534697651863098,
+        "finite": true
+      },
+      "state_vs_fp64": {
+        "rel_rms": 0.004926436580717564,
+        "max_abs": 0.00772702693939209,
+        "finite": true
+      },
+      "timing": {
+        "median_ms": 1.7049547941788383,
+        "samples_ms": [
+          1.7051992167597232,
+          1.7049547941788383,
+          1.7047297933827277
+        ]
+      },
+      "speedup": 1.7875274649097737
+    },
+    {
+      "T": 32768,
+      "H": 12,
+      "gate": "normal",
+      "method": "segment_tree",
+      "P": 8,
+      "tile": 64,
+      "merge_precision": "tf32",
+      "output_vs_fp64": {
+        "rel_rms": 0.005719808861613274,
+        "max_abs": 0.0007534697651863098,
+        "finite": true
+      },
+      "state_vs_fp64": {
+        "rel_rms": 0.004926436580717564,
+        "max_abs": 0.00772702693939209,
+        "finite": true
+      },
+      "timing": {
+        "median_ms": 1.6741293724547042,
+        "samples_ms": [
+          1.6741293724547042,
+          1.6743309507978723,
+          1.6740831415703956
+        ]
+      },
+      "speedup": 1.8204408638716014
+    },
+    {
+      "T": 32768,
+      "H": 12,
+      "gate": "normal",
+      "method": "segment_tree",
+      "P": 16,
+      "tile": 64,
+      "merge_precision": "tf32x3",
+      "output_vs_fp64": {
+        "rel_rms": 0.005719805136322975,
+        "max_abs": 0.0007534697651863098,
+        "finite": true
+      },
+      "state_vs_fp64": {
+        "rel_rms": 0.004926436580717564,
+        "max_abs": 0.00772702693939209,
+        "finite": true
+      },
+      "timing": {
+        "median_ms": 1.7400926547580295,
+        "samples_ms": [
+          1.7400926547580295,
+          1.7399359809027777,
+          1.7404792107476128
+        ]
+      },
+      "speedup": 1.7514317485858582
+    },
+    {
+      "T": 32768,
+      "H": 12,
+      "gate": "normal",
+      "method": "segment_tree",
+      "P": 16,
+      "tile": 64,
+      "merge_precision": "tf32",
+      "output_vs_fp64": {
+        "rel_rms": 0.005719805136322975,
+        "max_abs": 0.0007534697651863098,
+        "finite": true
+      },
+      "state_vs_fp64": {
+        "rel_rms": 0.004926436580717564,
+        "max_abs": 0.00772702693939209,
+        "finite": true
+      },
+      "timing": {
+        "median_ms": 1.6709568591828041,
+        "samples_ms": [
+          1.6716500951888713,
+          1.670720932331491,
+          1.6709568591828041
+        ]
+      },
+      "speedup": 1.8238971905682502
+    },
+    {
+      "T": 32768,
+      "H": 12,
+      "gate": "normal",
+      "method": "segment_tree",
+      "P": 32,
+      "tile": 64,
+      "merge_precision": "tf32x3",
+      "output_vs_fp64": {
+        "rel_rms": 0.005719804670661688,
+        "max_abs": 0.0007534697651863098,
+        "finite": true
+      },
+      "state_vs_fp64": {
+        "rel_rms": 0.004926436580717564,
+        "max_abs": 0.00772702693939209,
+        "finite": true
+      },
+      "timing": {
+        "median_ms": 1.8224139901094658,
+        "samples_ms": [
+          1.8197005338447039,
+          1.8224139901094658,
+          1.82290574894395
+        ]
+      },
+      "speedup": 1.672316793859337
+    },
+    {
+      "T": 32768,
+      "H": 12,
+      "gate": "normal",
+      "method": "segment_tree",
+      "P": 32,
+      "tile": 64,
+      "merge_precision": "tf32",
+      "output_vs_fp64": {
+        "rel_rms": 0.005719804670661688,
+        "max_abs": 0.0007534697651863098,
+        "finite": true
+      },
+      "state_vs_fp64": {
+        "rel_rms": 0.004926436580717564,
+        "max_abs": 0.00772702693939209,
+        "finite": true
+      },
+      "timing": {
+        "median_ms": 1.6884249423412565,
+        "samples_ms": [
+          1.6878256290516955,
+          1.6898350817091923,
+          1.6884249423412565
+        ]
+      },
+      "speedup": 1.8050275405184617
+    },
+    {
+      "T": 32768,
+      "H": 12,
+      "gate": "weak",
+      "method": "original",
+      "output_vs_fp64": {
+        "rel_rms": 0.00801281537860632,
+        "max_abs": 0.0027208328247070312,
+        "finite": true
+      },
+      "state_vs_fp64": {
+        "rel_rms": 0.007349116262048483,
+        "max_abs": 0.04184412956237793,
+        "finite": true
+      }
+    },
+    {
+      "T": 32768,
+      "H": 12,
+      "gate": "weak",
+      "method": "segment_tree",
+      "P": 8,
+      "tile": 64,
+      "merge_precision": "tf32x3",
+      "output_vs_fp64": {
+        "rel_rms": 0.007925298064947128,
+        "max_abs": 0.00327986478805542,
+        "finite": true
+      },
+      "state_vs_fp64": {
+        "rel_rms": 0.007387131918221712,
+        "max_abs": 0.03485703468322754,
+        "finite": true
+      }
+    },
+    {
+      "T": 32768,
+      "H": 12,
+      "gate": "weak",
+      "method": "segment_tree",
+      "P": 8,
+      "tile": 64,
+      "merge_precision": "tf32",
+      "output_vs_fp64": {
+        "rel_rms": 0.0079251853749156,
+        "max_abs": 0.00327986478805542,
+        "finite": true
+      },
+      "state_vs_fp64": {
+        "rel_rms": 0.007389014586806297,
+        "max_abs": 0.03485703468322754,
+        "finite": true
+      }
+    },
+    {
+      "T": 32768,
+      "H": 12,
+      "gate": "weak",
+      "method": "segment_tree",
+      "P": 16,
+      "tile": 64,
+      "merge_precision": "tf32x3",
+      "output_vs_fp64": {
+        "rel_rms": 0.007825690321624279,
+        "max_abs": 0.002947509288787842,
+        "finite": true
+      },
+      "state_vs_fp64": {
+        "rel_rms": 0.007370227947831154,
+        "max_abs": 0.03485703468322754,
+        "finite": true
+      }
+    },
+    {
+      "T": 32768,
+      "H": 12,
+      "gate": "weak",
+      "method": "segment_tree",
+      "P": 16,
+      "tile": 64,
+      "merge_precision": "tf32",
+      "output_vs_fp64": {
+        "rel_rms": 0.007824820466339588,
+        "max_abs": 0.002947509288787842,
+        "finite": true
+      },
+      "state_vs_fp64": {
+        "rel_rms": 0.00737005053088069,
+        "max_abs": 0.03485703468322754,
+        "finite": true
+      }
+    },
+    {
+      "T": 32768,
+      "H": 12,
+      "gate": "weak",
+      "method": "segment_tree",
+      "P": 32,
+      "tile": 64,
+      "merge_precision": "tf32x3",
+      "output_vs_fp64": {
+        "rel_rms": 0.007620709482580423,
+        "max_abs": 0.0028398633003234863,
+        "finite": true
+      },
+      "state_vs_fp64": {
+        "rel_rms": 0.007360582705587149,
+        "max_abs": 0.03485703468322754,
+        "finite": true
+      }
+    },
+    {
+      "T": 32768,
+      "H": 12,
+      "gate": "weak",
+      "method": "segment_tree",
+      "P": 32,
+      "tile": 64,
+      "merge_precision": "tf32",
+      "output_vs_fp64": {
+        "rel_rms": 0.007621524855494499,
+        "max_abs": 0.0031501874327659607,
+        "finite": true
+      },
+      "state_vs_fp64": {
+        "rel_rms": 0.0073742372915148735,
+        "max_abs": 0.036667585372924805,
+        "finite": true
+      }
+    },
+    {
+      "T": 32768,
+      "H": 12,
+      "gate": "strong",
+      "method": "original",
+      "output_vs_fp64": {
+        "rel_rms": 0.0052568987011909485,
+        "max_abs": 0.0006934776902198792,
+        "finite": true
+      },
+      "state_vs_fp64": {
+        "rel_rms": 0.004914392251521349,
+        "max_abs": 0.004246056079864502,
+        "finite": true
+      }
+    },
+    {
+      "T": 32768,
+      "H": 12,
+      "gate": "strong",
+      "method": "segment_tree",
+      "P": 8,
+      "tile": 64,
+      "merge_precision": "tf32x3",
+      "output_vs_fp64": {
+        "rel_rms": 0.0052568987011909485,
+        "max_abs": 0.0006934776902198792,
+        "finite": true
+      },
+      "state_vs_fp64": {
+        "rel_rms": 0.004914392251521349,
+        "max_abs": 0.004246056079864502,
+        "finite": true
+      }
+    },
+    {
+      "T": 32768,
+      "H": 12,
+      "gate": "strong",
+      "method": "segment_tree",
+      "P": 8,
+      "tile": 64,
+      "merge_precision": "tf32",
+      "output_vs_fp64": {
+        "rel_rms": 0.0052568987011909485,
+        "max_abs": 0.0006934776902198792,
+        "finite": true
+      },
+      "state_vs_fp64": {
+        "rel_rms": 0.004914392251521349,
+        "max_abs": 0.004246056079864502,
+        "finite": true
+      }
+    },
+    {
+      "T": 32768,
+      "H": 12,
+      "gate": "strong",
+      "method": "segment_tree",
+      "P": 16,
+      "tile": 64,
+      "merge_precision": "tf32x3",
+      "output_vs_fp64": {
+        "rel_rms": 0.0052568987011909485,
+        "max_abs": 0.0006934776902198792,
+        "finite": true
+      },
+      "state_vs_fp64": {
+        "rel_rms": 0.004914392251521349,
+        "max_abs": 0.004246056079864502,
+        "finite": true
+      }
+    },
+    {
+      "T": 32768,
+      "H": 12,
+      "gate": "strong",
+      "method": "segment_tree",
+      "P": 16,
+      "tile": 64,
+      "merge_precision": "tf32",
+      "output_vs_fp64": {
+        "rel_rms": 0.0052568987011909485,
+        "max_abs": 0.0006934776902198792,
+        "finite": true
+      },
+      "state_vs_fp64": {
+        "rel_rms": 0.004914392251521349,
+        "max_abs": 0.004246056079864502,
+        "finite": true
+      }
+    },
+    {
+      "T": 32768,
+      "H": 12,
+      "gate": "strong",
+      "method": "segment_tree",
+      "P": 32,
+      "tile": 64,
+      "merge_precision": "tf32x3",
+      "output_vs_fp64": {
+        "rel_rms": 0.0052568987011909485,
+        "max_abs": 0.0006934776902198792,
+        "finite": true
+      },
+      "state_vs_fp64": {
+        "rel_rms": 0.004914392251521349,
+        "max_abs": 0.004246056079864502,
+        "finite": true
+      }
+    },
+    {
+      "T": 32768,
+      "H": 12,
+      "gate": "strong",
+      "method": "segment_tree",
+      "P": 32,
+      "tile": 64,
+      "merge_precision": "tf32",
+      "output_vs_fp64": {
+        "rel_rms": 0.0052568987011909485,
+        "max_abs": 0.0006934776902198792,
+        "finite": true
+      },
+      "state_vs_fp64": {
+        "rel_rms": 0.004914392251521349,
+        "max_abs": 0.004246056079864502,
+        "finite": true
+      }
+    }
+  ]
+}

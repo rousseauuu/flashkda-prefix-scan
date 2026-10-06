@@ -1,0 +1,501 @@
+{
+  "metadata": {
+    "gpu": "NVIDIA B200",
+    "capability": [
+      10,
+      0
+    ],
+    "sm_count": 148,
+    "memory_GiB": 178.3511962890625,
+    "torch": "2.8.0+cu129",
+    "triton": "3.4.0",
+    "cuda": "12.9",
+    "flashkda_commit": "1ce47ea3bb22c84eb9cc665028399cf35e8ffb0b",
+    "cutlass_commit": "5c149f52a436782210263fb2f19b354443a61c6a"
+  },
+  "suite": "correctness",
+  "rows": [
+    {
+      "method": "original",
+      "gate": "normal",
+      "output_vs_fp64": {
+        "rel_rms": 0.005723034963011742,
+        "max_abs": 0.00045553967356681824,
+        "finite": true
+      },
+      "state_vs_fp64": {
+        "rel_rms": 0.004629017319530249,
+        "max_abs": 0.003565758466720581,
+        "finite": true
+      }
+    },
+    {
+      "method": "segment_serial",
+      "P": 4,
+      "fast": false,
+      "gate": "normal",
+      "output_vs_fp64": {
+        "rel_rms": 0.005723055452108383,
+        "max_abs": 0.00045553967356681824,
+        "finite": true
+      },
+      "state_vs_fp64": {
+        "rel_rms": 0.004629017319530249,
+        "max_abs": 0.003565758466720581,
+        "finite": true
+      },
+      "output_vs_original": {
+        "rel_rms": 0.00010308740456821397,
+        "max_abs": 3.0517578125e-05,
+        "finite": true
+      }
+    },
+    {
+      "method": "segment_tree",
+      "P": 4,
+      "fast": false,
+      "gate": "normal",
+      "output_vs_fp64": {
+        "rel_rms": 0.005723055452108383,
+        "max_abs": 0.00045553967356681824,
+        "finite": true
+      },
+      "state_vs_fp64": {
+        "rel_rms": 0.004629017319530249,
+        "max_abs": 0.003565758466720581,
+        "finite": true
+      },
+      "output_vs_original": {
+        "rel_rms": 0.00010308740456821397,
+        "max_abs": 3.0517578125e-05,
+        "finite": true
+      }
+    },
+    {
+      "method": "segment_serial",
+      "P": 4,
+      "fast": true,
+      "gate": "normal",
+      "output_vs_fp64": {
+        "rel_rms": 0.0057233646512031555,
+        "max_abs": 0.00045553967356681824,
+        "finite": true
+      },
+      "state_vs_fp64": {
+        "rel_rms": 0.004629017319530249,
+        "max_abs": 0.003565758466720581,
+        "finite": true
+      },
+      "output_vs_original": {
+        "rel_rms": 8.82488238858059e-05,
+        "max_abs": 3.0517578125e-05,
+        "finite": true
+      }
+    },
+    {
+      "method": "segment_tree",
+      "P": 4,
+      "fast": true,
+      "gate": "normal",
+      "output_vs_fp64": {
+        "rel_rms": 0.0057233646512031555,
+        "max_abs": 0.00045553967356681824,
+        "finite": true
+      },
+      "state_vs_fp64": {
+        "rel_rms": 0.004629017319530249,
+        "max_abs": 0.003565758466720581,
+        "finite": true
+      },
+      "output_vs_original": {
+        "rel_rms": 8.82488238858059e-05,
+        "max_abs": 3.0517578125e-05,
+        "finite": true
+      }
+    },
+    {
+      "method": "value_split",
+      "BV": 32,
+      "gate": "normal",
+      "output_vs_fp64": {
+        "rel_rms": 0.005723034963011742,
+        "max_abs": 0.00045553967356681824,
+        "finite": true
+      },
+      "state_vs_fp64": {
+        "rel_rms": 0.004629017319530249,
+        "max_abs": 0.003565758466720581,
+        "finite": true
+      },
+      "output_vs_original": {
+        "rel_rms": 0.0,
+        "max_abs": 0.0,
+        "finite": true
+      }
+    },
+    {
+      "method": "value_split",
+      "BV": 64,
+      "gate": "normal",
+      "output_vs_fp64": {
+        "rel_rms": 0.005723034963011742,
+        "max_abs": 0.00045553967356681824,
+        "finite": true
+      },
+      "state_vs_fp64": {
+        "rel_rms": 0.004629017319530249,
+        "max_abs": 0.003565758466720581,
+        "finite": true
+      },
+      "output_vs_original": {
+        "rel_rms": 0.0,
+        "max_abs": 0.0,
+        "finite": true
+      }
+    },
+    {
+      "method": "value_split",
+      "BV": 128,
+      "gate": "normal",
+      "output_vs_fp64": {
+        "rel_rms": 0.005723034963011742,
+        "max_abs": 0.00045553967356681824,
+        "finite": true
+      },
+      "state_vs_fp64": {
+        "rel_rms": 0.004629017319530249,
+        "max_abs": 0.003565758466720581,
+        "finite": true
+      },
+      "output_vs_original": {
+        "rel_rms": 0.0,
+        "max_abs": 0.0,
+        "finite": true
+      }
+    },
+    {
+      "method": "original",
+      "gate": "weak",
+      "output_vs_fp64": {
+        "rel_rms": 0.006926264148205519,
+        "max_abs": 0.0019137263298034668,
+        "finite": true
+      },
+      "state_vs_fp64": {
+        "rel_rms": 0.0068534547463059425,
+        "max_abs": 0.02382826805114746,
+        "finite": true
+      }
+    },
+    {
+      "method": "segment_serial",
+      "P": 4,
+      "fast": false,
+      "gate": "weak",
+      "output_vs_fp64": {
+        "rel_rms": 0.0057407887652516365,
+        "max_abs": 0.001519225537776947,
+        "finite": true
+      },
+      "state_vs_fp64": {
+        "rel_rms": 0.0057119885459542274,
+        "max_abs": 0.03064250946044922,
+        "finite": true
+      },
+      "output_vs_original": {
+        "rel_rms": 0.0063195982947945595,
+        "max_abs": 0.001953125,
+        "finite": true
+      }
+    },
+    {
+      "method": "segment_tree",
+      "P": 4,
+      "fast": false,
+      "gate": "weak",
+      "output_vs_fp64": {
+        "rel_rms": 0.005740876775234938,
+        "max_abs": 0.001519225537776947,
+        "finite": true
+      },
+      "state_vs_fp64": {
+        "rel_rms": 0.005711657460778952,
+        "max_abs": 0.03064250946044922,
+        "finite": true
+      },
+      "output_vs_original": {
+        "rel_rms": 0.00631977804005146,
+        "max_abs": 0.001953125,
+        "finite": true
+      }
+    },
+    {
+      "method": "segment_serial",
+      "P": 4,
+      "fast": true,
+      "gate": "weak",
+      "output_vs_fp64": {
+        "rel_rms": 0.005960971582680941,
+        "max_abs": 0.0016938745975494385,
+        "finite": true
+      },
+      "state_vs_fp64": {
+        "rel_rms": 0.005954206921160221,
+        "max_abs": 0.021961450576782227,
+        "finite": true
+      },
+      "output_vs_original": {
+        "rel_rms": 0.00655494537204504,
+        "max_abs": 0.001953125,
+        "finite": true
+      }
+    },
+    {
+      "method": "segment_tree",
+      "P": 4,
+      "fast": true,
+      "gate": "weak",
+      "output_vs_fp64": {
+        "rel_rms": 0.005960943177342415,
+        "max_abs": 0.0016938745975494385,
+        "finite": true
+      },
+      "state_vs_fp64": {
+        "rel_rms": 0.005954206921160221,
+        "max_abs": 0.021961450576782227,
+        "finite": true
+      },
+      "output_vs_original": {
+        "rel_rms": 0.006554897874593735,
+        "max_abs": 0.001953125,
+        "finite": true
+      }
+    },
+    {
+      "method": "value_split",
+      "BV": 32,
+      "gate": "weak",
+      "output_vs_fp64": {
+        "rel_rms": 0.006926264148205519,
+        "max_abs": 0.0019137263298034668,
+        "finite": true
+      },
+      "state_vs_fp64": {
+        "rel_rms": 0.0068534547463059425,
+        "max_abs": 0.02382826805114746,
+        "finite": true
+      },
+      "output_vs_original": {
+        "rel_rms": 0.0,
+        "max_abs": 0.0,
+        "finite": true
+      }
+    },
+    {
+      "method": "value_split",
+      "BV": 64,
+      "gate": "weak",
+      "output_vs_fp64": {
+        "rel_rms": 0.006926264148205519,
+        "max_abs": 0.0019137263298034668,
+        "finite": true
+      },
+      "state_vs_fp64": {
+        "rel_rms": 0.0068534547463059425,
+        "max_abs": 0.02382826805114746,
+        "finite": true
+      },
+      "output_vs_original": {
+        "rel_rms": 0.0,
+        "max_abs": 0.0,
+        "finite": true
+      }
+    },
+    {
+      "method": "value_split",
+      "BV": 128,
+      "gate": "weak",
+      "output_vs_fp64": {
+        "rel_rms": 0.006926264148205519,
+        "max_abs": 0.0019137263298034668,
+        "finite": true
+      },
+      "state_vs_fp64": {
+        "rel_rms": 0.0068534547463059425,
+        "max_abs": 0.02382826805114746,
+        "finite": true
+      },
+      "output_vs_original": {
+        "rel_rms": 0.0,
+        "max_abs": 0.0,
+        "finite": true
+      }
+    },
+    {
+      "method": "original",
+      "gate": "strong",
+      "output_vs_fp64": {
+        "rel_rms": 0.005262619815766811,
+        "max_abs": 0.00041281431913375854,
+        "finite": true
+      },
+      "state_vs_fp64": {
+        "rel_rms": 0.004043678753077984,
+        "max_abs": 0.00266188383102417,
+        "finite": true
+      }
+    },
+    {
+      "method": "segment_serial",
+      "P": 4,
+      "fast": false,
+      "gate": "strong",
+      "output_vs_fp64": {
+        "rel_rms": 0.005262653809040785,
+        "max_abs": 0.00041281431913375854,
+        "finite": true
+      },
+      "state_vs_fp64": {
+        "rel_rms": 0.004043678753077984,
+        "max_abs": 0.00266188383102417,
+        "finite": true
+      },
+      "output_vs_original": {
+        "rel_rms": 2.0527748347376473e-05,
+        "max_abs": 3.0517578125e-05,
+        "finite": true
+      }
+    },
+    {
+      "method": "segment_tree",
+      "P": 4,
+      "fast": false,
+      "gate": "strong",
+      "output_vs_fp64": {
+        "rel_rms": 0.005262653809040785,
+        "max_abs": 0.00041281431913375854,
+        "finite": true
+      },
+      "state_vs_fp64": {
+        "rel_rms": 0.004043678753077984,
+        "max_abs": 0.00266188383102417,
+        "finite": true
+      },
+      "output_vs_original": {
+        "rel_rms": 2.0527748347376473e-05,
+        "max_abs": 3.0517578125e-05,
+        "finite": true
+      }
+    },
+    {
+      "method": "segment_serial",
+      "P": 4,
+      "fast": true,
+      "gate": "strong",
+      "output_vs_fp64": {
+        "rel_rms": 0.005262619815766811,
+        "max_abs": 0.00041281431913375854,
+        "finite": true
+      },
+      "state_vs_fp64": {
+        "rel_rms": 0.004043678753077984,
+        "max_abs": 0.00266188383102417,
+        "finite": true
+      },
+      "output_vs_original": {
+        "rel_rms": 1.6274275367322844e-06,
+        "max_abs": 1.9073486328125e-06,
+        "finite": true
+      }
+    },
+    {
+      "method": "segment_tree",
+      "P": 4,
+      "fast": true,
+      "gate": "strong",
+      "output_vs_fp64": {
+        "rel_rms": 0.005262619815766811,
+        "max_abs": 0.00041281431913375854,
+        "finite": true
+      },
+      "state_vs_fp64": {
+        "rel_rms": 0.004043678753077984,
+        "max_abs": 0.00266188383102417,
+        "finite": true
+      },
+      "output_vs_original": {
+        "rel_rms": 1.6274275367322844e-06,
+        "max_abs": 1.9073486328125e-06,
+        "finite": true
+      }
+    },
+    {
+      "method": "value_split",
+      "BV": 32,
+      "gate": "strong",
+      "output_vs_fp64": {
+        "rel_rms": 0.005262619815766811,
+        "max_abs": 0.00041281431913375854,
+        "finite": true
+      },
+      "state_vs_fp64": {
+        "rel_rms": 0.004043678753077984,
+        "max_abs": 0.00266188383102417,
+        "finite": true
+      },
+      "output_vs_original": {
+        "rel_rms": 0.0,
+        "max_abs": 0.0,
+        "finite": true
+      }
+    },
+    {
+      "method": "value_split",
+      "BV": 64,
+      "gate": "strong",
+      "output_vs_fp64": {
+        "rel_rms": 0.005262619815766811,
+        "max_abs": 0.00041281431913375854,
+        "finite": true
+      },
+      "state_vs_fp64": {
+        "rel_rms": 0.004043678753077984,
+        "max_abs": 0.00266188383102417,
+        "finite": true
+      },
+      "output_vs_original": {
+        "rel_rms": 0.0,
+        "max_abs": 0.0,
+        "finite": true
+      }
+    },
+    {
+      "method": "value_split",
+      "BV": 128,
+      "gate": "strong",
+      "output_vs_fp64": {
+        "rel_rms": 0.005262619815766811,
+        "max_abs": 0.00041281431913375854,
+        "finite": true
+      },
+      "state_vs_fp64": {
+        "rel_rms": 0.004043678753077984,
+        "max_abs": 0.00266188383102417,
+        "finite": true
+      },
+      "output_vs_original": {
+        "rel_rms": 0.0,
+        "max_abs": 0.0,
+        "finite": true
+      }
+    }
+  ],
+  "sass": {
+    "returncode": 0,
+    "matrix_instructions": [
+      "HMMA.16816.F16",
+      "HMMA.16816.F32.BF16"
+    ],
+    "hmmma_occurrences": 1544
+  }
+}
